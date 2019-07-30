@@ -18599,3 +18599,17 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 76ms (Views: 71.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-07-30 01:49:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 548ms (Views: 544.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-30 01:49:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+

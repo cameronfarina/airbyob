@@ -29,8 +29,15 @@ class Autocomplete extends Component {
       .concat(suggestions[1].concat(suggestions[2]))
       .sort();
 
+    let singularSuggestions = [];
+
+    allSuggestions.map(suggestion => {
+      if (!singularSuggestions.includes(suggestion)) {
+        singularSuggestions.push(suggestion);
+      }
+    });
     // Filter our suggestions that don't contain the user's input
-    const filteredSuggestions = allSuggestions.filter(
+    const filteredSuggestions = singularSuggestions.filter(
       suggestion =>
         suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
     );
