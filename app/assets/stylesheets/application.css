@@ -274,6 +274,7 @@ input {
 .toolbar-navigation-items a:hover,
 .toolbar-navigation-items a:active {
   color: black;
+  text-decoration: black underline;
 }
 
 .logo {
