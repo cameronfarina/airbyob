@@ -26,4 +26,15 @@ class ApplicationController < ActionController::Base
   def require_logged_in
     redirect_to new_session_url unless logged_in?
   end
+
+  def owner?
+    Listing.user_id === @current_user.id
+  end
+
+  def require_ownership
+    unless owner?
+      redirect_to user_url(@current_user)
+      render json: ['You are not the owner of this listing']
+    end
+  end
 end

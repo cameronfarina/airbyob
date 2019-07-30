@@ -127,7 +127,6 @@ input {
 .sign-in-container {
   left: 0;
   width: 50%;
-  z-index: 2;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -138,7 +137,6 @@ input {
   left: 0;
   width: 50%;
   opacity: 0;
-  z-index: 1;
 }
 
 .container.right-panel-active .sign-up-container {
@@ -292,8 +290,7 @@ input {
 }
 
 .App-Component {
-  z-index: 400;
-  width: 500px;
+  width: 400px;
 }
 
 .search-bar-input {
@@ -308,7 +305,6 @@ input {
   outline: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 5px 8px rgba(0, 0, 0, 0.02);
   overflow-y: auto;
-  z-index: 100;
 }
 
 .search-bar-input[type="text"] {
