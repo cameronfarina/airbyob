@@ -7,7 +7,7 @@ import {
   Marker
 } from "react-google-maps";
 import Geocode from "react-geocode";
-Geocode.setApiKey("AIzaSyBfwNmuusCzXl_Ci-4YgLglUGyN7uU0w_E");
+Geocode.setApiKey("");
 Geocode.enableDebug();
 
 class Map extends React.Component {
