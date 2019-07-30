@@ -13,6 +13,7 @@ class SessionForm extends React.Component {
     this.handlesSubmit = this.handlesSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
     this.toggleClass = this.toggleClass.bind(this);
+    this.closeContainer = this.closeContainer.bind(this);
   }
 
   toggleClass() {
@@ -58,8 +59,16 @@ class SessionForm extends React.Component {
     );
   }
 
+
+
+  closeContainer() {
+    const container = document.getElementById("container");
+
+    container.classList.add("close-form");
+    
+  }
+
   render() {
-    // debugger;
     return (
       <div
         className={
@@ -69,11 +78,15 @@ class SessionForm extends React.Component {
         }
         id="container"
       >
+        <span onClick={this.closeContainer} className="left-closeBtn">
+          &times;
+        </span>
         <div className="form-container sign-up-container">
           <form onSubmit={this.handleSubmit}>
             {this.renderErrors()}
-            <h1>Create Account</h1>
+            <h1 className="form-header">Create Account</h1>
             <input
+              className="signup-form-input"
               type="text"
               placeholder="Full Name"
               value={this.props.name}
@@ -91,14 +104,20 @@ class SessionForm extends React.Component {
               value={this.props.password}
               onChange={this.handleChange("password")}
             />
-            <button>Sign Up</button>
+            <button className="form-btn" className="form-btn">
+              Sign Up
+            </button>
           </form>
         </div>
+        <span onClick={this.closeContainer} className="right-closeBtn">
+          &times;
+        </span>
         <div className="form-container sign-in-container">
           <form onSubmit={this.handlesSubmit}>
             {this.renderErrors()}
-            <h1>Sign in</h1>
+            <h1 className="form-header">Log in</h1>
             <input
+              className="signin-form-input"
               type="email"
               placeholder="Email"
               value={this.props.email}
@@ -110,23 +129,30 @@ class SessionForm extends React.Component {
               value={this.props.password}
               onChange={this.handleChange("password")}
             />
-            <a href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <button className="form-btn">Log In</button>
           </form>
         </div>
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
-              <h1>Welcome Back!</h1>
-              <p>To log into your account, please enter your login info</p>
-              <button className="ghost" id="signIn" onClick={this.toggleClass}>
-                Sign In
+              <h1 className="form-header">Welcome Back!</h1>
+              <p>To log into your account, please click below</p>
+              <button
+                className="ghost form-btn"
+                id="signIn"
+                onClick={this.toggleClass}
+              >
+                Log In
               </button>
             </div>
             <div className="overlay-panel overlay-right">
-              <h1>Hello!</h1>
-              <p>Enter your personal details to create your account</p>
-              <button className="ghost" id="signUp" onClick={this.toggleClass}>
+              <h1 className="form-header">Hello!</h1>
+              <p>If you'd like to create an account, please click below</p>
+              <button
+                className="ghost form-btn"
+                id="signUp"
+                onClick={this.toggleClass}
+              >
                 Sign Up
               </button>
             </div>

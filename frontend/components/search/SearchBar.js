@@ -15,11 +15,8 @@ class Autocomplete extends Component {
 
     this.state = {
       activeSuggestion: 0,
-      // The suggestions that match the user's input
       filteredSuggestions: [],
-      // Whether or not the suggestion list is shown
       showSuggestions: false,
-      // What the user has entered
       userInput: ""
     };
   }
@@ -28,15 +25,16 @@ class Autocomplete extends Component {
   onChange = e => {
     const { suggestions } = this.props;
     const userInput = e.currentTarget.value;
+    const allSuggestions = suggestions[0]
+      .concat(suggestions[1].concat(suggestions[2]))
+      .sort();
 
     // Filter our suggestions that don't contain the user's input
-    const filteredSuggestions = suggestions.filter(
+    const filteredSuggestions = allSuggestions.filter(
       suggestion =>
         suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
     );
 
-    // Update the user input and filtered suggestions, reset the active
-    // suggestion and make sure the suggestions are shown
     this.setState({
       activeSuggestion: 0,
       filteredSuggestions,
@@ -100,46 +98,46 @@ class Autocomplete extends Component {
       }
     } = this;
 
-    let suggestionsListComponent;
+    let suggestionsList;
 
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
-        suggestionsListComponent = (
-          <ul className="suggestions">
+        suggestionsList = (
+          <ul className="suggestions-list">
             {filteredSuggestions.map((suggestion, index) => {
               let className;
 
-              // Flag the active suggestion with a class
               if (index === activeSuggestion) {
                 className = "suggestion-active";
               }
 
               return (
-                <li
-                  className={className}
-                  key={suggestion}
-                  onClick={onClick}
-                >
+                <li className={className} key={index} onClick={onClick}>
                   {suggestion}
                 </li>
               );
             })}
           </ul>
         );
-      } 
+      }
     }
 
     return (
-      <Fragment>
-        <input
-          type="text"
-          onChange={onChange}
-          onKeyDown={onKeyDown}
-          value={userInput}
-          placeholder="Search Here..."
-        />
-        {suggestionsListComponent}
-      </Fragment>
+      <div className="App-Component">
+        <div className="App-Component">
+          <i className="fa fa-search" />
+          <input
+            id="search-bar-field"
+            className="search-bar-input"
+            type="text"
+            onChange={onChange}
+            onKeyDown={onKeyDown}
+            value={userInput}
+            placeholder='Try "Los Angeles"'
+          />
+          {suggestionsList}
+        </div>
+      </div>
     );
   }
 }

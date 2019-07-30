@@ -2,28 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GreetingContainer from "../sessions/greeting/GreetingContainer";
 import Autocomplete from "../search/SearchBar";
-
-const navbar = props => (
+const navbar = ({ cities, states, countries }) => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       <div />
       <div className="toolbar__logo">
-        <a href="/">Logo</a>
+        <a href="/">
+          <img src={window.logo} className="logo" />
+        </a>
       </div>
-      <Autocomplete
-        suggestions={[
-          "Alligator",
-          "Bask",
-          "Crocodilian",
-          "Death Roll",
-          "Eggs",
-          "Jaws",
-          "Reptile",
-          "Solitary",
-          "Tail",
-          "Wetlands"
-        ]}
-      />
+      <Autocomplete suggestions={[cities, states, countries]} />
       <div className="spacer" />
       <div className="toolbar-navigation-items">
         <GreetingContainer />
