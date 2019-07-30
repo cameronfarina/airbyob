@@ -131,6 +131,7 @@ class Autocomplete extends Component {
             onKeyDown={onKeyDown}
             value={userInput}
             placeholder='Try "Los Angeles"'
+            
           />
           {suggestionsList}
         </div>

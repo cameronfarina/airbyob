@@ -18627,3 +18627,31 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 167ms (Views: 162.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-07-30 11:17:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 159ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-30 11:48:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (152.2ms)
+Completed 200 OK in 2951ms (Views: 2858.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-30 11:48:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 106ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-30 11:48:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+

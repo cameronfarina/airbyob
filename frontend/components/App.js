@@ -10,9 +10,7 @@ import states from "../components/search/States";
 const App = () => {
   return (
     <div>
-      <header>
-        <Navbar cities={cities} countries={countries} states={states} />
-      </header>
+      <Navbar cities={cities} countries={countries} states={states} />
 
       <AuthRoute exact path="/login" component={SessionFormContainer} />
       <AuthRoute exact path="/signup" component={SessionFormContainer} />
