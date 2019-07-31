@@ -8,14 +8,12 @@ import countries from "../components/search/Countries";
 import states from "../components/search/States";
 import splash from "./splash";
 import IndexForm from "./index_page/IndexForm";
-// import locations from '../components/search/Locations'
 
 const App = () => {
   return (
     <div>
       <Switch>
         <AuthRoute exact path="/" component={splash} />
-        <AuthRoute exact path="/" component={IndexForm} />
         
         <Fragment>
           <Navbar cities={cities} countries={countries} states={states} />
