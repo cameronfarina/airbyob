@@ -19,13 +19,10 @@ const App = () => {
           <Navbar cities={cities} countries={countries} states={states} />
           <AuthRoute exact path="/login" component={SessionFormContainer} />
           <AuthRoute exact path="/signup" component={SessionFormContainer} />
-          {/* <Route exact path="/listings" component={ListingsContainer } /> */}
         </Fragment>
       </Switch>
-
-      {/* <Map center={{ lat: 18.5204, lng: 73.8567 }} height="300px" zoom={15} /> */}
     </div>
   );
 };
-
+clear
 export default App;
