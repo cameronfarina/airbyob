@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import GreetingContainer from "../sessions/greeting/GreetingContainer";
 import Autocomplete from "../search/SearchBar";
 const navbar = ({ cities, states, countries }) => (

@@ -26,13 +26,13 @@ const Greeting = ({ currentUser, logout }) => {
     <div>
       <ul>
         <li>
-          <Link to="/login" onClick={openContainer}>
-            Log In
+          <Link to="/login" className="loginButton" onClick={openContainer}>
+            Log in
           </Link>
         </li>
         <br />
         <li>
-          <Link to="/signup" onClick={openContainer}>
+          <Link to="/signup" className="loginButton" onClick={openContainer}>
             Sign up
           </Link>
         </li>

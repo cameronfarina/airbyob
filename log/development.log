@@ -19503,3 +19503,1109 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 85ms (Views: 79.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-07-30 18:51:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 643ms (Views: 636.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:09:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 3766ms (Views: 3762.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:09:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:12:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 113ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:12:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:12:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:13:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:13:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:13:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 144ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:14:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 587ms (Views: 582.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:14:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:15:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:15:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 66ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 91ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:16:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:17:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:18:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 73ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:18:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 70ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:18:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:18:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:19:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 68ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:19:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:21:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 800ms (Views: 790.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:21:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:21:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:21:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:22:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 97ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:22:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:23:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:24:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:25:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:25:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:25:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:25:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:25:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 526ms (Views: 522.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 90ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:26:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:28:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 627ms (Views: 623.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:28:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 305ms (Views: 302.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:28:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:28:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:28:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 502ms (Views: 499.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:29:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:29:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:29:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:29:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:30:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:30:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:31:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:33:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 823ms (Views: 819.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:34:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:34:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:41:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 595ms (Views: 591.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:41:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:42:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 579ms (Views: 575.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 527ms (Views: 523.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 638ms (Views: 634.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 126ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:43:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 77ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:44:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:44:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:44:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 554ms (Views: 550.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:46:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 473ms (Views: 471.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:46:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:47:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 685ms (Views: 678.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:47:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 517ms (Views: 513.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:48:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:48:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 502ms (Views: 500.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:48:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:48:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 554ms (Views: 551.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:49:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 505ms (Views: 501.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:49:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:49:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:49:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:49:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:51:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 520ms (Views: 516.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:53:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 522ms (Views: 518.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:53:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:54:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 86ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:54:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:55:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:56:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:56:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:56:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:56:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:58:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:58:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:59:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 00:59:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 592ms (Views: 588.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:01:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 758ms (Views: 754.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:03:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 85ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:03:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:04:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:06:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:06:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:06:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:08:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 592ms (Views: 588.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:08:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:08:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:08:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:08:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:09:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:09:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:10:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:13:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 832ms (Views: 826.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:13:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:27:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 617ms (Views: 609.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:27:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:28:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:28:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 707ms (Views: 701.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:28:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 403ms (Views: 400.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:28:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:29:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:29:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 519ms (Views: 515.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:29:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:31:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 539ms (Views: 535.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:31:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:32:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:33:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:33:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 528ms (Views: 521.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:33:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:34:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 86ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:34:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:48:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 664ms (Views: 658.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:49:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 668ms (Views: 663.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:50:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:51:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:51:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:53:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 561ms (Views: 558.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:54:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 599ms (Views: 595.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:55:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 01:55:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+

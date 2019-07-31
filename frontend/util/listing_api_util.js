@@ -11,11 +11,11 @@ export const fetchListing = id =>
     url: `api/listings/${id}`
   });
 
-export const createListing = listingForm =>
+export const createListing = listing =>
   $.ajax({
     method: "POST",
     url: "api/listings",
-    data: listingForm
+    data: listing
   });
 
 export const updateListing = listing =>

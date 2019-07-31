@@ -1,22 +1,29 @@
-import React from "react";
+import React, { Fragment } from "react";
 import SessionFormContainer from "./sessions/forms/session_forms/SessionFormContainer";
-import { Route } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import Navbar from "./navbar/Navbar";
 import cities from "../components/search/Cities";
 import countries from "../components/search/Countries";
 import states from "../components/search/States";
-// import Map from "../components/map/Map";
+import splash from "./splash";
+import IndexForm from "./index_page/IndexForm";
+// import locations from '../components/search/Locations'
 
 const App = () => {
   return (
     <div>
-      <div>
-        <Navbar cities={cities} countries={countries} states={states} />
-        <AuthRoute exact path="/login" component={SessionFormContainer} />
-        <AuthRoute exact path="/signup" component={SessionFormContainer} />
-        {/* <Route exact path="/listings" component={ListingsContainer } /> */}
-      </div>
+      <Switch>
+        <AuthRoute exact path="/" component={splash} />
+        <AuthRoute exact path="/" component={IndexForm} />
+        
+        <Fragment>
+          <Navbar cities={cities} countries={countries} states={states} />
+          <AuthRoute exact path="/login" component={SessionFormContainer} />
+          <AuthRoute exact path="/signup" component={SessionFormContainer} />
+          {/* <Route exact path="/listings" component={ListingsContainer } /> */}
+        </Fragment>
+      </Switch>
 
       {/* <Map center={{ lat: 18.5204, lng: 73.8567 }} height="300px" zoom={15} /> */}
     </div>

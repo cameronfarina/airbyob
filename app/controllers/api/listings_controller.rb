@@ -3,7 +3,7 @@ class Api::ListingsController < ApplicationController
   before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def index
-    @listings = Listing.all
+    @listings = bounds ? Listing.in_bounds(bounds) : Listing.all
   end
 
   def show
@@ -52,5 +52,9 @@ class Api::ListingsController < ApplicationController
       :longitude, 
       :description
     )
+  end
+
+  def bounds
+    params[:bounds]
   end
 end
