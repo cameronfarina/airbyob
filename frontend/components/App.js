@@ -24,5 +24,5 @@ const App = () => {
     </div>
   );
 };
-clear
+
 export default App;
