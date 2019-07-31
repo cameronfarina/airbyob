@@ -1,5 +1,5 @@
 class Listing < ApplicationRecord
-  validates :address, :city, :country, :price, :furnished, :description
+  validates :address, :city, :country, :price, :furnished, :description, presence: true
 
   belongs_to :user
 
