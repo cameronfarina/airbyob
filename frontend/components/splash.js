@@ -1,12 +1,12 @@
 import React from "react";
-import SplashNav from './index_page/SplashNavbar'
+import Splashbar from "./navbar/SplashNavbar";
 
 export default function splash() {
   return (
-    <div >
-      <SplashNav  />
+    <div>
       <div className="welcome">
         <img src={window.splash} className="splash" />
+        <Splashbar />
       </div>
     </div>
   );

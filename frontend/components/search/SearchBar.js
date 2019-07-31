@@ -1,10 +1,13 @@
 import React, { Component, Fragment } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 class Autocomplete extends Component {
-  static propTypes = {
-    suggestions: PropTypes.instanceOf(Array)
-  };
+  // static propTypes = {
+  //   suggestions: PropTypes.instanceOf(Array)
+  // };
+  componentDidMount() {
+    this.props.fetchSuggestions();
+  }
 
   static defaultProps = {
     suggestions: []
@@ -19,27 +22,38 @@ class Autocomplete extends Component {
       showSuggestions: false,
       userInput: ""
     };
+
+    this.onChange = this.onChange.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
   }
 
   onChange = e => {
     const { suggestions } = this.props;
     const userInput = e.currentTarget.value;
-    const allSuggestions = suggestions[0]
-      .concat(suggestions[1].concat(suggestions[2]))
-      .sort();
+    let allSuggestions = [];
+    let filteredSuggestions = [];
 
-    let singularSuggestions = [];
+    for (let i = 0; i < suggestions.length; i++) {
+      if (suggestions[i][0].includes(userInput)) {
+        if (suggestions[i][2] === "null") {
+          allSuggestions.push(suggestions[i][0], suggestions[i][1]);
+        } else {
+          allSuggestions.push(suggestions[i][0], suggestions[i][2]);
+        }
+      } else if (suggestions[i][1].includes(userInput)) {
+        allSuggestions.push(suggestions[i][1]);
+      } else if (suggestions[i][1] !== "United States") {
+        continue;
+      } else if (suggestions[i][2].includes(userInput)) {
+        allSuggestions.push(suggestions[i][2], suggestions[i][1]);
+      }
+    }
 
     allSuggestions.map(suggestion => {
-      if (!singularSuggestions.includes(suggestion)) {
-        singularSuggestions.push(suggestion);
+      if (!filteredSuggestions.includes(suggestion)) {
+        filteredSuggestions.push(suggestion);
       }
     });
-
-    const filteredSuggestions = singularSuggestions.filter(
-      suggestion =>
-        suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
-    );
 
     this.setState({
       activeSuggestion: 0,
@@ -127,11 +141,10 @@ class Autocomplete extends Component {
             id="search-bar-field"
             className="search-bar-input"
             type="text"
-            onChange={onChange}
-            onKeyDown={onKeyDown}
+            onChange={this.onChange}
+            onKeyDown={this.onKeyDown}
             value={userInput}
             placeholder='Try "Los Angeles"'
-            
           />
           {suggestionsList}
         </div>

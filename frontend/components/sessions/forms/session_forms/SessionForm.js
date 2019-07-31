@@ -59,13 +59,10 @@ class SessionForm extends React.Component {
     );
   }
 
-
-
   closeContainer() {
     const container = document.getElementById("container");
 
     container.classList.add("close-form");
-    
   }
 
   render() {

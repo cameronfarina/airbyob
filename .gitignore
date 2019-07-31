@@ -1,7 +1,3 @@
 node_modules/
 bundle.js
 bundle.js.map
-Cities.js
-States.js
-Countries.js
-Locations.js

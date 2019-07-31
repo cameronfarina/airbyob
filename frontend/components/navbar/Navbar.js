@@ -1,8 +1,11 @@
 import React from "react";
 import GreetingContainer from "../sessions/greeting/GreetingContainer";
-import Autocomplete from "../search/SearchBar";
-const navbar = ({ cities, states, countries }) => (
-  <header className="toolbar">
+import SearchBarContainer from "../search/SearchBarContainer";
+
+
+
+const navbar = () => (
+  <div className="toolbar">
     <nav className="toolbar__navigation">
       <div />
       <div className="toolbar__logo">
@@ -10,13 +13,13 @@ const navbar = ({ cities, states, countries }) => (
           <img src={window.logo} className="logo" />
         </a>
       </div>
-      <Autocomplete suggestions={[cities, states, countries]} />
+      <SearchBarContainer />
       <div className="spacer" />
       <div className="toolbar-navigation-items">
         <GreetingContainer />
       </div>
     </nav>
-  </header>
+  </div>
 );
 
 export default navbar;

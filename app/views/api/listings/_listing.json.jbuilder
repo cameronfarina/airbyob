@@ -1,2 +1,2 @@
-json.extract! bench, :id, :description, :latitude, :longitude, :price,
+json.extract! listing, :id, :description, :latitude, :longitude, :price,
 :furnished, :address, :city, :state, :country

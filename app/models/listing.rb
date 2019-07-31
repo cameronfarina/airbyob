@@ -26,5 +26,8 @@ class Listing < ApplicationRecord
     self.where('price < ?', range)
   end
 
+  def self.all_locations
+    self.pluck('city', 'country', 'state').uniq
+  end
 
 end

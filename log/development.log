@@ -20616,3 +20616,1911 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 292ms (Views: 286.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-07-31 11:05:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 160ms (Views: 153.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:31:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 1717ms (Views: 1711.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:31:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:32:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 103ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:32:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Started GET "/" for ::1 at 2019-07-31 11:32:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1538ms (Views: 1535.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 960ms (Views: 951.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:55:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 700ms (Views: 695.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:55:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:55:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 11:55:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 644ms (Views: 640.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 11:55:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/suggestions"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-31 11:55:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 11:55:51 -0400
+Processing by Api::SuggestionsController#index as JSON
+No template found for Api::SuggestionsController#index, rendering head :no_content
+Completed 204 No Content in 158ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:07:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 644ms (Views: 640.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:07:57 -0400
+Processing by Api::SuggestionsController#index as JSON
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant Api::SuggestionsController::Suggestion:
+  app/controllers/api/suggestions_controller.rb:3:in `index'
+
+Started GET "/" for ::1 at 2019-07-31 12:09:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:09:17 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  Rendered api/suggestions/index.json.jbuilder (11.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/suggestions/index.json.jbuilder:1:in `_app_views_api_suggestions_index_json_jbuilder___4016207402242625952_70180033812220'
+
+Started GET "/" for ::1 at 2019-07-31 12:09:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:09:19 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  Rendered api/suggestions/index.json.jbuilder (6.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/suggestions/index.json.jbuilder:1:in `_app_views_api_suggestions_index_json_jbuilder___4016207402242625952_70180063110380'
+
+Started GET "/" for ::1 at 2019-07-31 12:11:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:11:09 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (98.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (205.8ms)
+Completed 200 OK in 281ms (Views: 30.7ms | ActiveRecord: 194.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:11:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:11:16 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (26.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (29.2ms)
+Completed 200 OK in 46ms (Views: 14.5ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:12:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:12:35 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (81.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (85.9ms)
+Completed 200 OK in 105ms (Views: 17.1ms | ActiveRecord: 81.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:12:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:12:57 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (27.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (30.6ms)
+Completed 200 OK in 48ms (Views: 16.7ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:13:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 624ms (Views: 619.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:13:01 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (78.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (81.7ms)
+Completed 200 OK in 104ms (Views: 18.1ms | ActiveRecord: 78.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:15:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 627ms (Views: 620.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:15:28 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (20.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (27.8ms)
+Completed 200 OK in 50ms (Views: 20.7ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:15:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 585ms (Views: 582.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:17:18 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (11.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (17.8ms)
+Completed 200 OK in 37ms (Views: 17.2ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:17:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:17:29 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (4.8ms)
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:17:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 592ms (Views: 589.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:17:33 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (70.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (73.0ms)
+Completed 200 OK in 97ms (Views: 21.6ms | ActiveRecord: 70.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:18:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 629ms (Views: 625.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:19:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:19:03 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (142.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (146.4ms)
+Completed 200 OK in 160ms (Views: 12.8ms | ActiveRecord: 142.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:19:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:19:06 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (26.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (29.7ms)
+Completed 200 OK in 44ms (Views: 12.5ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:19:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:19:42 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (4.6ms)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:23:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 670ms (Views: 667.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:23:48 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (25.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (28.5ms)
+Completed 200 OK in 47ms (Views: 16.6ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:23:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:23:51 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (108.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (110.0ms)
+Completed 200 OK in 129ms (Views: 15.2ms | ActiveRecord: 108.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:23:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:24:02 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (25.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (28.0ms)
+Completed 200 OK in 51ms (Views: 20.1ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:24:29 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (19.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (22.0ms)
+Completed 200 OK in 35ms (Views: 12.6ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 12:26:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:26:24 -0400
+Processing by Api::SuggestionsController#index as JSON
+  Rendering api/suggestions/index.json.jbuilder
+  [1m[36mListing Load (14.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (country = NULL)[0m
+  ↳ app/views/api/suggestions/index.json.jbuilder:1
+  Rendered api/suggestions/index.json.jbuilder (18.4ms)
+Completed 200 OK in 40ms (Views: 19.7ms | ActiveRecord: 14.2ms)
+
+
+  [1m[36mListing Load (34.9ms)[0m  [1m[34mSELECT  "listings"."city" FROM "listings" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mListing Load (18.2ms)[0m  [1m[34mSELECT  "listings"."city" FROM "listings" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mListing Load (5.4ms)[0m  [1m[34mSELECT  "listings"."city" FROM "listings" ORDER BY "listings"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT  * FROM "listings" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT "listings"."city" FROM "listings"[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "listings"."city" FROM "listings"[0m
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."state", "listings"."country" FROM "listings"[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country" FROM "listings"[0m
+  [1m[35m (19.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."state", "listings"."country" FROM "listings"[0m
+  [1m[35m (24.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."state", "listings"."country" FROM "listings"[0m
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country" FROM "listings"[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:54:41 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 138ms (Views: 69.0ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 12:58:09 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 201ms (Views: 60.7ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:17:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 970ms (Views: 963.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:17:42 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (33.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 71ms (Views: 24.5ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:18:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1024ms (Views: 1019.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:18:11 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (27.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 65ms (Views: 30.2ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:39:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1172ms (Views: 1167.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:40:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:40:05 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (142.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 181ms (Views: 26.5ms | ActiveRecord: 142.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:41:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 82ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:41:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1077ms (Views: 1074.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:41:24 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 50ms (Views: 31.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:41:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 671ms (Views: 668.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:41:27 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:41:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:41:58 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (36.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 93ms (Views: 46.1ms | ActiveRecord: 36.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:41:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1224ms (Views: 1221.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:42:02 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (97.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 138ms (Views: 33.6ms | ActiveRecord: 97.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:48:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1040ms (Views: 1036.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:48:54 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (33.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 76ms (Views: 29.1ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:53:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 2447ms (Views: 2438.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:53:42 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (414.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 463ms (Views: 37.2ms | ActiveRecord: 414.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:53:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 105ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:53:46 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 52ms (Views: 33.7ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:53:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:53:48 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 48ms (Views: 31.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:54:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 90ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:54:19 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 259ms (Views: 233.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:56:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1572ms (Views: 1565.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:56:11 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 44ms (Views: 27.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 13:56:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 13:56:14 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (297.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 326ms (Views: 22.3ms | ActiveRecord: 297.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:00:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1474ms (Views: 1468.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:00:47 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (243.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 523ms (Views: 182.7ms | ActiveRecord: 243.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:00:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 156ms (Views: 149.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:00:56 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (53.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 116ms (Views: 47.5ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:02:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1965ms (Views: 1959.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:02:33 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (45.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 148ms (Views: 87.7ms | ActiveRecord: 45.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:02:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:02:36 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (41.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 105ms (Views: 38.4ms | ActiveRecord: 41.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:02:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1491ms (Views: 1487.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:02:57 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 58ms (Views: 30.8ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:02:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:03:00 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 201ms (Views: 151.9ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:05:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1620ms (Views: 1616.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:05:36 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (214.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 255ms (Views: 31.0ms | ActiveRecord: 214.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:09:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 1985ms (Views: 1962.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:09:28 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (29.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 130ms (Views: 52.9ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 14:09:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 115ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:09:39 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (30.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 78ms (Views: 37.5ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 14:13:34 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 123ms (Views: 104.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:46:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 256ms (Views: 249.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:46:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:46:22 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (37.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 426ms (Views: 46.6ms | ActiveRecord: 344.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:53:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 1192ms (Views: 1182.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:53:23 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (64.9ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 216ms (Views: 133.7ms | ActiveRecord: 64.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:53:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:53:34 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (144.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 187ms (Views: 31.9ms | ActiveRecord: 144.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:54:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 613ms (Views: 608.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:54:19 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (48.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 78ms (Views: 22.2ms | ActiveRecord: 48.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:54:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:54:20 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (11.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 75ms (Views: 50.6ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:56:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:56:22 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (32.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 301ms (Views: 23.3ms | ActiveRecord: 248.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:56:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 143ms (Views: 135.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:56:24 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (147.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 189ms (Views: 33.8ms | ActiveRecord: 147.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:56:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 15:56:31 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 54ms (Views: 35.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:05:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 741ms (Views: 737.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:05:43 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (20.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 58ms (Views: 29.7ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:05:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:05:45 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (46.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 108ms (Views: 46.7ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:06:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:06:01 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (65.9ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 97ms (Views: 22.3ms | ActiveRecord: 65.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:06:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:06:03 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (79.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 132ms (Views: 40.5ms | ActiveRecord: 79.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:07:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 724ms (Views: 718.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:07:54 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (14.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 61ms (Views: 35.3ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:07:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:07:55 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 52ms (Views: 25.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:07:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:07:57 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (34.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 60ms (Views: 17.8ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:08:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:08:41 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 55ms (Views: 36.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:08:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 745ms (Views: 741.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:08:43 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (71.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 116ms (Views: 34.1ms | ActiveRecord: 71.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:10:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 556ms (Views: 551.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:10:51 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 70ms (Views: 19.9ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:10:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:10:53 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (58.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 98ms (Views: 30.0ms | ActiveRecord: 58.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:11:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:11:05 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 59ms (Views: 27.1ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:11:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:11:09 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (46.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 151ms (Views: 57.6ms | ActiveRecord: 46.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:11:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 676ms (Views: 671.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:11:42 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (136.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 169ms (Views: 23.4ms | ActiveRecord: 136.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:11:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:11:43 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (30.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 129ms (Views: 24.7ms | ActiveRecord: 30.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:12:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 583ms (Views: 579.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:12:27 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (36.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 64ms (Views: 20.5ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:12:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:12:28 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (88.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 124ms (Views: 26.2ms | ActiveRecord: 88.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:17:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 861ms (Views: 849.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:17:34 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (50.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 94ms (Views: 31.6ms | ActiveRecord: 50.2ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:17:41 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+Completed 500 Internal Server Error in 438ms (ActiveRecord: 100.9ms)
+
+
+
+ActionView::MissingTemplate - Missing template api/users/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/larissa/code/airbyob/app/views"
+:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:17:43 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 2.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template api/users/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/larissa/code/airbyob/app/views"
+:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started GET "/" for ::1 at 2019-07-31 16:18:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 82ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:18:02 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (184.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 225ms (Views: 31.0ms | ActiveRecord: 184.4ms)
+
+
+Started POST "/api/users" for ::1 at 2019-07-31 16:18:13 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"cameron", "password"=>"[FILTERED]", "email"=>"cam@gmail.com"}}
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Create (44.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "session_token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "cameron"], ["email", "cam@gmail.com"], ["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["password_digest", "$2a$12$ctLrseByucFW5Szk1o68/.IVMmFmMGDAVBK.AawDtPizyDAiXHebe"], ["created_at", "2019-07-31 20:18:13.766497"], ["updated_at", "2019-07-31 20:18:13.766497"]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered api/users/show.json.jbuilder (5.9ms)
+Completed 200 OK in 349ms (Views: 19.2ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:22:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (3.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 117ms (Views: 108.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:22:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (85.7ms)
+Completed 200 OK in 145ms (Views: 91.1ms | ActiveRecord: 49.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:22:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (19.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 75ms (Views: 53.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:22:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (23.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (4.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 137ms (Views: 109.0ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:23:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (30.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 100ms (Views: 66.0ms | ActiveRecord: 30.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 16:23:16 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wpNwKftx5bRoqAz9ERW0kg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (32.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "KNuvI-EZ8BtF7WDGmX8Blw"], ["updated_at", "2019-07-31 20:23:16.678855"], ["id", 9]]
+  ↳ app/models/user.rb:32
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered api/users/show.json.jbuilder (3.1ms)
+Completed 200 OK in 73ms (Views: 17.2ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:25:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:25:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:25:40 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 92ms (Views: 20.7ms | ActiveRecord: 30.1ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:25:46 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (2.1ms)
+Completed 200 OK in 366ms (Views: 8.2ms | ActiveRecord: 75.1ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:25:49 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 35ms (Views: 22.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:25:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "6lPhLNBD2k3fkoC_9M2Vnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 89ms (Views: 58.1ms | ActiveRecord: 27.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 16:25:56 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "6lPhLNBD2k3fkoC_9M2Vnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (44.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "amLtcp_DgSi-FyP5W6hwtg"], ["updated_at", "2019-07-31 20:25:56.844192"], ["id", 8]]
+  ↳ app/models/user.rb:32
+  [1m[35m (26.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (2.3ms)
+Completed 200 OK in 97ms (Views: 9.6ms | ActiveRecord: 78.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:26:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:26:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:26:19 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 99ms (Views: 40.8ms | ActiveRecord: 25.8ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:26:24 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 49.9ms)
+
+
+
+ActionView::MissingTemplate - Missing template api/suggestions with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/larissa/code/airbyob/app/views"
+:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:26:26 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 1.1ms)
+
+
+
+ActionView::MissingTemplate - Missing template api/suggestions with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/larissa/code/airbyob/app/views"
+:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started GET "/" for ::1 at 2019-07-31 16:26:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:26:40 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 128ms (Views: 29.2ms | ActiveRecord: 77.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:32:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1024ms (Views: 1016.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:32:47 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 280ms (Views: 40.5ms | ActiveRecord: 210.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:32:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:32:49 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 64ms (Views: 49.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:33:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 76ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:33:38 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 54ms (Views: 29.2ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 16:34:50 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (2.2ms)
+Completed 200 OK in 321ms (Views: 7.8ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5ktHlbaNNqJTab8g_UB3aw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (69.2ms)
+Completed 200 OK in 650ms (Views: 609.9ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5ktHlbaNNqJTab8g_UB3aw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 107ms (Views: 98.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5ktHlbaNNqJTab8g_UB3aw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 63ms (Views: 55.3ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 16:36:33 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5ktHlbaNNqJTab8g_UB3aw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "GNJMIdwygRLbeDYC3p1sIA"], ["updated_at", "2019-07-31 20:36:33.896071"], ["id", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered api/users/show.json.jbuilder (2.7ms)
+Completed 200 OK in 26ms (Views: 14.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:36:40 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 111ms (Views: 20.5ms | ActiveRecord: 61.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:36:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 16:36:56 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (43.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 90ms (Views: 35.0ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:03:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 264ms (Views: 253.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:05:27 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 238ms (Views: 152.4ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 17:05:32 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered api/users/show.json.jbuilder (2.7ms)
+Completed 200 OK in 296ms (Views: 8.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:06:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "amLtcp_DgSi-FyP5W6hwtg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (2.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 231ms (Views: 226.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:45 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 66ms (Views: 46.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:46 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 61ms (Views: 46.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:47 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 74ms (Views: 52.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:48 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 47ms (Views: 34.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:50 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 74ms (Views: 42.7ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:06:54 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 55ms (Views: 38.2ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 17:06:55 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "amLtcp_DgSi-FyP5W6hwtg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (84.1ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "eXDgyHgZe8Nd-dVYJ6wCZg"], ["updated_at", "2019-07-31 21:06:55.903692"], ["id", 8]]
+  ↳ app/models/user.rb:32
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (2.0ms)
+  Rendered api/users/show.json.jbuilder (5.4ms)
+Completed 200 OK in 141ms (Views: 18.4ms | ActiveRecord: 98.6ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:07:55 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 78ms (Views: 51.8ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 17:08:05 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (2.4ms)
+Completed 200 OK in 282ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:08:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (40.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GNJMIdwygRLbeDYC3p1sIA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 142ms (Views: 95.7ms | ActiveRecord: 40.7ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:08:09 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (56.2ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 94ms (Views: 22.5ms | ActiveRecord: 56.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:08:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (30.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GNJMIdwygRLbeDYC3p1sIA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  Rendered api/users/_user.json.jbuilder (1.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 831ms (Views: 795.2ms | ActiveRecord: 30.4ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 17:09:00 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GNJMIdwygRLbeDYC3p1sIA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "2dOPgbi7k8JmcHv9AqwgkA"], ["updated_at", "2019-07-31 21:09:00.849915"], ["id", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered api/users/show.json.jbuilder (4.0ms)
+Completed 200 OK in 70ms (Views: 19.8ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:09:01 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (95.7ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 181ms (Views: 67.3ms | ActiveRecord: 95.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:09:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 116ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:09:19 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 57ms (Views: 32.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:09:28 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (84.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 143ms (Views: 46.1ms | ActiveRecord: 84.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:09:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:10:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:10:22 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (64.4ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 222ms (Views: 122.1ms | ActiveRecord: 64.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:10:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:10:55 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (63.8ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 159ms (Views: 80.1ms | ActiveRecord: 63.8ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:11:11 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 71ms (Views: 54.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:11:58 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 50ms (Views: 33.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:12:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:13:15 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (30.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 87ms (Views: 41.5ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:26:23 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (51.0ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 208ms (Views: 41.9ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:26:26 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (44.3ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 110ms (Views: 52.8ms | ActiveRecord: 44.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:48:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 681ms (Views: 673.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:48:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:48:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:48:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 601ms (Views: 597.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:48:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2019-07-31 17:48:41 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "password"=>"[FILTERED]", "email"=>"cameronfarina@gmail.com"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cameronfarina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered api/users/show.json.jbuilder (2.9ms)
+Completed 200 OK in 336ms (Views: 9.2ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/api/suggestions" for ::1 at 2019-07-31 17:48:42 -0400
+Processing by Api::SuggestionsController#index as JSON
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "listings"."city", "listings"."country", "listings"."state" FROM "listings"[0m
+  ↳ app/models/listing.rb:30
+Completed 200 OK in 65ms (Views: 25.9ms | ActiveRecord: 5.6ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-07-31 17:48:44 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "eXDgyHgZe8Nd-dVYJ6wCZg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "gD-KZDbDSsvbEIT4mCIf-w"], ["updated_at", "2019-07-31 21:48:44.680281"], ["id", 8]]
+  ↳ app/models/user.rb:32
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (2.5ms)
+Completed 200 OK in 26ms (Views: 14.8ms | ActiveRecord: 3.8ms)
+
+
