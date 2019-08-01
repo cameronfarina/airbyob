@@ -5,23 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Listing.delete_all
 
 require 'csv'
 data = CSV.foreach("#{Rails.root}/db/MOCK_DATA.csv").map do |row|
 
     {
-      address: row[1], 
-      city: row[2], 
-      state: row[3], 
-      country: row[4], 
+      address: row[0], 
+      city: row[1], 
+      state: row[2], 
+      country: row[3],
+      price: row[4],
       latitude: row[5], 
       longitude: row[6], 
       furnished: row[7], 
       user_id: row[8], 
       description: row[9], 
-      price: row[10]
+      beds: row[10],
+      bathrooms: row[11]
     }
 
 end
 
-Listing.create(data)
+Listing.create!(data)
+
+# Listing.create(address: 480 Morning Avenue,Wiwilí,,Nicaragua,98.60,13.621654,-85.8255855,true,994,Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.,4,2)

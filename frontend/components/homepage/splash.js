@@ -1,5 +1,5 @@
 import React from "react";
-import Splashbar from "./navbar/SplashNavbar";
+import Splashbar from "../navbar/SplashNavbar";
 
 export default function splash() {
   return (

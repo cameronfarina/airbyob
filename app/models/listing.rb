@@ -1,7 +1,6 @@
 class Listing < ApplicationRecord
-  validates :address, :city, :country, :price, :furnished, :description, presence: true
-
-  belongs_to :user
+  validates :address, :city, :country, :price, :description, :beds, :bathrooms, presence: true
+  validates :furnished, inclusion: { in: [true, false]}
 
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])

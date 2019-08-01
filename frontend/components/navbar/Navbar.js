@@ -2,8 +2,6 @@ import React from "react";
 import GreetingContainer from "../sessions/greeting/GreetingContainer";
 import SearchBarContainer from "../search/SearchBarContainer";
 
-
-
 const navbar = () => (
   <div className="toolbar">
     <nav className="toolbar__navigation">

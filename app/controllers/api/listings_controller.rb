@@ -51,7 +51,9 @@ class Api::ListingsController < ApplicationController
       :furnished, 
       :latitude, 
       :longitude, 
-      :description
+      :description,
+      :beds,
+      :bathrooms
     )
   end
 

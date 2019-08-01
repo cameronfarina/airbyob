@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../../../../components/navbar/Navbar";
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -67,91 +68,94 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div
-        className={
-          this.props.formType === "/login"
-            ? "container left-panel-active"
-            : "container right-panel-active"
-        }
-        id="container"
-      >
-        <span onClick={this.closeContainer} className="left-closeBtn">
-          &times;
-        </span>
-        <div className="form-container sign-up-container">
-          <form onSubmit={this.handleSubmit}>
-            {this.renderErrors()}
-            <h1 className="form-header">Create Account</h1>
-            <input
-              className="signup-form-input"
-              type="text"
-              placeholder="Full Name"
-              value={this.props.name}
-              onChange={this.handleChange("name")}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              value={this.props.email}
-              onChange={this.handleChange("email")}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              value={this.props.password}
-              onChange={this.handleChange("password")}
-            />
-            <button className="form-btn" className="form-btn">
-              Sign Up
-            </button>
-          </form>
-        </div>
-        <span onClick={this.closeContainer} className="right-closeBtn">
-          &times;
-        </span>
-        <div className="form-container sign-in-container">
-          <form onSubmit={this.handlesSubmit}>
-            {this.renderErrors()}
-            <h1 className="form-header">Log in</h1>
-            <input
-              className="signin-form-input"
-              type="email"
-              placeholder="Email"
-              value={this.props.email}
-              onChange={this.handleChange("email")}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              value={this.props.password}
-              onChange={this.handleChange("password")}
-            />
-            <button className="form-btn">Log In</button>
-          </form>
-        </div>
-        <div className="overlay-container">
-          <div className="overlay">
-            <div className="overlay-panel overlay-left">
-              <h1 className="form-header">Welcome Back!</h1>
-              <p>To log into your account, please click below</p>
-              <button
-                className="ghost form-btn"
-                id="signIn"
-                onClick={this.toggleClass}
-              >
-                Log In
-              </button>
-            </div>
-            <div className="overlay-panel overlay-right">
-              <h1 className="form-header">Hello!</h1>
-              <p>If you'd like to create an account, please click below</p>
-              <button
-                className="ghost form-btn"
-                id="signUp"
-                onClick={this.toggleClass}
-              >
+      <div>
+        <Navbar />
+        <div
+          className={
+            this.props.formType === "/login"
+              ? "container left-panel-active"
+              : "container right-panel-active"
+          }
+          id="container"
+        >
+          <span onClick={this.closeContainer} className="left-closeBtn">
+            &times;
+          </span>
+          <div className="form-container sign-up-container">
+            <form onSubmit={this.handleSubmit}>
+              {this.renderErrors()}
+              <h1 className="form-header">Create Account</h1>
+              <input
+                className="signup-form-input"
+                type="text"
+                placeholder="Full Name"
+                value={this.props.name}
+                onChange={this.handleChange("name")}
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                value={this.props.email}
+                onChange={this.handleChange("email")}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={this.props.password}
+                onChange={this.handleChange("password")}
+              />
+              <button className="form-btn" className="form-btn">
                 Sign Up
               </button>
+            </form>
+          </div>
+          <span onClick={this.closeContainer} className="right-closeBtn">
+            &times;
+          </span>
+          <div className="form-container sign-in-container">
+            <form onSubmit={this.handlesSubmit}>
+              {this.renderErrors()}
+              <h1 className="form-header">Log in</h1>
+              <input
+                className="signin-form-input"
+                type="email"
+                placeholder="Email"
+                value={this.props.email}
+                onChange={this.handleChange("email")}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={this.props.password}
+                onChange={this.handleChange("password")}
+              />
+              <button className="form-btn">Log In</button>
+            </form>
+          </div>
+          <div className="overlay-container">
+            <div className="overlay">
+              <div className="overlay-panel overlay-left">
+                <h1 className="form-header">Welcome Back!</h1>
+                <p>To log into your account, please click below</p>
+                <button
+                  className="ghost form-btn"
+                  id="signIn"
+                  onClick={this.toggleClass}
+                >
+                  Log In
+                </button>
+              </div>
+              <div className="overlay-panel overlay-right">
+                <h1 className="form-header">Hello!</h1>
+                <p>If you'd like to create an account, please click below</p>
+                <button
+                  className="ghost form-btn"
+                  id="signUp"
+                  onClick={this.toggleClass}
+                >
+                  Sign Up
+                </button>
+              </div>
             </div>
           </div>
         </div>

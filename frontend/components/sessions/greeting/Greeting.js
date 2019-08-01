@@ -23,15 +23,15 @@ const Greeting = ({ currentUser, logout }) => {
   );
 
   const isNotLoggedIn = () => (
-    <div>
-      <ul>
-        <li>
+    <div className="navbar-list">
+      <ul className="navbar-list-items">
+        <li className="navbar-link-item">
           <Link to="/login" className="loginButton" onClick={openContainer}>
             Log in
           </Link>
         </li>
         <br />
-        <li>
+        <li className="navbar-link-item">
           <Link to="/signup" className="loginButton" onClick={openContainer}>
             Sign up
           </Link>
