@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   fetchSuggestions: () => dispatch(fetchSuggestions()),
-  fetchListings: () => dispatch(fetchListings()),
+  fetchListings: (location) => dispatch(fetchListings(location)),
 });
 
 export default connect(

@@ -29,4 +29,13 @@ class Listing < ApplicationRecord
     self.pluck('city', 'country', 'state').uniq
   end
 
+  def self.same_location?(location)
+    if self.same_city?(location).length > 1
+      return self.same_city?(location) 
+    elsif self.same_state?(location).length > 1
+      return self.same_state?(location)
+    elsif self.same_country?(location).length > 1
+      return self.same_country?(location)
+    end
+  end
 end

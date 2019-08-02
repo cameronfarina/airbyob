@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { withRouter } from "react-router-dom";
 
 class Autocomplete extends Component {
   componentDidMount() {
@@ -22,6 +23,7 @@ class Autocomplete extends Component {
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
     this.onClick = this.onClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   onChange = e => {
@@ -92,6 +94,12 @@ class Autocomplete extends Component {
     }
   };
 
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.fetchListings(this.state.userInput)
+      .then(this.props.history.push(`/listings/`));
+  }
+
   render() {
     const {
       state: {
@@ -127,7 +135,7 @@ class Autocomplete extends Component {
     }
 
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div className="App-Component">
           <div className="App-Component">
             <i className="fa fa-search" />
@@ -148,4 +156,4 @@ class Autocomplete extends Component {
   }
 }
 
-export default Autocomplete;
+export default withRouter(Autocomplete);

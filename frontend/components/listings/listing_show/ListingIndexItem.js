@@ -16,6 +16,20 @@ class ListingIndexItem extends React.Component {
 
   render() {
     const { listing } = this.props;
+    let beds;
+    if (listing.beds === 1){
+      beds = 'bed'
+    } else {
+      beds = 'beds'
+    }
+
+    let bathrooms;
+    if (listing.bathrooms === 1){
+      bathrooms = 'bathroom'
+    } else {
+      bathrooms = 'bathrooms'
+    }
+    
     const features = "Wifi - Kitchen - Free Parking";
     return (
       <div className="listing-index-items" onClick={this.handleClick}>
@@ -30,9 +44,9 @@ class ListingIndexItem extends React.Component {
                   <h5>ENTIRE APARTMENT</h5>
                 </div>
                 <div className="listing-details-specific">
-                  <li>{listing.beds} beds</li>
+                  <li>{listing.beds} {beds}</li>
                   <span className="details-breaker">.</span>
-                  <li>{listing.bathrooms} bathrooms</li>
+                  <li>{listing.bathrooms} {bathrooms}</li>
                 </div>
                 <div className="listing-features">
                   <li>{features}</li>

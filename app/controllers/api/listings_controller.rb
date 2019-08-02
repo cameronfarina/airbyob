@@ -3,7 +3,7 @@ class Api::ListingsController < ApplicationController
   before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def index
-    @listings = city ? Listing.same_city?(city) : Listing.first(5)
+    @listings = location ? Listing.same_location?(location) : Listing.first(5)
   end
 
   def show
@@ -61,9 +61,8 @@ class Api::ListingsController < ApplicationController
     params[:bounds]
   end
 
-  def city
-    params[:city]
+  def location
+    params[:location]
   end
-
 
 end
