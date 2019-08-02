@@ -7,7 +7,6 @@ const ListingDetail = ({listing}) => {
         <li>Rating: {listing.average_rating || "No reviews yet"}</li>
         <li>Description: {listing.description}</li>
         <li>Price: {listing.price}</li>
-        <li>Beds: {listing.beds}</li>
         <li>Bathrooms: {listing.bathrooms}</li>
         <li>Latitude: {listing.latitude}</li>
         <li>Longitude: {listing.longitude}</li>
