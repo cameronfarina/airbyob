@@ -92,11 +92,7 @@ class Autocomplete extends Component {
     }
   };
 
-  handleSubmit(e) {
-    e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user);
-  }
+  
 
   render() {
     const {
@@ -133,7 +129,7 @@ class Autocomplete extends Component {
     }
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={}>
         <div className="App-Component">
           <div className="App-Component">
             <i className="fa fa-search" />
