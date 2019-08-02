@@ -8,10 +8,6 @@ class ListingIndex extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.props.fetchListings();
-  }
-
   render() {
     const { listings, listingId, fetchListing, updateFilter } = this.props;
     if (Object.values(listings).length === 0) {

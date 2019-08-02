@@ -14,7 +14,7 @@
  *= require_self
  */
 
- .listing-list {
+.listing-list {
   margin: 0;
   padding-left: 8px;
   display: inline-block !important;
@@ -31,6 +31,10 @@
   border-image: initial !important;
   border-radius: 4px !important;
   list-style: none;
+}
+
+.listing-list:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
 }
 
 .individual-listing {

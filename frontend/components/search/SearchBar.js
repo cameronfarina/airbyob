@@ -28,21 +28,22 @@ class Autocomplete extends Component {
 
   onChange = e => {
     const { suggestions } = this.props;
-    const userInput = e.currentTarget.value;
+    const userInput = e.currentTarget.value.toUpperCase();
     let allSuggestions = [];
     let filteredSuggestions = [];
+
     for (let i = 0; i < suggestions.length; i++) {
-      if (suggestions[i][0].includes(userInput)) {
+      if (suggestions[i][0].toUpperCase().includes(userInput)) {
         if (suggestions[i][2] === "null") {
           allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][1]}`);
         } else {
           allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][2]}`);
         }
-      } else if (suggestions[i][1].includes(userInput)) {
+      } else if (suggestions[i][1].toUpperCase().includes(userInput)) {
         allSuggestions.push(suggestions[i][1]);
       } else if (suggestions[i][1] !== "United States") {
         continue;
-      } else if (suggestions[i][2].includes(userInput)) {
+      } else if (suggestions[i][2].toUpperCase().includes(userInput)) {
         allSuggestions.push(suggestions[i][2], suggestions[i][1]);
       }
     }
@@ -139,7 +140,7 @@ class Autocomplete extends Component {
       <form onSubmit={this.handleSubmit}>
         <div className="App-Component">
           <div className="App-Component">
-            <i className="fa fa-search" />
+            <i className="fa fa-search search-bar-icon" />
             <input
               id="search-bar-field"
               className="search-bar-input"
@@ -147,7 +148,7 @@ class Autocomplete extends Component {
               onChange={this.onChange}
               onKeyDown={this.onKeyDown}
               value={userInput}
-              placeholder='Try "Los Angeles"'
+              placeholder='Search For Listings'
             />
             {suggestionsList}
           </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { withRouter } from "react-router-dom";
 
 import MarkerManager from "../../../util/marker_manager";
@@ -11,10 +10,10 @@ const getCoordsObj = latLng => ({
 
 const mapOptions = {
   center: {
-    lat: 37.773972,
-    lng: -122.431297
+    lat: 39.8097,
+    lng: -98.5556
   },
-  zoom: 13
+  zoom: 8
 };
 
 class ListingMap extends React.Component {
@@ -28,7 +27,7 @@ class ListingMap extends React.Component {
     if (this.props.singleListing) {
       this.props.fetchListing(this.props.listingId);
     } else {
-      this.registerListeners();
+      // this.registerListeners();
       this.MarkerManager.updateMarkers(this.props.listings);
     }
   }
@@ -37,7 +36,7 @@ class ListingMap extends React.Component {
     if (this.props.singleListing) {
       const targetListingKey = Object.keys(this.props.listings)[0];
       const targetListing = this.props.listings[targetListingKey];
-      this.MarkerManager.updateMarkers([targetListing]); //grabs only that one Listing
+      this.MarkerManager.updateMarkers([targetListing]);
     } else {
       this.MarkerManager.updateMarkers(this.props.listings);
     }
@@ -50,6 +49,7 @@ class ListingMap extends React.Component {
         northEast: { lat: north, lng: east },
         southWest: { lat: south, lng: west }
       };
+      
       this.props.updateFilter("bounds", bounds);
     });
     google.maps.event.addListener(this.map, "click", event => {

@@ -3,7 +3,14 @@ class Api::ListingsController < ApplicationController
   before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def index
-    @listings = location ? Listing.same_location?(location) : Listing.first(5)
+    if (params[:filter].class.to_s == 'Hash')
+      answer = bounds
+    else
+      answer = location
+    end
+    @listings = answer ? Listing.get_listings(answer) : Listing.first(5)
+    
+    @bounds = Listing.get_bounds(@listings)
   end
 
   def show
@@ -59,7 +66,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def bounds
-    params[:bounds]
+    params[:filter][:bounds]
   end
 
   def location

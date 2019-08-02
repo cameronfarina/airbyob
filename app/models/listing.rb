@@ -38,4 +38,59 @@ class Listing < ApplicationRecord
       return self.same_country?(location)
     end
   end
+
+  def self.location_type(splat)
+    if splat[1] && (splat[1] == splat[1].upcase)
+      return 'US'
+    elsif splat[1]
+      return 'City'
+    else
+      return 'Country'
+    end
+  end
+
+  def self.get_listings(location)
+    splat = location.split(', ')
+    type = self.location_type(splat)
+
+    if type == 'US'
+      return self.where('city = ? AND state = ?', splat[0], splat[1])
+    elsif type == 'City'
+      return self.where('city = ? AND country = ?', splat[0], splat[1])
+    else
+      return self.where('country = ?', splat[0])
+    end
+  end
+
+  def self.get_bounds(listings)
+    listing_max_lat = listings.first.latitude
+    listing_max_lng = listings.first.longitude
+    listing_min_lat = listings.first.latitude
+    listing_min_lng = listings.first.longitude
+
+    listings.each do |listing|
+      if listing.latitude > listing_max_lat
+        listing_max_lat = listing.latitude
+      elsif listing.latitude < listing_min_lat
+        listing_min_lat = listing.latitude
+      end
+
+      if listing.longitude > listing_max_lng
+        listing_max_lng = listing.longitude
+      elsif listing.longitude < listing_min_lng
+        listing_min_lng = listing.longitude
+      end
+    end
+    
+    bounds = [listing_max_lat, listing_max_lng, listing_min_lat, listing_min_lng]
+    return bounds
+  end
+
+  def self.in_our_bounds?(bounds)
+    self.where("lat < ?", bounds[0])
+      .where("lat > ?", bounds[2])
+      .where("lng > ?", bounds[1])
+      .where("lng < ?", bounds[3])
+  end
+
 end
