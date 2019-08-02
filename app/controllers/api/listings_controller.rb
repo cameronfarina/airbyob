@@ -53,7 +53,8 @@ class Api::ListingsController < ApplicationController
       :longitude, 
       :description,
       :beds,
-      :bathrooms
+      :bathrooms,
+      :location
     )
   end
 
@@ -62,7 +63,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def location
-    params[:location]
+    params[:filter]
   end
 
 end

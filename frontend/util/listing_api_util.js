@@ -1,8 +1,8 @@
-export const fetchListings = location =>
+export const fetchListings = filter =>
   $.ajax({
     method: "GET",
     url: "api/listings",
-    data: { location }
+    data: { filter }
   });
 
 export const fetchListing = id =>

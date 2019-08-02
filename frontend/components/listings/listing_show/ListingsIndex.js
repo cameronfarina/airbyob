@@ -37,6 +37,7 @@ class ListingIndex extends React.Component {
               listings={listings}
               fetchListing={fetchListing}
               listingId={listingId}
+              singleListing={false}
             />
           </div>
         </div>

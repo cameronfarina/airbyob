@@ -50,7 +50,10 @@ class Greeting extends React.Component {
               />
             </button>
 
-            <div className="profile-dropdown-menu hide-dropdown" id="profile-dropdown">
+            <div
+              className="profile-dropdown-menu hide-dropdown"
+              id="profile-dropdown"
+            >
               <ul className="profile-dropdown-list">
                 <li className="profile-dropdown-list-item">
                   <Link to="/" onClick={logout}>

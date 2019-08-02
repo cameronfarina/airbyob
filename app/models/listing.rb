@@ -30,11 +30,11 @@ class Listing < ApplicationRecord
   end
 
   def self.same_location?(location)
-    if self.same_city?(location).length > 1
+    if self.same_city?(location).length > 0
       return self.same_city?(location) 
-    elsif self.same_state?(location).length > 1
+    elsif self.same_state?(location).length > 0
       return self.same_state?(location)
-    elsif self.same_country?(location).length > 1
+    elsif self.same_country?(location).length > 0
       return self.same_country?(location)
     end
   end

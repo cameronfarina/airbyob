@@ -96,7 +96,8 @@ class Autocomplete extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.fetchListings(this.state.userInput)
+    this.props
+      .fetchListings(this.state.userInput)
       .then(this.props.history.push(`/listings/`));
   }
 

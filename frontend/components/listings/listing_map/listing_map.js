@@ -25,7 +25,7 @@ class ListingMap extends React.Component {
       this.map,
       this.handleMarkerClick.bind(this)
     );
-    if (this.props.listings.length === 1) {
+    if (this.props.singleListing) {
       this.props.fetchListing(this.props.listingId);
     } else {
       this.registerListeners();
@@ -34,7 +34,7 @@ class ListingMap extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.props.listings.length === 1) {
+    if (this.props.singleListing) {
       const targetListingKey = Object.keys(this.props.listings)[0];
       const targetListing = this.props.listings[targetListingKey];
       this.MarkerManager.updateMarkers([targetListing]); //grabs only that one Listing

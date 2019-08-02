@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Navbar  */
+
+.toolbar {
+  position: fixed;
+  border-bottom: 0.4px solid rgba(196, 196, 196, 0.795);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  height: 81px;
+  z-index: 100;
+
+  .toolbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+
+    .toolbar__logo {
+      margin: 0 auto;
+
+      .logo {
+        position: relative;
+        width: 100px;
+      }
+    }
+
+    .spacer {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #container {
+    width: 100%;
+  }
+
+  #root {
+    width: 100%;
+  }
+}
+
+.profile-container {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  padding: 8px !important;
+  border-bottom: 2px solid transparent !important;
+  height: 100% !important;
+
+  img:hover {
+    border-bottom: 2px solid rgba(80, 80, 80, 0.534) !important;
+    cursor: pointer;
+  }
+
+  .avatar {
+    background-color: rgb(242, 242, 242) !important;
+    box-shadow: rgb(235, 235, 235) 0px 0px 0px 2px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+  }
+
+  .profile-dropdown-menu {
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px !important;
+    min-width: 282px !important;
+    max-width: 950px !important;
+    min-height: 40px !important;
+    position: absolute !important;
+    right: 0px !important;
+    border-width: 1px 1px 1px !important;
+    border-style: none solid solid !important;
+    border-color: rgb(235, 235, 235) rgb(235, 235, 235) rgb(235, 235, 235) !important;
+    border-top: none !important;
+    top: 81px;
+
+    .profile-dropdown-list {
+      list-style: none;
+      margin: 0;
+      padding: 0 12px;
+      height: 100%;
+      display: block;
+    }
+
+    .profile-dropdown-list-item {
+      padding: 15px 0.5rem;
+      border-bottom: 2px solid whitesmoke;
+    }
+
+    .profile-dropdown-list-item a {
+      padding: 0 10px;
+    }
+    .profile-dropdown-list-item:hover {
+      border-bottom: 1px solid rgba(112, 112, 112, 0.534) !important;
+    }
+  }
+
+  .hide-dropdown {
+    display: none;
+  }
+}
+
+.navbar-list-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: #484848;
+    text-decoration: none;
+    padding: 32px 20px;
+  }
+
+  a:hover {
+    border-bottom: 2px solid rgba(80, 80, 80, 0.534);
+  }
+}

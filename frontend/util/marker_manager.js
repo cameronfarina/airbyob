@@ -23,7 +23,10 @@ class MarkerManager {
   }
 
   createMarkerFromListing(listing) {
-    const position = new google.maps.LatLng(listing.latitude, listing.longitude);
+    const position = new google.maps.LatLng(
+      listing.latitude,
+      listing.longitude
+    );
     const marker = new google.maps.Marker({
       position,
       map: this.map,
