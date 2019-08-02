@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
             &times;
           </span>
           <div className="form-container sign-up-container">
-            <form onSubmit={this.handleSubmit}>
+            <form className="session-form" onSubmit={this.handleSubmit}>
               {this.renderErrors()}
               <h1 className="form-header">Create Account</h1>
               <input
@@ -113,7 +113,7 @@ class SessionForm extends React.Component {
             &times;
           </span>
           <div className="form-container sign-in-container">
-            <form onSubmit={this.handlesSubmit}>
+            <form className="session-form" onSubmit={this.handlesSubmit}>
               {this.renderErrors()}
               <h1 className="form-header">Log in</h1>
               <input

@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar/Navbar";
 import Splash from "./splash";
 
 const Homepage = ({ currentUser }) => {
-  debugger;
   if (currentUser) {
     return (
       <div>

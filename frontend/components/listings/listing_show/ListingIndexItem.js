@@ -1,9 +1,11 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from "react";
+import { withRouter } from "react-router-dom";
+import ListingsDetail from "./ListingsDetail";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
     super(props);
+
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -13,17 +15,41 @@ class ListingIndexItem extends React.Component {
   }
 
   render() {
-    const { description } = this.props.listing;
+    const { listing } = this.props;
+    const features = "Wifi - Kitchen - Free Parking";
     return (
-      <div
-        className="listing-index-item"
-        onClick={this.handleClick}
-      >
+      <div className="listing-index-items" onClick={this.handleClick}>
         <div className="index-item-info">
-          <span className="index-item-category">Description:</span>
-          <span className="index-item-copy">{description}</span>
+          <ul className="listing-list">
+            <div className="individual-listing">
+              <div className="listing-image">
+                <img src={window.livingroom} />
+              </div>
+              <div className="listing-details">
+                <div className="listing-header">
+                  <h5>ENTIRE APARTMENT</h5>
+                </div>
+                <div className="listing-details-specific">
+                  <li>{listing.beds} beds</li>
+                  <span className="details-breaker">.</span>
+                  <li>{listing.bathrooms} bathrooms</li>
+                </div>
+                <div className="listing-features">
+                  <li>{features}</li>
+                </div>
+                <div className="listing-furnished">
+                  <li>Furnished: {`${listing.furnished}`}</li>
+                </div>
+                <div className="listing-review">
+                  <li>{listing.average_rating || "No reviews yet"}</li>
+                </div>
+                <div className="listing-price">
+                  <li>{`$${Math.floor(listing.price)}/night`}</li>
+                </div>
+              </div>
+            </div>
+          </ul>
         </div>
-        <img src={window.bedroom1} />
       </div>
     );
   }

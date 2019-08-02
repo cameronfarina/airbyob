@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router";
 
-const ListingDetail = ({ listing }) => {
+const ListingDetail = ({listing}) => {
   return (
     <div>
       <ul className="listing-list">
@@ -14,10 +13,6 @@ const ListingDetail = ({ listing }) => {
         <li>Longitude: {listing.longitude}</li>
       </ul>
       <br />
-      <div className="reviews">
-        <h3>Reviews</h3>
-        {reviewList(reviews) || "No reviews yet"}
-      </div>
     </div>
   );
 };

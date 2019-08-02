@@ -1,10 +1,6 @@
 import React, { Component, Fragment } from "react";
-// import PropTypes from "prop-types";
 
 class Autocomplete extends Component {
-  // static propTypes = {
-  //   suggestions: PropTypes.instanceOf(Array)
-  // };
   componentDidMount() {
     this.props.fetchSuggestions();
   }
@@ -25,6 +21,7 @@ class Autocomplete extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   onChange = e => {
@@ -32,13 +29,12 @@ class Autocomplete extends Component {
     const userInput = e.currentTarget.value;
     let allSuggestions = [];
     let filteredSuggestions = [];
-
     for (let i = 0; i < suggestions.length; i++) {
       if (suggestions[i][0].includes(userInput)) {
         if (suggestions[i][2] === "null") {
-          allSuggestions.push(suggestions[i][0], suggestions[i][1]);
+          allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][1]}`);
         } else {
-          allSuggestions.push(suggestions[i][0], suggestions[i][2]);
+          allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][2]}`);
         }
       } else if (suggestions[i][1].includes(userInput)) {
         allSuggestions.push(suggestions[i][1]);
@@ -96,11 +92,9 @@ class Autocomplete extends Component {
     }
   };
 
+
   render() {
     const {
-      onChange,
-      onClick,
-      onKeyDown,
       state: {
         activeSuggestion,
         filteredSuggestions,
@@ -123,7 +117,7 @@ class Autocomplete extends Component {
               }
 
               return (
-                <li className={className} key={index} onClick={onClick}>
+                <li className={className} key={index} onClick={this.onClick}>
                   {suggestion}
                 </li>
               );
@@ -134,21 +128,23 @@ class Autocomplete extends Component {
     }
 
     return (
-      <div className="App-Component">
+      <form >
         <div className="App-Component">
-          <i className="fa fa-search" />
-          <input
-            id="search-bar-field"
-            className="search-bar-input"
-            type="text"
-            onChange={this.onChange}
-            onKeyDown={this.onKeyDown}
-            value={userInput}
-            placeholder='Try "Los Angeles"'
-          />
-          {suggestionsList}
+          <div className="App-Component">
+            <i className="fa fa-search" />
+            <input
+              id="search-bar-field"
+              className="search-bar-input"
+              type="text"
+              onChange={this.onChange}
+              onKeyDown={this.onKeyDown}
+              value={userInput}
+              placeholder='Try "Los Angeles"'
+            />
+            {suggestionsList}
+          </div>
         </div>
-      </div>
+      </form>
     );
   }
 }

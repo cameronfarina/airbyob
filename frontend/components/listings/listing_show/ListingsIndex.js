@@ -1,16 +1,47 @@
-import React from 'react';
-import ListingIndexItem from './ListingIndexItem';
+import React from "react";
+import ListingIndexItem from "./ListingIndexItem";
+import Navbar from "../../navbar/Navbar";
+import ListingsMap from "../listing_map/listing_map";
 
-const ListingIndex = ({ listings }) => (
-  <div>
-    <h1>Listings: </h1>
-    {listings.map(listing => (
-      <ListingIndexItem
-        listing={listing}
-        key={listing.id}
-      />
-    ))}
-  </div>
-);
+class ListingIndex extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
+  componentDidMount() {
+    this.props.fetchListings();
+  }
+
+  render() {
+    const { listings, listingId, fetchListing, updateFilter } = this.props;
+    if (Object.values(listings).length === 0) {
+      return null;
+    }
+
+    const IndexItems = Object.values(listings).map((listing, i) => (
+      <ListingIndexItem listing={listing} key={i} />
+    ));
+
+    return (
+      <div>
+        <Navbar />
+        <div className="listings-wrapper">
+          <div className="listings-page-content">
+            <div className="listings-content">
+              <div className="listings-rows">{IndexItems}</div>
+            </div>
+          </div>
+          <div className="map-container">
+            <ListingsMap
+              updateFilter={updateFilter}
+              listings={listings}
+              fetchListing={fetchListing}
+              listingId={listingId}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 export default ListingIndex;

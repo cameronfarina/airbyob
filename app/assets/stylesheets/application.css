@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: white;
   display: flex;
@@ -86,7 +93,7 @@ button.ghost {
   border-color: #ffffff;
 }
 
-form {
+.session-form {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -111,8 +118,12 @@ input {
   box-shadow: 0 20px 28px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
+  top: 160px;
+  justify-content: center;
+  align-items: center;
   width: 768px;
   max-width: 100%;
+  margin: 0 auto;
   min-height: 480px;
 }
 
@@ -238,6 +249,7 @@ input {
   width: 100%;
   background: white;
   height: 81px;
+  z-index: 100;
 }
 .splashbar {
   position: fixed;
@@ -278,27 +290,6 @@ input {
   flex: 1;
 }
 
-.toolbar-navigation-items ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.toolbar-navigation-items li {
-  padding: 0 0.5rem;
-}
-
-.toolbar-navigation-items a {
-  color: #484848;
-  text-decoration: none;
-  padding: 20px;
-}
-
-.toolbar-navigation-items a:hover,
-.toolbar-navigation-items a:active {
-  color: black;
-  text-decoration: black underline;
-}
 .splashbar-navigation-items ul {
   list-style: none;
   margin: 0;
@@ -311,7 +302,7 @@ input {
 }
 
 .splashbar-navigation-items a {
-  color: white;
+  color: white !important;
   text-decoration: none;
   padding: 20px;
 }
@@ -443,4 +434,250 @@ input {
 .welcome-home {
   position: absolute;
   z-index: 15;
+}
+
+.avatar {
+  background-color: rgb(242, 242, 242) !important;
+  box-shadow: rgb(235, 235, 235) 0px 0px 0px 2px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.profile-container img:hover {
+  border-bottom: 2px solid rgba(80, 80, 80, 0.534) !important;
+}
+
+.profile-container {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  padding: 8px !important;
+  border-bottom: 2px solid transparent !important;
+  height: 100% !important;
+}
+
+.profile-container img {
+  cursor: pointer;
+}
+
+.profile-dropdown-menu {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px !important;
+  min-width: 282px !important;
+  max-width: 950px !important;
+  min-height: 40px !important;
+  position: absolute !important;
+  right: 0px !important;
+  border-width: 1px 1px 1px !important;
+  border-style: none solid solid !important;
+  border-color: rgb(235, 235, 235) rgb(235, 235, 235) rgb(235, 235, 235) !important;
+  border-top: none !important;
+  top: 81px;
+}
+
+.hide-dropdown {
+  display: none;
+}
+
+.dropdown-menu-display {
+  display: block;
+}
+
+.profile-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px;
+  height: 100%;
+  display: block;
+}
+
+.profile-dropdown-list-item {
+  padding: 15px 0.5rem;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.profile-dropdown-list-item a {
+  padding: 0 10px;
+}
+.profile-dropdown-list-item:hover {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.534) !important;
+}
+
+.navbar-list-items {
+  display: flex;
+}
+
+.navbar-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list a {
+  color: #484848;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.listing-list {
+  margin: 0;
+  padding-left: 8px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  white-space: normal !important;
+  width: 100% !important;
+  position: relative !important;
+  color: rgb(72, 72, 72) !important;
+  height: 100% !important;
+  margin-bottom: 20px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(235, 235, 235) !important;
+  border-image: initial !important;
+  border-radius: 4px !important;
+  list-style: none;
+}
+
+.individual-listing {
+  display: table !important;
+  width: 100% !important;
+  border-spacing: 0px !important;
+}
+.map {
+  top: 120px;
+  position: fixed !important;
+  display: block !important;
+  right: 0px !important;
+  height: calc(100vh - 128px) !important;
+  width: 42%;
+}
+
+.listing-image {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  z-index: 0 !important;
+  width: 300px !important;
+  height: 200px !important;
+  margin: 4px !important;
+  padding: 0;
+  position: relative !important;
+}
+
+.listing-image img {
+  border-radius: 8px;
+  vertical-align: middle !important;
+}
+
+.listing-details {
+  display: table-cell !important;
+  width: 100% !important;
+  vertical-align: middle !important;
+  position: relative;
+  padding: 10px;
+}
+
+.listing-details li {
+  display: flex;
+  margin-top: 5px;
+}
+
+.listings-body-container {
+  width: 100%;
+  height: 100%;
+}
+
+.listing-details-specific {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+  display: flex;
+  padding-right: 40px;
+  position: relative;
+}
+.listing-details-specific li {
+  padding: 0 5px;
+}
+
+.listings-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.listings-content {
+  position: absolute;
+  width: 95%;
+  top: 120px;
+  display: flex;
+}
+.map-container {
+  display: inline-block;
+}
+
+.listings-body {
+  width: 100%;
+  height: 100%;
+}
+
+.listing-price {
+  position: absolute;
+  padding: 20px 14px;
+  bottom: 0;
+  font-weight: 700;
+  right: 0;
+}
+
+.listings-rows {
+  width: 100%;
+}
+
+.listings-page-content {
+  width: 58%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.listing-review {
+  position: absolute;
+  padding: 20px 14px;
+  bottom: 0;
+  left: 0;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+}
+
+.details-breaker {
+  line-height: 1.9em !important;
+}
+
+.listing-header {
+  position: absolute;
+  top: 0;
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+}
+
+.listing-features,
+.listing-furnished {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+  padding-left: 4px;
 }

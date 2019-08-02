@@ -1,15 +1,18 @@
 import { connect } from "react-redux";
 import SearchBar from "./SearchBar";
 import { fetchSuggestions } from "../../actions/suggestion_actions";
+import { fetchListings } from "../../actions/listing_actions";
 
 const mapStateToProps = state => {
   return {
-    suggestions: state.entities.suggestions
+    suggestions: state.entities.suggestions,
+    listings: state.entities.listings
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchSuggestions: () => dispatch(fetchSuggestions())
+  fetchSuggestions: () => dispatch(fetchSuggestions()),
+  fetchListings: () => dispatch(fetchListings()),
 });
 
 export default connect(
