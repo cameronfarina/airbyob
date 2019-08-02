@@ -3,7 +3,7 @@ class Api::ListingsController < ApplicationController
   before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def index
-    @listings = Listing.first(5)
+    @listings = location ? Listing.same_location?(location) : Listing.first(5)
   end
 
   def show
