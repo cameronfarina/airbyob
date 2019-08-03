@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { updateFilter } from "../../actions/filter_actions";
-import FilterForm from "./FilterForm";
+import FilterForm from "../filterbar/Filterbar";
 
 const mapStateToProps = state => ({
   listings: Object.values(state.entities.listings),

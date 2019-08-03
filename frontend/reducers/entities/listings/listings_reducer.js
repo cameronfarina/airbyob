@@ -11,7 +11,7 @@ const ListingsReducer = (oldState = initialState, action) => {
   Object.freeze(oldState);
   switch (action.type) {
     case RECEIVE_LISTINGS:
-      return action.listings;
+      return action.listings.listings;
     case RECEIVE_LISTING:
       return merge({}, oldState, { [action.listing.id]: action.listing });
     case REMOVE_LISTING:

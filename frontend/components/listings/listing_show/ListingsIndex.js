@@ -2,6 +2,8 @@ import React from "react";
 import ListingIndexItem from "./ListingIndexItem";
 import Navbar from "../../navbar/Navbar";
 import ListingsMap from "../listing_map/listing_map";
+// import FilterBar from "../../filter/FilterForm";
+import FilterBar from "../../filterbar/Filterbar";
 
 class ListingIndex extends React.Component {
   constructor(props) {
@@ -9,7 +11,13 @@ class ListingIndex extends React.Component {
   }
 
   render() {
-    const { listings, listingId, fetchListing, updateFilter } = this.props;
+    const {
+      listings,
+      bounds,
+      listingId,
+      fetchListing,
+      updateFilter
+    } = this.props;
     if (Object.values(listings).length === 0) {
       return null;
     }
@@ -21,6 +29,7 @@ class ListingIndex extends React.Component {
     return (
       <div>
         <Navbar />
+        <FilterBar />
         <div className="listings-wrapper">
           <div className="listings-page-content">
             <div className="listings-content">
@@ -34,6 +43,7 @@ class ListingIndex extends React.Component {
               fetchListing={fetchListing}
               listingId={listingId}
               singleListing={false}
+              bounds={bounds}
             />
           </div>
         </div>

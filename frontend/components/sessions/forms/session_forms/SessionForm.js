@@ -17,9 +17,13 @@ class SessionForm extends React.Component {
     this.closeContainer = this.closeContainer.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearErrors();
+  }
+
   toggleClass() {
     const container = document.getElementById("container");
-
+    this.props.clearErrors();
     if (container.classList.contains("right-panel-active")) {
       container.classList.remove("right-panel-active");
     } else {

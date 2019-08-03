@@ -41,7 +41,7 @@ class Greeting extends React.Component {
       <div>
         <div>
           <div className="profile-container">
-            <button onClick={this.toggleDropdown}>
+            <button className="avatar-button" onClick={this.toggleDropdown}>
               <img
                 src={faker.image.avatar()}
                 alt="avatar"
@@ -54,21 +54,12 @@ class Greeting extends React.Component {
               className="profile-dropdown-menu hide-dropdown"
               id="profile-dropdown"
             >
-              <ul className="profile-dropdown-list">
+              <ul className="profile-dropdown-list" onClick={logout}>
                 <li className="profile-dropdown-list-item">
-                  <Link to="/" onClick={logout}>
-                    Log Out
-                  </Link>
+                  <Link to="/">Log Out</Link>
                 </li>
                 <li className="profile-dropdown-list-item">
-                  <Link to="/" onClick={logout}>
-                    Log Out
-                  </Link>
-                </li>
-                <li className="profile-dropdown-list-item">
-                  <Link to="/" onClick={logout}>
-                    Log Out
-                  </Link>
+                  <Link to="/">My Trips</Link>
                 </li>
               </ul>
             </div>

@@ -8,6 +8,7 @@ class Api::ListingsController < ApplicationController
     else
       answer = location
     end
+
     @listings = answer ? Listing.get_listings(answer) : Listing.first(5)
     
     @bounds = Listing.get_bounds(@listings)

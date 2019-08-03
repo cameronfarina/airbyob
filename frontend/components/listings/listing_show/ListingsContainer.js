@@ -8,6 +8,7 @@ const mapStateToProps = state => {
   const listingId = state.entities.listings.listingId;
   return {
     listings: state.entities.listings,
+    bounds: state.entities.listings.bounds,
     listingId
   };
 };

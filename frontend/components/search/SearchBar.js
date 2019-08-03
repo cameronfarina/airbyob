@@ -1,18 +1,9 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 
-class Autocomplete extends Component {
-  componentDidMount() {
-    this.props.fetchSuggestions();
-  }
-
-  static defaultProps = {
-    suggestions: []
-  };
-
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       activeSuggestion: 0,
       filteredSuggestions: [],
@@ -20,79 +11,26 @@ class Autocomplete extends Component {
       userInput: ""
     };
 
-    this.onChange = this.onChange.bind(this);
-    this.onKeyDown = this.onKeyDown.bind(this);
-    this.onClick = this.onClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.activateAutocomplete();
+  }
+
+  activateAutocomplete() {
+    const input = document.getElementById("search-bar-field");
+    const options = {
+      types: ["(cities)"]
+    };
+
+    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+  }
+
   onChange = e => {
-    const { suggestions } = this.props;
-    const userInput = e.currentTarget.value.toUpperCase();
-    let allSuggestions = [];
-    let filteredSuggestions = [];
-
-    for (let i = 0; i < suggestions.length; i++) {
-      if (suggestions[i][0].toUpperCase().includes(userInput)) {
-        if (suggestions[i][2] === "null") {
-          allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][1]}`);
-        } else {
-          allSuggestions.push(`${suggestions[i][0]}, ${suggestions[i][2]}`);
-        }
-      } else if (suggestions[i][1].toUpperCase().includes(userInput)) {
-        allSuggestions.push(suggestions[i][1]);
-      } else if (suggestions[i][1] !== "United States") {
-        continue;
-      } else if (suggestions[i][2].toUpperCase().includes(userInput)) {
-        allSuggestions.push(suggestions[i][2], suggestions[i][1]);
-      }
-    }
-
-    allSuggestions.map(suggestion => {
-      if (!filteredSuggestions.includes(suggestion)) {
-        filteredSuggestions.push(suggestion);
-      }
-    });
-
     this.setState({
-      activeSuggestion: 0,
-      filteredSuggestions,
-      showSuggestions: true,
       userInput: e.currentTarget.value
     });
-  };
-
-  onClick = e => {
-    this.setState({
-      activeSuggestion: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
-      userInput: e.currentTarget.innerText
-    });
-  };
-
-  onKeyDown = e => {
-    const { activeSuggestion, filteredSuggestions } = this.state;
-
-    if (e.keyCode === 13) {
-      this.setState({
-        activeSuggestion: 0,
-        showSuggestions: false,
-        userInput: filteredSuggestions[activeSuggestion]
-      });
-    } else if (e.keyCode === 38) {
-      if (activeSuggestion === 0) {
-        return;
-      }
-
-      this.setState({ activeSuggestion: activeSuggestion - 1 });
-    } else if (e.keyCode === 40) {
-      if (activeSuggestion - 1 === filteredSuggestions.length) {
-        return;
-      }
-
-      this.setState({ activeSuggestion: activeSuggestion + 1 });
-    }
   };
 
   handleSubmit(e) {
@@ -100,62 +38,61 @@ class Autocomplete extends Component {
     this.props
       .fetchListings(this.state.userInput)
       .then(this.props.history.push(`/listings/`));
+
+    if (event.key === "Enter") {
+      event.preventDefault();
+      const geocoder = new google.maps.Geocoder();
+      const address = document.getElementById("search-bar-field").value;
+      let formatted_address, geometry;
+
+      geocoder.geocode({ address: address }, (results, status) => {
+        if (status == "OK") {
+          formatted_address = results[0].formatted_address;
+          geometry = results[0].geometry;
+
+          this.location = {
+            vicinity: formatted_address,
+            center: {
+              lat: geometry.location.lat(),
+              lng: geometry.location.lng()
+            }
+          };
+
+          const hashContent = `&lat=${this.location.center.lat}&lng=${
+            this.location.center.lng
+          }&checkin=null&checkout=null&guests=1`;
+
+          this.props.history.push({
+            pathname: `/index`,
+            hash: hashContent,
+            state: location
+          });
+        }
+      });
+    }
   }
 
   render() {
     const {
-      state: {
-        activeSuggestion,
-        filteredSuggestions,
-        showSuggestions,
-        userInput
-      }
+      state: { userInput }
     } = this;
-
-    let suggestionsList;
-
-    if (showSuggestions && userInput) {
-      if (filteredSuggestions.length) {
-        suggestionsList = (
-          <ul className="suggestions-list">
-            {filteredSuggestions.map((suggestion, index) => {
-              let className;
-
-              if (index === activeSuggestion) {
-                className = "suggestion-active";
-              }
-
-              return (
-                <li className={className} key={index} onClick={this.onClick}>
-                  {suggestion}
-                </li>
-              );
-            })}
-          </ul>
-        );
-      }
-    }
 
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="App-Component">
-          <div className="App-Component">
-            <i className="fa fa-search search-bar-icon" />
-            <input
-              id="search-bar-field"
-              className="search-bar-input"
-              type="text"
-              onChange={this.onChange}
-              onKeyDown={this.onKeyDown}
-              value={userInput}
-              placeholder='Search For Listings'
-            />
-            {suggestionsList}
-          </div>
+          <i className="fa fa-search search-bar-icon" aria-hidden="true" />
+          <input
+            className="search-bar-input"
+            id="search-bar-field"
+            type="text"
+            value={userInput}
+            placeholder="Search for listings..."
+            onChange={this.onChange}
+          />
         </div>
       </form>
     );
   }
 }
 
-export default withRouter(Autocomplete);
+export default withRouter(SearchBar);

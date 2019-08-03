@@ -82,7 +82,7 @@ class Listing < ApplicationRecord
       end
     end
     
-    bounds = [listing_max_lat, listing_max_lng, listing_min_lat, listing_min_lng]
+    bounds = {northEastLat: listing_max_lat, southWestLng: listing_max_lng, southWestLat: listing_min_lat, northEastLng: listing_min_lng}
     return bounds
   end
 
