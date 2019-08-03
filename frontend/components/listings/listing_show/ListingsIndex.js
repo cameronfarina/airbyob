@@ -26,6 +26,8 @@ class ListingIndex extends React.Component {
       <ListingIndexItem listing={listing} key={i} />
     ));
 
+    debugger
+
     return (
       <div>
         <Navbar />
