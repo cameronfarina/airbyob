@@ -7,5 +7,6 @@ Rails.application.routes.draw do
       resources :suggestions, only: [:index]
       resources :users 
       resource :session, only: [:create, :destroy]
+      resources :bookings, only: [:index, :create, :destroy]
     end
 end

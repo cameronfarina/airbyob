@@ -3,6 +3,7 @@ import SessionFormContainer from "./sessions/forms/session_forms/SessionFormCont
 import { HashRouter, Route, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import HomepageContainer from "../components/homepage/HomepageContainer";
+import ListingsDetailContainer from "./listings/individual-listing-detail/ListingShowContainer";
 import ListingsContainer from "../components/listings/listing_show/ListingsContainer";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Route exact path="/listings" component={ListingsContainer} />
       <AuthRoute exact path="/login" component={SessionFormContainer} />
       <AuthRoute exact path="/signup" component={SessionFormContainer} />
+      <Route path="/listings/:listingId" component={ListingsDetailContainer} />
     </div>
   );
 };
