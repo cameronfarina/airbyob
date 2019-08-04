@@ -3,8 +3,25 @@ import React from "react";
 class FilterBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      mapHidden: "false"
+    };
+    this.toggleMap = this.toggleMap.bind(this);
   }
-  
+
+  toggleMap() {
+    const theMap = document.getElementById("the-map");
+    this.setState({
+      mapHidden: !this.state.mapHidden
+    });
+
+    if (this.state.mapHidden) {
+      theMap.classList.add("hide-map");
+    } else {
+      theMap.classList.remove("hide-map");
+    }
+  }
+
   render() {
     return (
       <div className="filter">
@@ -19,7 +36,7 @@ class FilterBar extends React.Component {
           <div className="switches">
             <label className="showmap">Show Map</label>
             <label className="switch">
-              <input type="checkbox" />
+              <input type="checkbox" onClick={this.toggleMap} />
               <span className="slider round" />
             </label>
           </div>

@@ -2,7 +2,6 @@ import React from "react";
 import ListingIndexItem from "./ListingIndexItem";
 import Navbar from "../../navbar/Navbar";
 import ListingsMap from "../listing_map/listing_map";
-// import FilterBar from "../../filter/FilterForm";
 import FilterBar from "../../filterbar/Filterbar";
 
 class ListingIndex extends React.Component {
@@ -36,7 +35,7 @@ class ListingIndex extends React.Component {
               <div className="listings-rows">{IndexItems}</div>
             </div>
           </div>
-          <div className="map-container">
+          <div className="map-container" id="the-map">
             <ListingsMap
               updateFilter={updateFilter}
               listings={listings}

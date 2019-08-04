@@ -23,7 +23,6 @@ class SearchBar extends React.Component {
     const options = {
       types: ["(cities)"]
     };
-
     this.autocomplete = new google.maps.places.Autocomplete(input, options);
   }
 
@@ -33,18 +32,13 @@ class SearchBar extends React.Component {
     });
   };
 
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props
-      .fetchListings(this.state.userInput)
-      .then(this.props.history.push(`/listings/`));
-
-    if (event.key === "Enter") {
+  handleSubmit(event) {
+    if (event.keyCode === "13") {
+      debugger;
       event.preventDefault();
       const geocoder = new google.maps.Geocoder();
       const address = document.getElementById("search-bar-field").value;
       let formatted_address, geometry;
-
       geocoder.geocode({ address: address }, (results, status) => {
         if (status == "OK") {
           formatted_address = results[0].formatted_address;
@@ -57,18 +51,13 @@ class SearchBar extends React.Component {
               lng: geometry.location.lng()
             }
           };
-
-          const hashContent = `&lat=${this.location.center.lat}&lng=${
-            this.location.center.lng
-          }&checkin=null&checkout=null&guests=1`;
-
-          this.props.history.push({
-            pathname: `/index`,
-            hash: hashContent,
-            state: location
-          });
         }
       });
+    } else {
+      event.preventDefault();
+      this.props
+        .fetchListings(this.state.userInput)
+        .then(this.props.history.push(`/listings/`));
     }
   }
 
@@ -80,7 +69,7 @@ class SearchBar extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="App-Component">
-          <i className="fa fa-search search-bar-icon" aria-hidden="true" />
+          <i className="fa fa-search search-bar-icon" />
           <input
             className="search-bar-input"
             id="search-bar-field"

@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- .main-section {
+.main-section {
   margin: 20px auto;
   width: 85%;
   height: 100%;
@@ -36,6 +36,7 @@
 
 .listing-content-container {
   width: 50%;
+  left: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,7 +49,7 @@
   justify-content: center;
 }
 
-.listings-page {
+.listings-detail-page {
   top: 155px;
   flex-direction: column;
   display: flex;
@@ -58,8 +59,8 @@
   margin-right: auto !important;
   margin-top: 420px;
   width: auto !important;
-  padding-right: 24px !important;
-  padding-left: 24px !important;
+  padding-right: 125px !important;
+  padding-left: 125px !important;
   position: absolute;
 }
 
@@ -84,8 +85,11 @@
 
     .listing-properties-list {
       .listing-type {
-        font-size: 16px;
-        font-weight: 800;
+        font-size: 16px !important;
+        font-weight: 800 !important;
+        line-height: 1.375em !important;
+        color: #484848 !important;
+        padding-bottom: 20px;
       }
 
       .listing-props {
@@ -98,7 +102,7 @@
         }
       }
 
-      .listing-explaination {
+      .listing-explanation {
         margin-top: 5px;
         font-size: 16px;
         font-weight: 300;
@@ -108,8 +112,10 @@
 }
 
 .listing-title {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
   padding-bottom: 20px;
 }
 

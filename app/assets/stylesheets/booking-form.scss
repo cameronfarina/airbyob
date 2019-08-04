@@ -13,17 +13,18 @@
  *= require_tree .
  *= require_self
  */
- .booking-form-container {
+
+.booking-form-container {
   box-sizing: border-box;
   width: 34%;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 100px;
   padding: 30px;
-  border: 1px solid black;
-  .price-container {
+  border: 1px solid #e4e4e4 !important;
+  border .price-container {
     font-size: 12px;
-    span{
+    .price-tag {
       font-size: 24px;
       font-weight: 800;
       margin-right: 3px;
@@ -36,10 +37,10 @@
     justify-content: left;
     font-size: 12px;
   }
-  .draw-line{
+  .draw-line {
     padding-top: 12px;
     margin-bottom: 12px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e4e4e4 !important;
   }
 
   .booking-request-form-container {
@@ -55,18 +56,24 @@
       padding-bottom: 5px;
     }
 
-    input{
+    .booking-form-input {
       width: 100%;
       border-radius: 2px;
       box-sizing: border-box;
-      border: 1px solid black;
+      border: 1px solid #e4e4e4 !important;
       color: grey;
       font-size: 14px;
       padding: 10px;
+      background: white;
     }
 
-    input:hover, input:focus {
-      border: 1px solid green;
+    input {
+      border: 1px solid #e4e4e4 !important;
+    }
+
+    input:hover,
+    input:focus {
+      border: 1px solid #ff4b2b;
     }
 
     li {
@@ -74,17 +81,35 @@
       margin-top: 10px;
     }
 
+    .final-pricing {
+      font-family: "Montserrat", sans-serif;
+      padding: 4px 0;
+    }
+
     .booking-form-field {
       padding-bottom: 10px;
       width: 100%;
+
+      .hide-cal {
+        display: none;
+        padding: 0 10px;
+      }
     }
 
-    .booking-form-field-inline {
+    .left-field {
+      padding-right: 10px;
+    }
+
+    .right-field {
+      padding-left: 10px;
+    }
+
+    .booking-form-fields {
       display: flex;
       padding-bottom: 10px;
       width: 100%;
       box-sizing: border-box;
-      .booking-form-inline-field {
+      .booking-form-field {
         width: 50%;
         input {
           padding: 10px 0 10px 10px;
@@ -92,11 +117,11 @@
       }
     }
 
-    .booking-button{
+    .reserve-button {
       padding: 10px 0;
       button {
         width: 100%;
-        background: green;
+        background: #ff4b2b;
         font-size: 16px;
         font-weight: 600;
         color: white;
@@ -106,49 +131,9 @@
         border-radius: 3px;
       }
     }
-
-    .calculation-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0 10px 0;
-      border-bottom: 1px solid black;
-      font-size: 14px;
-      font-weight: 200;
-      .fee-description{
-        margin-left: 2px;
-        i {
-          margin-left: 3px;
-          font-weight: 100;
-        }
-        i:hover {
-          color: green;
-          cursor: pointer;
-        }
-      }
-      .fee{
-        margin-right: 2px;
-      }
-    }
-    .calculation-row-total {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0 10px 0;
-      font-size: 14px;
-      // font-weight: 200;
-      font-weight: 800;
-      .fee-description{
-        margin-left: 2px;
-      }
-      .fee{
-        margin-right: 2px;
-      }
-    }
   }
-}
 
-.no-charge {
-  display: block;
-  font-size: 16px;
-  font-weight: 800;
-  text-align: center;
+  .charged {
+    text-align: center;
+  }
 }

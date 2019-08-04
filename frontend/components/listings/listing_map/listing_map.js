@@ -25,7 +25,7 @@ class ListingMap extends React.Component {
         lat: getCenterLat,
         lng: getCenterLng
       },
-      zoom: 8
+      zoom: 6
     };
 
     const map = this.refs.map;

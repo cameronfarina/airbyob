@@ -58,7 +58,7 @@ class ListingContent extends React.Component {
           <PhotoSection />
         </div>
         <div className="listings-page-content-wrapper">
-          <div className="listings-page">
+          <div className="listings-detail-page">
             <div className="listing-content-container">
               <div className="listing-content">
                 <div className="title-host-container">
@@ -103,7 +103,7 @@ class ListingContent extends React.Component {
                     </div>
                     <div className="listing-properties-list">
                       <div className="listing-type">Great Location</div>
-                      <div className="listing-explaination">
+                      <div className="listing-explanation">
                         100% of recent guests gave the location a 5-star rating.
                       </div>
                     </div>
