@@ -25,3 +25,4 @@ class Api::BookingsController < ApplicationController
   def booking_params
     params.require(:booking).permit(:start_date, :end_date, :num_guests)
   end
+end
