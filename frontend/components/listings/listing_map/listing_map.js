@@ -20,7 +20,7 @@ class ListingMap extends React.Component {
     let getCenterLng =
       (this.props.bounds.northEastLng + this.props.bounds.southWestLng) / 2;
 
-   const mapOptions = {
+    const mapOptions = {
       center: {
         lat: getCenterLat,
         lng: getCenterLng
@@ -65,7 +65,8 @@ class ListingMap extends React.Component {
   }
 
   handleMarkerClick(listing) {
-    this.props.history.push(`listings/${listing.id}`);
+    const listingId = listing.id;
+    this.props.history.push(`/listings/${listingId}`);
   }
 
   handleClick(coords) {
