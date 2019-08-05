@@ -15,10 +15,10 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount() {
-    this.activateAutocomplete();
+    this.autoComplete();
   }
 
-  activateAutocomplete() {
+  autoComplete() {
     const input = document.getElementById("search-bar-field");
     const options = {
       types: ["(cities)"]

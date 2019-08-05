@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Splash from "./splash";
+import HomepageForm from "./HomepageForm";
 
 const Homepage = ({ currentUser }) => {
   if (currentUser) {
@@ -13,6 +14,7 @@ const Homepage = ({ currentUser }) => {
     return (
       <div>
         <Splash />
+        <HomepageForm />
       </div>
     );
   }

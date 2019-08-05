@@ -1,12 +1,15 @@
 import React from "react";
+import Calendar from "react-calendar/dist/entry.nostyle";
 
 class FilterBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mapHidden: "false"
+      mapHidden: "false",
+      filterButtonHidden: "true"
     };
     this.toggleMap = this.toggleMap.bind(this);
+    this.toggleFilterButtons = this.toggleFilterButtons.bind(this);
   }
 
   toggleMap() {
@@ -22,22 +25,64 @@ class FilterBar extends React.Component {
     }
   }
 
+  toggleFilterButtons() {
+    const filterButton = document.getElementById("filter-button");
+    this.setState({
+      filterButtonHidden: !this.state.filterButtonHidden
+    });
+
+    // if (this.state.filterButtonHidden) {
+    //   filterButton.classList.remove("show-button");
+    // } else {
+    //   filterButton.classList.add("show-button");
+    // }
+  }
+
   render() {
     return (
       <div className="filter">
         <div className="filter-button-container">
           <div className="filters">
-            <button className="filter-button">Dates</button>
-            <button className="filter-button">Guests</button>
-            <button className="filter-button">Home type</button>
-            <button className="filter-button">Price</button>
-            <button className="filter-button">More filters</button>
+            <button
+              onClick={this.toggleFilterButtons}
+              className="filter-button"
+            >
+              Dates
+            </button>
+            <button
+              onClick={this.toggleFilterButtons}
+              className="filter-button"
+              id="filter-button"
+            >
+              Guests
+            </button>
+            <button
+              onClick={this.toggleFilterButtons}
+              className="filter-button"
+              id="filter-button"
+            >
+              Home type
+            </button>
+            <button
+              onClick={this.toggleFilterButtons}
+              className="filter-button"
+              id="filter-button"
+            >
+              Price
+            </button>
+            <button
+              onClick={this.toggleFilterButtons}
+              className="filter-button"
+              id="filter-button"
+            >
+              More filters
+            </button>
           </div>
-          <div className="switches">
+          <div className="switch-container">
             <label className="showmap">Show Map</label>
-            <label className="switch">
+            <label className="map-off-button">
               <input type="checkbox" onClick={this.toggleMap} />
-              <span className="slider round" />
+              <span className="slider-button round" />
             </label>
           </div>
         </div>

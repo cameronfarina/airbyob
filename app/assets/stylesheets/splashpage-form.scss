@@ -1,0 +1,81 @@
+.splash-form {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  width: 450px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  padding: 32px 32px 24px;
+  font-weight: 900;
+  top: 150px;
+  left: 100px;
+
+  button {
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    background: #ff4b2b;
+    padding: 10px 22px;
+    color: white;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: #ff4b2b;
+    cursor: pointer;
+  }
+}
+
+.splash-form-field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  input {
+    display: block;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+
+    width: 100%;
+    color: grey;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+
+  input:hover,
+  textarea:hover,
+  input:focus,
+  textarea:focus {
+    border: 1px solid #ff4b2b;
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+    padding: 0 0 5px 0;
+  }
+
+  > textarea {
+    display: block;
+    color: grey;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    width: calc(100% - 21px);
+    height: 50px;
+    resize: none;
+  }
+}
+
+.splash-form-button {
+  padding-top: 15px;
+  float: right;
+  padding-bottom: 5px;
+}
+
+.inline {
+  display: flex;
+}
+
+.splash-form-inline-field {
+  width: 100%;
+}

@@ -1,3 +1,19 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
 .filter {
   display: flex;
   justify-content: left;
@@ -35,7 +51,7 @@
   justify-content: space-between;
 }
 
-.switches {
+.switch-container {
   margin-right: 30px;
   display: flex;
   label.showmap {
@@ -43,20 +59,20 @@
   }
 }
 
-.switch {
+.map-off-button {
   position: relative;
   display: inline-block;
   width: 56px;
   height: 30px;
 }
 
-.switch input {
+.map-off-button input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
+.slider-button {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -68,7 +84,7 @@
   transition: 0.4s;
 }
 
-.slider:before {
+.slider-button:before {
   position: absolute;
   content: "";
   height: 22px;
@@ -80,28 +96,32 @@
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked + .slider-button {
   background-color: #ccc;
 }
 
-input:focus + .slider {
+input:focus + .slider-button {
   box-shadow: 0 0 1px #ccc;
 }
 
-input:checked + .slider:before {
+input:checked + .slider-button:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-.slider.round {
+.slider-button.round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider-button.round:before {
   border-radius: 50%;
 }
 
 .hide-map {
   display: none !important;
+}
+
+.show-button {
+  display: none;
 }

@@ -1,7 +1,5 @@
 import React from "react";
-import DayPickerInput from "react-day-picker/DayPickerInput";
-import { formatDate, parseDate } from "react-day-picker/moment";
-import Calendar from "react-calendar/dist/entry.nostyle";
+import Calendar from "../calendar/Calendar";
 
 class BookingForm extends React.Component {
   constructor(props) {
@@ -11,36 +9,29 @@ class BookingForm extends React.Component {
       end_date: null,
       num_guests: null,
       listing_id: this.props.listing.id,
-      rightHidden: true,
-      leftHidden: true
+      hidden: true
     };
 
-    this.toggleLeftCalendar = this.toggleLeftCalendar.bind(this);
-    this.toggleRightCalendar = this.toggleRightCalendar.bind(this);
+    this.toggleCal = this.toggleCal.bind(this);
+    this.toggleFix = this.toggleFix.bind(this);
   }
 
-  toggleLeftCalendar() {
-    const calLeft = document.getElementById("left-cal");
-    this.setState({
-      leftHidden: !this.state.leftHidden
-    });
+  toggleFix() {
+    const bFC = $("#booking-form-container");
 
-    if (this.state.leftHidden) {
-      calLeft.classList.remove("hide-cal");
-    } else {
-      calLeft.classList.add("hide-cal");
-    }
+    bFC.toggleClass("fix-search", this.scrollTop > 147);
   }
-  toggleRightCalendar() {
-    const calRight = document.getElementById("right-cal");
+
+  toggleCal() {
+    const cal = document.getElementById("cal");
     this.setState({
-      rightHidden: !this.state.rightHidden
+      hidden: !this.state.hidden
     });
 
-    if (this.state.rightHidden) {
-      calRight.classList.remove("hide-cal");
+    if (this.state.hidden) {
+      cal.classList.remove("hide-cal");
     } else {
-      calRight.classList.add("hide-cal");
+      cal.classList.add("hide-cal");
     }
   }
 
@@ -51,7 +42,7 @@ class BookingForm extends React.Component {
       this.props.listing.price + taxes + cleaningFees
     );
     return (
-      <div className="booking-form-container">
+      <div className="booking-form-container" id="booking-form-container">
         <div className="price-container">
           <span className="price-tag">
             ${Math.floor(this.props.listing.price)}
@@ -61,27 +52,14 @@ class BookingForm extends React.Component {
         <div className="draw-line" />
         <form className="booking-request-form-container">
           <div className="booking-form-fields">
-            <div className="booking-form-field left-field">
-              <label>CHECK-IN</label>
+            <div className="check-in-and-out">
+              <label>Dates</label>
               <input
-                type="text"
-                onClick={this.toggleLeftCalendar}
-                placeholder="Check In Date"
-                className="left-field booking-form-input"
+                onClick={this.toggleCal}
+                placeholder="Check-in --> Checkout"
+                className="booking-form-input"
               />
-              <div id="left-cal" className="hide-cal form-left-cal">
-                <Calendar />
-              </div>
-            </div>
-            <div className="booking-form-field right-field">
-              <label>CHECKOUT</label>
-              <input
-                type="text"
-                onClick={this.toggleRightCalendar}
-                placeholder="Check Out Date"
-                className="right-field booking-form-input"
-              />
-              <div id="right-cal" className="hide-cal form-right-cal">
+              <div id="cal" className="hide-cal">
                 <Calendar />
               </div>
             </div>
