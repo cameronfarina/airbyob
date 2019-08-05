@@ -3,13 +3,8 @@ class Booking < ApplicationRecord
   validate :start_must_come_before_end
   validate :valid_booking_request
 
-  belongs_to :user,
-  class_name: :User,
-  foreign_key: :user_id
-  
-  belongs_to :listing,
-  class_name: :Listing,
-  foreign_key: :listing_id
+  belongs_to :user
+  belongs_to :listing
 
   def valid_booking_request
     booking_slots = Booking

@@ -5,17 +5,17 @@ import {
   CLEAR_BOOKINGS
 } from "../../../actions/booking_actions";
 import { RECEIVE_LISTING } from "../../../actions/listing_actions";
-import merge from "lodash/merge";
+import { merge } from "lodash";
 
-const bookingReducer = (oldState = {}, action) => {
-  Object.freeze(oldState);
+const bookingReducer = (state = {}, action) => {
+  Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_BOOKINGS:
-      return merge({}, oldState, action.bookings);
+      return merge({}, state, action.bookings);
     case RECEIVE_BOOKING:
-      return merge({}, oldState, { [action.booking.id]: action.booking });
+      return merge({}, state, { [action.booking.id]: action.booking });
     case REMOVE_BOOKING:
-      let newState = merge({}, oldState);
+      let newState = merge({}, state);
       delete newState[action.bookingId];
       return newState;
     case RECEIVE_LISTING:
@@ -24,7 +24,7 @@ const bookingReducer = (oldState = {}, action) => {
     case CLEAR_BOOKINGS:
       return {};
     default:
-      return oldState;
+      return state;
   }
 };
 

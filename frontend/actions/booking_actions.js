@@ -1,10 +1,7 @@
 export const RECEIVE_ALL_BOOKINGS = "RECEIVE_ALL_BOOKINGS";
 export const RECEIVE_BOOKING = "RECEIVE_BOOKING";
 export const REMOVE_BOOKING = "REMOVE_BOOKING";
-export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const CLEAR_BOOKINGS = "CLEAR_BOOKINGS";
-
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 import * as APIBookingsUtil from '../util/booking_api_util';
 

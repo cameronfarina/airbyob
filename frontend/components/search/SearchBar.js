@@ -34,24 +34,9 @@ class SearchBar extends React.Component {
 
   handleSubmit(event) {
     if (event.keyCode === "13") {
-      debugger;
       event.preventDefault();
-      const geocoder = new google.maps.Geocoder();
-      const address = document.getElementById("search-bar-field").value;
-      let formatted_address, geometry;
-      geocoder.geocode({ address: address }, (results, status) => {
-        if (status == "OK") {
-          formatted_address = results[0].formatted_address;
-          geometry = results[0].geometry;
-
-          this.location = {
-            vicinity: formatted_address,
-            center: {
-              lat: geometry.location.lat(),
-              lng: geometry.location.lng()
-            }
-          };
-        }
+      this.setState({
+        userInput: document.getElementById("search-bar-field").value
       });
     } else {
       event.preventDefault();

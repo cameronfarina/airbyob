@@ -4,7 +4,6 @@ import BookingForm from "./BookingForm";
 import { clearErrors, createBooking, clearBookings } from "../../actions/booking_actions";
 
 const mapStateToProps = (state, ownProps) => {
-  // debugger
   const listings = Object.keys(state.entities.listings).map(id => {
     return state.entities.listings[id];
   });
@@ -19,8 +18,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return {
     createBooking: (booking) => dispatch(createBooking(booking)),
-    clearErrors: () => dispatch(clearErrors()),
-    clearBookings: () => dispatch(clearBookings())
+    clearBookings: () => dispatch(clearBookings()),
+    clearErrorss: () => dispatch(clearErrorss())
   };
 };
 

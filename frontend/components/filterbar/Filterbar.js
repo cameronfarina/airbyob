@@ -61,13 +61,6 @@ class FilterBar extends React.Component {
               className="filter-button"
               id="filter-button"
             >
-              Home type
-            </button>
-            <button
-              onClick={this.toggleFilterButtons}
-              className="filter-button"
-              id="filter-button"
-            >
               Price
             </button>
             <button
