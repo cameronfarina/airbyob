@@ -49,14 +49,15 @@ class BookingForm extends React.Component {
           </span>
           per night
         </div>
-        <div className="draw-line" />
+        <div className="line" />
         <form className="booking-request-form-container">
           <div className="booking-form-fields">
             <div className="check-in-and-out">
               <label>Dates</label>
+              <i className="fas fa-arrow-right"></i>
               <input
                 onClick={this.toggleCal}
-                placeholder="Check-in --> Checkout"
+                placeholder="Check-in           Checkout"
                 className="booking-form-input"
               />
               <div id="cal" className="hide-cal">

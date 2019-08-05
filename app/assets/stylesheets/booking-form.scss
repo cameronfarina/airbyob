@@ -37,14 +37,8 @@
       margin-right: 3px;
     }
   }
-  .listing-review {
-    padding-top: 10px;
-    padding-bottom: 12px;
-    display: flex;
-    justify-content: left;
-    font-size: 12px;
-  }
-  .draw-line {
+
+  .line {
     padding-top: 12px;
     margin-bottom: 12px;
     border-bottom: 1px solid #e4e4e4 !important;
@@ -146,4 +140,12 @@
 
 .hide-cal {
   display: none;
+}
+
+.fas,
+.fa-arrow-right {
+  top: 38px;
+  right: -83px;
+  position: relative;
+  color: rgb(41, 41, 41);
 }
