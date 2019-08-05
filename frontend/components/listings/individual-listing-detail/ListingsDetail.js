@@ -24,28 +24,25 @@ class ListingContent extends React.Component {
       default:
         "Private Room";
     }
+
   }
 
   render() {
     const { listing } = this.props;
-    let beds, size, furnished;
+    let beds, size;
     if (!listing.furnished) {
       beds =
         "beds can fit in this listing, but it will not be furnished during your stay. Please make sure to bring your own bed.";
       size = "Entire Apartment";
-      furnished = "This listing is not furnished";
     } else if (listing.beds === 2 || listing.beds === 3) {
       beds = "beds";
       size = "Entire Apartment";
-      furnished = "This listing is furnished";
     } else if (listing.beds > 3) {
       beds = "beds";
       size = "Entire House";
-      furnished = "This listing is furnished";
     } else {
       beds = "bed";
       size = "Private Room in Apartment";
-      furnished = "This listing is furnished";
     }
 
     let bathrooms;

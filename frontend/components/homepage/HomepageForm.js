@@ -1,9 +1,11 @@
 import React from "react";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import { formatDate, parseDate } from "react-day-picker/moment";
+import { withRouter } from "react-router-dom";
 
 class HomepageForm extends React.Component {
   constructor(props) {
+    // debugger;
     super(props);
     this.state = {
       location: "",
@@ -12,9 +14,8 @@ class HomepageForm extends React.Component {
       guests: 1
     };
 
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.updateInput = this.updateInput.bind(this);
-    this.handleStartDateChange = this.handleStartDateChange.bind(this);
-    this.handleEndDateChange = this.handleEndDateChange.bind(this);
   }
 
   componentDidMount() {
@@ -23,10 +24,8 @@ class HomepageForm extends React.Component {
 
   autoComplete() {
     const input = document.getElementById("location-input");
-    const options = {
-      types: ["(cities)"]
-    };
-    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    this.autocomplete = new google.maps.places.Autocomplete(input);
   }
 
   updateInput(field) {
@@ -35,41 +34,27 @@ class HomepageForm extends React.Component {
     };
   }
 
-  getNewDate(date) {
-    let dateObject = date;
-    return (
-      dateObject.getFullYear() +
-      "-" +
-      (dateObject.getMonth() + 1) +
-      "-" +
-      dateObject.getDate()
+  handleSubmit(event) {
+    event.preventDefault();
+
+    this.setState(
+      {
+        location: document.getElementById("location-input").value
+      },
+      () => {
+        // debugger;
+        return this.props
+          .fetchListings(this.state.location)
+          .then(this.props.history.push(`/listings/`));
+      }
     );
   }
 
-  handleStartDateChange(day) {
-    this.setState({ start_date: this.getNewDate(day) });
-  }
-
-  handleEndDateChange(day) {
-    this.setState({ end_date: this.getNewDate(day) });
-  }
-
-  nextDay(day) {
-    const nextDay = new Date(day);
-    nextDay.setDate(day.getDate() + 1);
-    return nextDay;
-  }
-
   render() {
-    const today = new Date();
-    const start = this.state.start_date
-      ? this.nextDay(new Date(this.state.start_date))
-      : this.nextDay(today);
-
     return (
       <section className="splash-form">
         <h1>Find your next place to call home</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <div className="splash-form-field">
             <label>WHERE</label>
             <input
@@ -87,12 +72,6 @@ class HomepageForm extends React.Component {
                 formatDate={formatDate}
                 parseDate={parseDate}
                 placeholder={"mm/dd/yyy"}
-                dayPickerProps={{
-                  disabledDays: {
-                    before: today
-                  }
-                }}
-                onDayChange={this.handleStartDateChange}
               />
             </div>
 
@@ -102,13 +81,6 @@ class HomepageForm extends React.Component {
                 formatDate={formatDate}
                 parseDate={parseDate}
                 placeholder={"mm/dd/yyy"}
-                dayPickerProps={{
-                  month: start,
-                  disabledDays: {
-                    before: start
-                  }
-                }}
-                onDayChange={this.handleEndDateChange}
               />
             </div>
           </div>
@@ -132,4 +104,4 @@ class HomepageForm extends React.Component {
   }
 }
 
-export default HomepageForm;
+export default withRouter(HomepageForm);

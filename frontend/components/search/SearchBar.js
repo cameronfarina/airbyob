@@ -5,9 +5,6 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeSuggestion: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
       userInput: ""
     };
 
@@ -20,10 +17,8 @@ class SearchBar extends React.Component {
 
   autoComplete() {
     const input = document.getElementById("search-bar-field");
-    const options = {
-      types: ["(cities)"]
-    };
-    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    this.autocomplete = new google.maps.places.Autocomplete(input);
   }
 
   onChange = e => {
@@ -33,17 +28,16 @@ class SearchBar extends React.Component {
   };
 
   handleSubmit(event) {
-    if (event.keyCode === "13") {
-      event.preventDefault();
-      this.setState({
+    event.preventDefault();
+    this.setState(
+      {
         userInput: document.getElementById("search-bar-field").value
-      });
-    } else {
-      event.preventDefault();
-      this.props
-        .fetchListings(this.state.userInput)
-        .then(this.props.history.push(`/listings/`));
-    }
+      },
+      () =>
+        this.props
+          .fetchListings(this.state.userInput)
+          .then(this.props.history.push(`/listings/`))
+    );
   }
 
   render() {

@@ -1,5 +1,7 @@
 import React from "react";
-import Calendar from "../calendar/Calendar";
+// import Calendar from "../calendar/Calendar";
+import DayPickerInput from "react-day-picker/DayPickerInput";
+import { formatDate, parseDate } from "react-day-picker/moment";
 
 class BookingForm extends React.Component {
   constructor(props) {
@@ -9,17 +11,27 @@ class BookingForm extends React.Component {
       end_date: null,
       num_guests: null,
       listing_id: this.props.listing.id,
-      hidden: true
+      hidden: true,
+      fixed: false
     };
 
     this.toggleCal = this.toggleCal.bind(this);
     this.toggleFix = this.toggleFix.bind(this);
   }
 
-  toggleFix() {
-    const bFC = $("#booking-form-container");
+  componentDidMount() {
+    window.addEventListener("scroll", this.toggleFix);
+  }
 
-    bFC.toggleClass("fix-search", this.scrollTop > 147);
+
+  toggleFix() {
+    const formContainer = document.getElementById("booking-form-container");
+
+    if (this.scrollTop > 147) {
+      formContainer.classList.add("fix-search");
+    } else {
+      formContainer.classList.remove("fix-search");
+    }
   }
 
   toggleCal() {
@@ -34,6 +46,10 @@ class BookingForm extends React.Component {
       cal.classList.add("hide-cal");
     }
   }
+
+  // countNights(){
+
+  // }
 
   render() {
     const taxes = Math.floor(this.props.listing.price * 0.08);
@@ -51,18 +67,22 @@ class BookingForm extends React.Component {
         </div>
         <div className="line" />
         <form className="booking-request-form-container">
-          <div className="booking-form-fields">
-            <div className="check-in-and-out">
-              <label>Dates</label>
-              <i className="fas fa-arrow-right"></i>
-              <input
-                onClick={this.toggleCal}
-                placeholder="Check-in           Checkout"
-                className="booking-form-input"
+          <div className="splash-form-field inline">
+            <div className="splash-form-inline-field">
+              <label>CHECK-IN</label>
+              <DayPickerInput
+                formatDate={formatDate}
+                parseDate={parseDate}
+                placeholder={"mm/dd/yyy"}
               />
-              <div id="cal" className="hide-cal">
-                <Calendar />
-              </div>
+            </div>
+            <div className="splash-form-inline-field">
+              <label>CHECKOUT</label>
+              <DayPickerInput
+                formatDate={formatDate}
+                parseDate={parseDate}
+                placeholder={"mm/dd/yyy"}
+              />
             </div>
           </div>
           <div className="booking-form-field">

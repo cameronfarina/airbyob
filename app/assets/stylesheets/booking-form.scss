@@ -16,136 +16,136 @@
 
 .booking-form-container {
   box-sizing: border-box;
-  width: 604px !important;
+  width: 400px ;
   position: absolute;
   top: 0;
   right: 100px;
   padding: 30px;
   border: 1px solid #e4e4e4 !important;
   border .price-container {
-    .fix-search {
-      position: fixed;
-      top: 10px;
-      input {
-        width: 250px;
-      }
-    }
-    font-size: 12px;
-    .price-tag {
-      font-size: 24px;
-      font-weight: 800;
-      margin-right: 3px;
-    }
-  }
-
-  .line {
-    padding-top: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #e4e4e4 !important;
-  }
-
-  .booking-request-form-container {
-    width: 100%;
-    font-size: 16px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    .booking-form-input {
-      width: 100%;
-      border-radius: 2px;
-      box-sizing: border-box;
-      border: 1px solid #e4e4e4 !important;
-      color: grey;
-      font-size: 14px;
-      padding: 10px;
-      background: white;
-    }
-
+    top: 10px;
     input {
-      border: 1px solid #e4e4e4 !important;
+      width: 250px;
     }
+  }
+  font-size: 12px;
+  .price-tag {
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 3px;
+  }
+}
 
-    input:hover,
-    input:focus {
-      border: 1px solid #ff4b2b;
+.line {
+  padding-top: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.booking-request-form-container {
+  width: 100%;
+  font-size: 16px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .booking-form-input {
+    width: 100%;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4 !important;
+    color: grey;
+    font-size: 14px;
+    padding: 10px;
+    background: white;
+  }
+
+  input {
+    border: 1px solid #e4e4e4 !important;
+  }
+
+  input:hover,
+  input:focus {
+    border: 1px solid #ff4b2b;
+  }
+
+  li {
+    color: red;
+    margin-top: 10px;
+  }
+
+  .final-pricing {
+    font-family: "Montserrat", sans-serif;
+    padding: 4px 0;
+  }
+
+  .booking-form-field {
+    padding-bottom: 10px;
+    width: 100%;
+
+    .hide-cal {
+      display: none;
+      padding: 0 10px;
     }
+  }
 
-    li {
-      color: red;
-      margin-top: 10px;
-    }
+  .left-field {
+    padding-right: 10px;
+  }
 
-    .final-pricing {
-      font-family: "Montserrat", sans-serif;
-      padding: 4px 0;
-    }
+  .right-field {
+    padding-left: 10px;
+  }
 
+  .booking-form-fields {
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
     .booking-form-field {
-      padding-bottom: 10px;
-      width: 100%;
-
-      .hide-cal {
-        display: none;
-        padding: 0 10px;
-      }
-    }
-
-    .left-field {
-      padding-right: 10px;
-    }
-
-    .right-field {
-      padding-left: 10px;
-    }
-
-    .booking-form-fields {
-      padding-bottom: 10px;
-      width: 100%;
-      box-sizing: border-box;
-      .booking-form-field {
-        width: 50%;
-        input {
-          padding: 10px 0 10px 10px;
-        }
-      }
-    }
-
-    .reserve-button {
-      padding: 10px 0;
-      button {
-        width: 100%;
-        background: #ff4b2b;
-        font-size: 16px;
-        font-weight: 600;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0 auto;
-        border-radius: 3px;
+      width: 50%;
+      input {
+        padding: 10px 0 10px 10px;
       }
     }
   }
 
-  .charged {
-    text-align: center;
+  .reserve-button {
+    padding: 10px 0;
+    button {
+      width: 100%;
+      background: #ff4b2b;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
   }
+}
+
+.charged {
+  text-align: center;
 }
 
 .hide-cal {
   display: none;
 }
 
-
 .fa-arrow-right {
   top: 38px;
   right: -83px;
   position: relative;
   color: rgb(41, 41, 41);
+}
+
+.fix-search {
+  position: fixed;
 }
