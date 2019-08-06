@@ -3,7 +3,6 @@ import { updateFilter } from "../../actions/filter_actions";
 import FilterBar from "./Filterbar";
 
 const mapStateToProps = state => {
-  // debugger;
   return {
     listings: Object.values(state.entities.listings),
     minPrice: state.ui.filters.minPrice,

@@ -30,7 +30,7 @@
   min-height: 480px;
 
   .left-closeBtn {
-    color: #ccc;
+    color: #20a59ece;
     font-size: 40px;
     float: left;
     position: relative;
@@ -105,6 +105,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+  .form-btn:hover {
+    background: #20a59ece;
+  }
 }
 
 .error-list {

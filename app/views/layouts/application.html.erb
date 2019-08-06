@@ -3,16 +3,17 @@
   <head>
     <title>Airbyob</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCd1lVopaf3Kj7oyoTBoVDeUIAcsmuaTps&libraries=places" %>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= @api_key %>&libraries=places"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <script type="text/javascript">
       window.logo = "<%= image_url('logo.png') %>"
       window.splash = "<%= image_url('water.jpg') %>"
       window.livingroom = "<%= image_url('airbnb_livingroom.jpg') %>"
     </script>
+
     
   </head>
 

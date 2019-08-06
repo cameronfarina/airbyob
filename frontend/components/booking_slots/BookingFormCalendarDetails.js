@@ -5,7 +5,6 @@ import React from "react";
 
 class BookingFormCalendar extends React.Component {
   constructor(props) {
-    debugger;
     super(props);
     this.state = {
       startDate: null,

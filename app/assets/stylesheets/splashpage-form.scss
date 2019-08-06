@@ -38,6 +38,10 @@
     border-color: $button-blue;
     cursor: pointer;
   }
+
+  button:hover {
+    background: #20a59ece;
+  }
 }
 
 .splash-form-field {
