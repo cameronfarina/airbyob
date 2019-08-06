@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 
 class HomepageForm extends React.Component {
   constructor(props) {
-    // debugger;
     super(props);
     this.state = {
       location: "",
@@ -42,7 +41,6 @@ class HomepageForm extends React.Component {
         location: document.getElementById("location-input").value
       },
       () => {
-        // debugger;
         return this.props
           .fetchListings(this.state.location)
           .then(this.props.history.push(`/listings/`));
@@ -51,6 +49,8 @@ class HomepageForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
+
     return (
       <section className="splash-form">
         <h1>Find your next place to call home</h1>

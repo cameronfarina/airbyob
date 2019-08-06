@@ -15,6 +15,7 @@
  */
 
 /* Navbar  */
+@import "variables";
 
 .toolbar {
   position: fixed;
@@ -118,7 +119,7 @@
       padding: 0;
     }
     .profile-dropdown-list-item:hover {
-      border-bottom: 1px solid rgb(118, 118, 118);
+      border-bottom: 1px solid $dark-blue;
     }
   }
 
@@ -134,12 +135,12 @@
   padding: 0;
 
   a {
-    color: #484848;
+    color: $dark-blue;
     text-decoration: none;
     padding: 32px 20px;
   }
 
   a:hover {
-    border-bottom: 2px solid rgba(80, 80, 80, 0.534);
+    border-bottom: 2px solid $dark-blue;
   }
 }

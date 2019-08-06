@@ -19,7 +19,7 @@ const mapDispatchToProps = dispatch => {
   return {
     createBooking: (booking) => dispatch(createBooking(booking)),
     clearBookings: () => dispatch(clearBookings()),
-    clearErrorss: () => dispatch(clearErrorss())
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 

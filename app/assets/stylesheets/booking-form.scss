@@ -13,10 +13,11 @@
  *= require_tree .
  *= require_self
  */
+@import "variables";
 
 .booking-form-container {
   box-sizing: border-box;
-  width: 400px ;
+  width: 400px;
   position: absolute;
   top: 0;
   right: 100px;
@@ -48,6 +49,10 @@
   padding-top: 10px;
   margin-bottom: 10px;
 
+  .booking-input {
+    background: white !important;
+  }
+
   label {
     display: block;
     font-weight: 600;
@@ -68,15 +73,16 @@
 
   input {
     border: 1px solid #e4e4e4 !important;
+    background-color: white;
   }
 
   input:hover,
   input:focus {
-    border: 1px solid #ff4b2b;
+    border: 1px solid $pink;
   }
 
   li {
-    color: red;
+    color: $pink;
     margin-top: 10px;
   }
 
@@ -89,29 +95,8 @@
     padding-bottom: 10px;
     width: 100%;
 
-    .hide-cal {
-      display: none;
-      padding: 0 10px;
-    }
-  }
-
-  .left-field {
-    padding-right: 10px;
-  }
-
-  .right-field {
-    padding-left: 10px;
-  }
-
-  .booking-form-fields {
-    padding-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    .booking-form-field {
-      width: 50%;
-      input {
-        padding: 10px 0 10px 10px;
-      }
+    input {
+      padding: 10px 0 10px 10px;
     }
   }
 
@@ -119,14 +104,14 @@
     padding: 10px 0;
     button {
       width: 100%;
-      background: #ff4b2b;
+      background: $button-blue;
       font-size: 16px;
       font-weight: 600;
       color: white;
       padding-top: 10px;
       padding-bottom: 10px;
       margin: 0 auto;
-      border-radius: 3px;
+      border-radius: 4px;
     }
   }
 }
@@ -143,9 +128,17 @@
   top: 38px;
   right: -83px;
   position: relative;
-  color: rgb(41, 41, 41);
+  color: $dark-blue;
 }
 
 .fix-search {
   position: fixed;
+}
+
+.right-side {
+  float: right;
+}
+
+.hide-extra-info {
+  display: none;
 }

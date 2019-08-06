@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import "variables";
+
 .main-section {
   margin: 20px auto;
   width: 85%;
@@ -54,11 +56,9 @@
   flex-direction: column;
   display: flex;
   width: 95%;
-  position: absolute;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: 420px;
-  width: auto !important;
   padding-right: 125px !important;
   padding-left: 25px !important;
   position: absolute;
@@ -88,7 +88,7 @@
         font-size: 16px !important;
         font-weight: 800 !important;
         line-height: 1.375em !important;
-        color: #484848 !important;
+        color: $dark-blue !important;
         padding-bottom: 20px;
       }
 
@@ -119,7 +119,7 @@
   font-size: 16px !important;
   font-weight: 800 !important;
   line-height: 1.375em !important;
-  color: #484848 !important;
+  color: $dark-blue !important;
   padding-bottom: 20px;
 }
 
@@ -161,13 +161,6 @@
   }
 }
 
-.listing-option {
-  display: inline-block;
-  padding-top: 20px;
-  color: green;
-  font-weight: 800;
-}
-.listing-option:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.availability {
+  padding-bottom: none !important;
 }

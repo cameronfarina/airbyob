@@ -123,7 +123,7 @@ class ListingContent extends React.Component {
                 <div className="amenities-row">
                   <div className="amenities-item">
                     <i className="fas fa-utensils" />
-                    Full Kitchen
+                    Kitchen
                   </div>
                   <div className="amenities-item">
                     <i className="fas fa-tv" />
@@ -141,10 +141,21 @@ class ListingContent extends React.Component {
                     Espresso Machine
                   </div>
                 </div>
+
+                <div className="amenities-row">
+                  <div className="amenities-item">
+                    <i className="fas fa-water"></i>
+                    On-site Laundry
+                  </div>
+                  <div className="amenities-item">
+                    <i className="fas fa-water"></i>
+                    Pet Friendly
+                  </div>
+                </div>
               </div>
 
               <div className="listing-calendar">
-                <div className="listing-title">Availability</div>
+                <div className="listing-title availability">Availability</div>
                 <div className="calendar-row">
                   <Calendar />
                 </div>
