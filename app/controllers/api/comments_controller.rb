@@ -28,6 +28,7 @@ class Api::CommentsController < ApplicationController
     else
       render json: @comment.errors.full_messages
       render :edit
+    end
   end
 
   def destroy
