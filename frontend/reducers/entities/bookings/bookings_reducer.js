@@ -18,9 +18,6 @@ const bookingReducer = (state = {}, action) => {
       let newState = merge({}, state);
       delete newState[action.bookingId];
       return newState;
-    case RECEIVE_LISTING:
-      const booking = action.payload.bookings || {};
-      return booking;
     case CLEAR_BOOKINGS:
       return {};
     default:

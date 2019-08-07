@@ -3,6 +3,9 @@ import BookingFormContainer from "../../booking_slots/BookingFormContainer";
 import PhotoSection from "./PhotoSection";
 import NavBar from "../../navbar/Navbar";
 import Calendar from "../../calendar/Calendar";
+import Map from "../listing_map/listing_map";
+import CommentIndexContainer from "../../comments/comment_index_container";
+import { withRouter } from "react-router-dom";
 
 class ListingContent extends React.Component {
   constructor(props) {
@@ -14,6 +17,20 @@ class ListingContent extends React.Component {
   }
 
   componentDidMount() {
+    let {
+      fetchListing,
+      fetchAllBookings,
+      fetchComments,
+      comments
+    } = this.props;
+
+    fetchAllBookings();
+
+    fetchListing(this.props.match.params.listingId);
+    if (!comments.length) {
+      fetchComments();
+    }
+
     switch (this.listing.beds) {
       case 1:
         return (this.listing.listing_type = "Private Room");
@@ -24,11 +41,14 @@ class ListingContent extends React.Component {
       default:
         "Private Room";
     }
-
   }
 
   render() {
-    const { listing } = this.props;
+    const { listing, comments } = this.props;
+    if (!listing) {
+      return null;
+    }
+
     let beds, size;
     if (!listing.furnished) {
       beds =
@@ -51,6 +71,16 @@ class ListingContent extends React.Component {
     } else {
       bathrooms = "bathrooms";
     }
+
+    let comment = Object.values(comments).filter(
+      el => el.listingId === listing.id
+    );
+    let rating = 0;
+    comment.forEach(el => (rating += el.rating));
+    rating = rating / comment.length || 0;
+
+    let center = new google.maps.LatLng(listing.latitude, listing.longitude);
+    let zoom = 2;
 
     return (
       <div className="listing-detail-content-wrapper">
@@ -144,11 +174,11 @@ class ListingContent extends React.Component {
 
                 <div className="amenities-row">
                   <div className="amenities-item">
-                    <i className="fas fa-water"></i>
+                    <i className="fas fa-water" />
                     On-site Laundry
                   </div>
                   <div className="amenities-item">
-                    <i className="fas fa-water"></i>
+                    <i className="fas fa-water" />
                     Pet Friendly
                   </div>
                 </div>
@@ -164,9 +194,21 @@ class ListingContent extends React.Component {
             <BookingFormContainer listing={this.listing} />
           </div>
         </div>
+
+        {/* <div className="details-map-container">
+          <Map
+            listing={listing}
+            updateBounds={() => {}}
+            center={center}
+            zoom={zoom}
+            singleListing={true}
+            className="details-map"
+            id="details-map"
+          />
+        </div> */}
       </div>
     );
   }
 }
 
-export default ListingContent;
+export default withRouter(ListingContent);

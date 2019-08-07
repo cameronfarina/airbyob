@@ -1,15 +1,35 @@
 import React from "react";
-import Calendar from "react-calendar/dist/entry.nostyle";
+import Calendar from "../../components/calendar/Calendar";
 
 class FilterBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mapHidden: "false",
-      filterButtonHidden: "true"
+      mapHidden: false,
+      datesHidden: true,
+      guestsHidden: true,
+      priceHidden: true,
+      moreHidden: true,
+      guests: 1
     };
     this.toggleMap = this.toggleMap.bind(this);
     this.toggleFilterButtons = this.toggleFilterButtons.bind(this);
+    this.plusOne = this.plusOne.bind(this);
+    this.minusOne = this.minusOne.bind(this);
+  }
+
+  plusOne(e) {
+    e.preventDefault();
+    this.setState({
+      guests: this.state.guests + 1
+    });
+  }
+
+  minusOne(e) {
+    e.preventDefault();
+    this.setState({
+      guests: this.state.guests - 1
+    });
   }
 
   toggleMap() {
@@ -25,17 +45,35 @@ class FilterBar extends React.Component {
     }
   }
 
-  toggleFilterButtons() {
-    const filterButton = document.getElementById("filter-button");
-    this.setState({
-      filterButtonHidden: !this.state.filterButtonHidden
-    });
+  // componentDidUpdate() {
+  //   window.addEventListener("mouseup", function(e) {
+  //     const box = document.getElementById("dates");
+  //     if (e.target != box) {
+  //       box.classList.add("hide-dropdown");
+  //       this.setState({
+  //         datesHidden: true
+  //       });
+  //     }
+  //   });
+  // }
 
-    // if (this.state.filterButtonHidden) {
-    //   filterButton.classList.remove("show-button");
-    // } else {
-    //   filterButton.classList.add("show-button");
-    // }
+  toggleFilterButtons(field) {
+    let that = this;
+    return () => {
+      const filterButton = document.getElementById(field);
+      that.setState(
+        {
+          [`${field}Hidden`]: !that.state[`${field}Hidden`]
+        },
+        () => {
+          if (!that.state[`${field}Hidden`]) {
+            filterButton.classList.remove("hide-dropdown");
+          } else {
+            filterButton.classList.add("hide-dropdown");
+          }
+        }
+      );
+    };
   }
 
   render() {
@@ -44,32 +82,57 @@ class FilterBar extends React.Component {
         <div className="filter-button-container">
           <div className="filters">
             <button
-              onClick={this.toggleFilterButtons}
+              onClick={this.toggleFilterButtons("dates")}
               className="filter-button"
             >
               Dates
             </button>
+            <div className="dates-filter-container hide-dropdown" id="dates">
+              <div className="dates-filter-content">
+                <Calendar />
+              </div>
+            </div>
             <button
-              onClick={this.toggleFilterButtons}
               className="filter-button"
               id="filter-button"
+              onClick={this.toggleFilterButtons("guests")}
             >
               Guests
             </button>
+            <div className="guests-filter-container hide-dropdown" id="guests">
+              <div className="guests-filter-container">
+                <button className="minus" onClick={this.minusOne}>
+                  -
+                </button>
+                {this.state.guests}
+                <button className="plus" onClick={this.plusOne}>
+                  +
+                </button>
+                <button className="save">Save</button>
+              </div>
+            </div>
             <button
-              onClick={this.toggleFilterButtons}
               className="filter-button"
-              id="filter-button"
+              id="price"
+              onClick={this.toggleFilterButtons("price")}
             >
               Price
             </button>
-            <button
-              onClick={this.toggleFilterButtons}
-              className="filter-button"
-              id="filter-button"
+            <div
+              className="guests-filter-container hide-dropdown"
+              id="price-filter"
             >
+              <div className="guests-filter-container">Price Filters</div>
+            </div>
+            <button className="filter-button" id="filter-button">
               More filters
             </button>
+            <div
+              className="guests-filter-container hide-dropdown"
+              id="button-filter"
+            >
+              <div className="guests-filter-container">More Filters</div>
+            </div>
           </div>
           <div className="switch-container">
             <label className="showmap">Show Map</label>

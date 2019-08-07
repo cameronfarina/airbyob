@@ -6,63 +6,27 @@ class Listing < ApplicationRecord
   foreign_key: :listing_id,
   class_name: :Booking
 
-  def self.in_bounds(bounds)
-    self.where("lat < ?", bounds[:northEast][:lat])
-      .where("lat > ?", bounds[:southWest][:lat])
-      .where("lng > ?", bounds[:southWest][:lng])
-      .where("lng < ?", bounds[:northEast][:lng])
-  end
+  has_many :comments
 
-  def self.same_city?(city)
-    self.where('city = ?', city)
-  end
-
-  def self.same_state?(state)
-    self.where('state = ?', state)
-  end
-
-  def self.same_country?(country)
-    self.where('country = ?', country)
-  end
-
-  def self.price_in_range?(range)
-    self.where('price < ?', range)
-  end
-
-  def self.all_locations
-    self.pluck('city', 'country', 'state').uniq
-  end
-
-  def self.same_location?(location)
-    if self.same_city?(location).length > 0
-      return self.same_city?(location) 
-    elsif self.same_state?(location).length > 0
-      return self.same_state?(location)
-    elsif self.same_country?(location).length > 0
-      return self.same_country?(location)
-    end
-  end
-
-  def self.location_type(splat)
-    if splat[1] && (splat[1] == splat[1].upcase)
-      return 'US'
-    elsif splat[1]
-      return 'City'
+  def self.location_type(location)
+    if location[1] && (location[1] == location[1].upcase)
+      return 'US City'
+    elsif location[1]
+      return 'International City'
     else
       return 'Country'
     end
   end
 
   def self.get_listings(location)
-    splat = location.split(', ')
-    type = self.location_type(splat)
-
-    if type == 'US'
-      return self.where('city = ? AND state = ?', splat[0], splat[1])
-    elsif type == 'City'
-      return self.where('city = ? AND country = ?', splat[0], splat[1])
+    userLocation = location.split(', ')
+    type = self.location_type(userLocation)
+    if type == 'US City'
+      return self.where('city = ? AND state = ? AND country = ?', userLocation[0], userLocation[1], 'United States')
+    elsif type == 'International City'
+      return self.where('city = ? AND country = ?', userLocation[0], userLocation[1]).or(self.where('country = ?', userLocation[1]))
     else
-      return self.where('country = ?', splat[0])
+      return self.where('country = ?', userLocation[0])
     end
   end
 

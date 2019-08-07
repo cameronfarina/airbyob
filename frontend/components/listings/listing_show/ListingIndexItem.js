@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import Stars from "../../comments/stars";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -66,7 +67,9 @@ class ListingIndexItem extends React.Component {
                   <li>{furnished}</li>
                 </div>
                 <div className="listing-review">
-                  <li>{listing.average_rating || "No reviews yet"}</li>
+                  <li>
+                    <Stars rating={this.props.averageRating} />
+                  </li>
                 </div>
                 <div className="listing-price">
                   <li>{`$${Math.floor(listing.price)}/night`}</li>

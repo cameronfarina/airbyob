@@ -27,11 +27,11 @@ class MarkerManager {
       listing.latitude,
       listing.longitude
     );
-
+    
     const marker = new google.maps.Marker({
       position,
-      map: this.map,
-      listingId: listing.id
+      listingId: listing.id,
+      map: this.map
     });
 
     marker.addListener("click", () => this.handleClick(listing));

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { withRouter } from "react-router-dom";
-
 import MarkerManager from "../../../util/marker_manager";
 
 const getCoordsObj = latLng => ({
@@ -9,25 +8,20 @@ const getCoordsObj = latLng => ({
   lng: latLng.lng()
 });
 
+const mapOptions = {
+  center: {
+    lat: 37.773972,
+    lng: -122.431297
+  },
+  zoom: 13
+};
+
 class ListingMap extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    let getCenterLat =
-      (this.props.bounds.northEastLat + this.props.bounds.southWestLat) / 2;
-    let getCenterLng =
-      (this.props.bounds.northEastLng + this.props.bounds.southWestLng) / 2;
-
-    const mapOptions = {
-      center: {
-        lat: getCenterLat,
-        lng: getCenterLng
-      },
-      zoom: 6
-    };
-
     const map = this.refs.map;
     this.map = new google.maps.Map(map, mapOptions);
     this.MarkerManager = new MarkerManager(
@@ -35,15 +29,52 @@ class ListingMap extends React.Component {
       this.handleMarkerClick.bind(this)
     );
 
-    this.MarkerManager.updateMarkers(this.props.listings);
+    if (this.props.singleListing) {
+      this.MarkerManager.createMarkerFromListing(this.props.listing);
+    } else {
+      let getCenterLat =
+        (this.props.bounds.northEastLat + this.props.bounds.southWestLat) / 2;
+      let getCenterLng =
+        (this.props.bounds.northEastLng + this.props.bounds.southWestLng) / 2;
+
+      const mapOptions = {
+        center: {
+          lat: getCenterLat,
+          lng: getCenterLng
+        },
+        zoom: 6
+      };
+
+      const map = this.refs.map;
+      this.map = new google.maps.Map(map, mapOptions);
+      this.MarkerManager = new MarkerManager(
+        this.map,
+        this.handleMarkerClick.bind(this)
+      );
+
+      this.MarkerManager.updateMarkers(this.props.listings);
+    }
   }
 
   componentDidUpdate() {
+    const map = this.refs.map;
+    this.map = new google.maps.Map(map, mapOptions);
+    this.MarkerManager = new MarkerManager(
+      this.map,
+      this.handleMarkerClick.bind(this)
+    );
+
     if (this.props.singleListing) {
-      const targetListingKey = Object.keys(this.props.listings)[0];
-      const targetListing = this.props.listings[targetListingKey];
-      this.MarkerManager.updateMarkers([targetListing]);
+      this.MarkerManager.createMarkerFromListing(this.props.listing);
     } else {
+      let coordinates = {
+        lat:
+          (this.props.bounds.northEastLat + this.props.bounds.southWestLat) / 2,
+        lng:
+          (this.props.bounds.northEastLng + this.props.bounds.southWestLng) / 2
+      };
+      this.map.panTo(coordinates);
+
       this.MarkerManager.updateMarkers(this.props.listings);
     }
   }

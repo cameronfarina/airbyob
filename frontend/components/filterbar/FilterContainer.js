@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { updateFilter } from "../../actions/filter_actions";
 import FilterBar from "./Filterbar";
+import { fetchListings } from "../../actions/listing_actions";
 
 const mapStateToProps = state => {
   return {
@@ -15,7 +16,8 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
+  updateFilter: (filter, value) => dispatch(updateFilter(filter, value)),
+  fetchListings: location => dispatch(fetchListings(location))
 });
 
 export default connect(

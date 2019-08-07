@@ -123,6 +123,42 @@ input:checked + .slider-button:before {
   display: none !important;
 }
 
-.show-button {
+.hide-dropdown {
   display: none;
+}
+
+#dates {
+  position: absolute;
+  background: white;
+  border: 1px solid #dce0e0;
+  left: 29px;
+  margin-top: 8px;
+  border-radius: 4px;
+
+  p {
+    display: none;
+  }
+}
+
+#guests {
+  position: absolute;
+  padding: 20px;
+  left: 103px;
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+
+  .plus {
+    margin-left: 20px;
+  }
+
+  .minus {
+    margin-right: 20px;
+  }
+
+  .save {
+    right: 10px;
+    bottom: 10px;
+  }
 }
