@@ -8,6 +8,10 @@ class Listing < ApplicationRecord
 
   has_many :comments
 
+  def average_rating
+    comments.average(:rating)
+  end
+
   def self.location_type(location)
     if location[1] && (location[1] == location[1].upcase)
       return 'US City'

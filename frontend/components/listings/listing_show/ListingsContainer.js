@@ -3,7 +3,6 @@ import ListingsIndex from "./ListingsIndex";
 import { fetchListings } from "../../../actions/listing_actions";
 import { fetchListing } from "../../../actions/listing_actions";
 import { updateFilter } from "../../../actions/filter_actions";
-import { fetchComments } from "../../../actions/comment_actions";
 
 const mapStateToProps = state => {
   const listingId = state.entities.listings.listingId;
@@ -18,8 +17,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   fetchListings: () => dispatch(fetchListings()),
   fetchListing: id => dispatch(fetchListing(id)),
-  updateFilter: (filter, value) => dispatch(updateFilter(filter, value)),
-  fetchComments: () => dispatch(fetchComments())
+  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
 export default connect(

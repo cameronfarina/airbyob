@@ -11,6 +11,13 @@ export const fetchListing = id =>
     url: `api/listings/${id}`
   });
 
+export const createComment = comment =>
+  $.ajax({
+    method: "POST",
+    url: `api/comments/`,
+    data: { comment }
+  });
+
 export const createListing = listing =>
   $.ajax({
     method: "POST",
@@ -29,4 +36,10 @@ export const deleteListing = id =>
   $.ajax({
     method: "DELETE",
     url: `api/listings/${id}`
+  });
+
+export const deleteComment = id =>
+  $.ajax({
+    method: "DELETE",
+    url: `api/comments/${id}`
   });

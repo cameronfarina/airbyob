@@ -1,17 +1,11 @@
 class Api::CommentsController < ApplicationController
-  before_action :require_logged_in, except: [:index]
   before_action :require_ownership, only: [:edit, :update, :destroy]
 
-  def index
-    @comments = Comment.all
-  end
-
   def create
-    @comment = Comment.new(comment_params)
-    @comment.author_id = current_user.id
+    @comment = current_user.comments.new(comment_params)
     @comment.listing_id = params[:listing_id]
     if @comment.save
-      render 'api/listings/show/'
+      render :show
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -39,6 +33,6 @@ class Api::CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:rating, :body)
+    params.require(:comment).permit(:rating, :body, :listing_id)
   end
 end

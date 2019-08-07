@@ -7,7 +7,6 @@ const ListingShow = ({
   fetchListing,
   bookings,
   fetchAllBookings,
-  fetchComments,
   comments
 }) => {
   return (
@@ -17,7 +16,6 @@ const ListingShow = ({
         listingId={listingId}
         fetchListing={fetchListing}
         fetchAllBookings={fetchAllBookings}
-        fetchComments={fetchComments}
         listing={listing}
         comments={comments}
       />

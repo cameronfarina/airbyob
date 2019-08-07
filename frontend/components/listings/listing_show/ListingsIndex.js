@@ -11,11 +11,7 @@ class ListingIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props
-      .fetchListings()
-      .then(() =>
-        this.props.comments.length === 0 ? this.props.fetchComments() : null
-      );
+    this.props.fetchListings();
   }
 
   render() {

@@ -9,13 +9,14 @@ class Api::ListingsController < ApplicationController
       answer = location
     end
 
-    @listings = answer ? Listing.get_listings(answer) : Listing.first(5)
+    listings = answer ? Listing.get_listings(answer) : Listing.first(5)
+    @listings = listings.includes(:comments)
     
     @bounds = Listing.get_bounds(@listings)
   end
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = Listing.includes(:comments).find(params[:id])
   end
 
   def create

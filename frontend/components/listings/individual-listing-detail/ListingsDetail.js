@@ -20,16 +20,13 @@ class ListingContent extends React.Component {
     let {
       fetchListing,
       fetchAllBookings,
-      fetchComments,
       comments
     } = this.props;
 
     fetchAllBookings();
 
     fetchListing(this.props.match.params.listingId);
-    if (!comments.length) {
-      fetchComments();
-    }
+
 
     switch (this.listing.beds) {
       case 1:

@@ -2,21 +2,27 @@ import { connect } from "react-redux";
 import ListingDetail from "../individual-listing-detail/ListingsDetail";
 import { fetchListing } from "../../../actions/listing_actions";
 import { fetchAllBookings } from "../../../actions/booking_actions";
-import { fetchComments } from "../../../actions/comment_actions";
+import {
+  selectCommentsForListing,
+  selectListing
+} from "../../../reducers/selectors";
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state, { match }) => {
+  const listingId = parseInt(match.params.listingId);
+  const listing = selectListing(state.entities, listingId);
+  const comments = selectCommentsForListing(state.entities, listing);
   return {
-    listing: state.entities.listings[ownProps.match.params.listingId],
-    bookings: state.entities.bookings,
-    comments: state.entities.comments
+    listingId,
+    listing,
+    comments,
+    bookings: state.entities.bookings
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     fetchListing: id => dispatch(fetchListing(id)),
-    fetchAllBookings: () => dispatch(fetchAllBookings()),
-    fetchComments: () => dispatch(fetchComments())
+    fetchAllBookings: () => dispatch(fetchAllBookings())
   };
 };
 

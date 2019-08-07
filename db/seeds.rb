@@ -76,3 +76,47 @@ Booking.create!(
   end_date: "2019-08-2",
   num_guests: 5
 )
+
+
+Comment.create!(
+  author_id: user1.id,
+  booking_id: Booking.fifth.id,
+  listing_id: Listing.first.id,
+  body: 'number 1 comment',
+  rating: '3'
+ 
+)
+
+Comment.create!(
+  author_id: user2.id,
+  booking_id: Booking.fourth.id,
+  listing_id: Listing.second.id,
+  body: 'number 1 comment',
+  rating: '3'
+ 
+)
+
+Comment.create!(
+  author_id: user3.id,
+  booking_id: Booking.third.id,
+  listing_id: Listing.third.id,
+  body: 'number 1 comment',
+  rating: '3'
+)
+
+Comment.create!(
+  author_id: user4.id,
+  booking_id: Booking.second.id,
+  listing_id: Listing.fourth.id,
+  body: 'number 1 comment',
+  rating: '3'
+)
+
+Comment.create!(
+  author_id: user5.id,
+  booking_id: Booking.first.id,
+  listing_id: Listing.fifth.id,
+  body: 'number 1 comment',
+  rating: '3'
+)
+

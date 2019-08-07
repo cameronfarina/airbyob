@@ -25,11 +25,6 @@ export const removeComment = commentId => ({
   commentId
 });
 
-export const fetchComments = () => dispatch =>
-  APICommentUtil.fetchComments().then(
-    comments => dispatch(receiveComments(comments)),
-    errors => dispatch(receiveErrors(errors))
-  );
 
 export const fetchComment = commentId => dispatch =>
   APICommentUtil.fetchComment(commentId).then(

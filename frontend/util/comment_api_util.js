@@ -1,15 +1,8 @@
-export const fetchComments = () =>
+export const fetchComment = commentId =>
   $.ajax({
     method: "GET",
-    url: "api/comments"
-  });
-
-export const fetchComment = commentId => (
-  $.ajax({
-    method: 'GET',
     url: `/api/listings/${commentId}`
-  })
-)
+  });
 
 export const createComment = comment =>
   $.ajax({
@@ -18,14 +11,12 @@ export const createComment = comment =>
     data: { comment }
   });
 
-
-export const updateComment = comment => (
+export const updateComment = comment =>
   $.ajax({
-    method: 'PATCH',
+    method: "PATCH",
     url: `/api/comments/${comment.id}`,
     data: { booking }
-  })
-)
+  });
 
 export const deleteComment = id =>
   $.ajax({
