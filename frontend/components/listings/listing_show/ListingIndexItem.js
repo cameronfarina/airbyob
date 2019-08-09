@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import Stars from "../../comments/stars";
+import { renderStars } from "../../comments/stars";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -68,7 +68,7 @@ class ListingIndexItem extends React.Component {
                 </div>
                 <div className="listing-review">
                   <li>
-                    <Stars rating={this.props.averageRating} />
+                    {renderStars(this.props.averageRating)}
                   </li>
                 </div>
                 <div className="listing-price">

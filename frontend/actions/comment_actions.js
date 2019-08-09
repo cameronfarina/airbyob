@@ -25,16 +25,15 @@ export const removeComment = commentId => ({
   commentId
 });
 
-
 export const fetchComment = commentId => dispatch =>
   APICommentUtil.fetchComment(commentId).then(
     comment => dispatch(receiveComment(comment)),
     errors => dispatch(receiveErrors(errors))
   );
 
-export const createComment = comment => dispatch =>
-  APICommentUtil.createComment(comment).then(
-    comment => dispatch(receiveComment(comment)),
+export const createComment = (id, comment) => dispatch =>
+  APICommentUtil.createComment(id, comment).then(
+    comment => dispatch(receiveComment(id, comment)),
     errors => dispatch(receiveErrors(errors))
   );
 

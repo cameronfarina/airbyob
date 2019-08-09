@@ -27,15 +27,33 @@ class MarkerManager {
       listing.latitude,
       listing.longitude
     );
-    
-    const marker = new google.maps.Marker({
+
+    const mapIcon = {
+      path: "m22,-28.38281l-44,0l0,20l16,0l6,5l6,-5l16,0l0,-20z",
+      labelOrigin: new google.maps.Point(0, -18),
+      fillColor: "white",
+      fillOpacity: 1,
+      scale: 1.15,
+      strokeColor: "grey",
+      strokeWeight: 0.5,
+    };
+
+    this.markers[listing.id] = new google.maps.Marker({
       position,
+      map: this.map,
+      title: listing.name,
       listingId: listing.id,
-      map: this.map
+      label: "$" + String(listing.price),
+      icon: mapIcon,
     });
 
-    marker.addListener("click", () => this.handleClick(listing));
-    this.markers[marker.listingId] = marker;
+    
+    let marker = this.markers[listing.id];
+    marker.addListener('click', () => this.handleClick(listing))
+    marker.setMap(this.map);
+
+    // marker.addListener("click", () => this.handleClick(listing));
+    // this.markers[marker.listingId] = marker;
   }
 
   removeMarker(marker) {

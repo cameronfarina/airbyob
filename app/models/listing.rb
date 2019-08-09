@@ -2,7 +2,7 @@ class Listing < ApplicationRecord
   validates :address, :city, :country, :price, :description, :beds, :bathrooms, presence: true
   validates :furnished, inclusion: { in: [true, false]}
 
-  has_many :booking_slots,
+  has_many :bookings,
   foreign_key: :listing_id,
   class_name: :Booking
 
@@ -26,11 +26,11 @@ class Listing < ApplicationRecord
     userLocation = location.split(', ')
     type = self.location_type(userLocation)
     if type == 'US City'
-      return self.where('city = ? AND state = ? AND country = ?', userLocation[0], userLocation[1], 'United States')
+      return self.includes(:comments).where('city = ? AND state = ? AND country = ?', userLocation[0], userLocation[1], 'United States')
     elsif type == 'International City'
-      return self.where('city = ? AND country = ?', userLocation[0], userLocation[1]).or(self.where('country = ?', userLocation[1]))
+      return self.includes(:comments).where('city = ? AND country = ?', userLocation[0], userLocation[1]).or(self.includes(:comments).where('country = ?', userLocation[1]))
     else
-      return self.where('country = ?', userLocation[0])
+      return self.includes(:comments).where('country = ?', userLocation[0])
     end
   end
 
@@ -63,6 +63,19 @@ class Listing < ApplicationRecord
       .where("lat > ?", bounds[2])
       .where("lng > ?", bounds[1])
       .where("lng < ?", bounds[3])
+  end
+
+    def booked_dates
+    booked = []
+    self.bookings.each do |booking|
+      check_in = booking.start_date
+      check_out = booking.end_date
+      while check_in < check_out
+        booked << check_in
+        check_in += 1
+      end
+    end
+    booked
   end
 
 end

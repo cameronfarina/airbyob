@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  validates :body, :booking_id, presence: true
+  validates :body, presence: true
   validates :rating, inclusion: { in: (1..5) }
 
   belongs_to :author,
@@ -7,5 +7,4 @@ class Comment < ApplicationRecord
   class_name: :User
 
   belongs_to :listing
-  belongs_to :booking
 end

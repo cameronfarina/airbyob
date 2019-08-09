@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token
   
-  has_many :booking_slots,
+  has_many :bookings,
   foreign_key: :user_id,
   class_name: :Booking
 

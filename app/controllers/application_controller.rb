@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
   end
 
   def owner?
-    Listing.user_id === @current_user.id
+    Comment.author_id == @current_user.id
   end
 
   def require_ownership

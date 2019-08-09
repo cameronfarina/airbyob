@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "variables";
+
+.review-container {
+  margin-bottom: 40px;
+
+  .review-search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid $light-grey;
+
+    h4 {
+      font-size: 24px;
+
+      span {
+        font-size: 28px;
+      }
+    }
+
+    .search-bar {
+      width: 185px;
+      height: 32px;
+      border: 1px solid $light-grey;
+      border-radius: 2px;
+      box-shadow: none;
+
+      i {
+        padding: 7px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  .create-review-box {
+    padding: 10px 0 20px;
+
+    .create-review-form {
+      .rating {
+        padding: 5px 0;
+        font-size: 20px;
+
+        p {
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        div {
+          display: inline-block;
+          color: $pink;
+
+          span {
+            padding: 0 1px;
+          }
+        }
+      }
+
+      label {
+        margin-right: 5px;
+        color: $pink;
+        font-size: 18px;
+      }
+
+      .review-body-box {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .review-text-area {
+          resize: none;
+          border: 1px solid $light-grey;
+          width: 72%;
+          height: 40px;
+          padding: 10px;
+        }
+
+        button {
+          height: 40px;
+          padding: 0 20px;
+          margin: 0 15px;
+          color: white;
+          background-color: $button-blue;
+          border-radius: 4px;
+
+          &:active {
+            background-color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .review-index-container {
+    margin-top: 10px;
+
+    .review-index {
+      list-style: none;
+      padding: 0;
+
+      .review-index-item {
+        padding: 10px 0;
+        border-bottom: 1px solid $light-grey;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+
+          .reviewer {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          a {
+            color: $pink;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        p {
+          font-style: italic;
+          margin: 10px 0;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
+
+#label-onrate {
+  top: 11px;
+  position: relative;
+}

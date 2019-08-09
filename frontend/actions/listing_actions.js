@@ -18,11 +18,9 @@ export const receiveListing = ({ listing, comments, authors }) => ({
   authors
 });
 
-export const receiveComment = ({ comment, average_rating, author }) => ({
+export const receiveComment = comment => ({
   type: RECEIVE_COMMENT,
-  comment,
-  average_rating,
-  author
+  comment
 });
 
 export const removeListing = listing => ({
@@ -32,7 +30,7 @@ export const removeListing = listing => ({
 
 export const removeComment = comment => ({
   type: REMOVE_COMMENT,
-  listingId: comment.id
+  listingId: comment
 });
 
 export const fetchListings = location => dispatch =>
@@ -50,9 +48,9 @@ export const createListing = listing => dispatch =>
     dispatch(receiveListing(listing))
   );
 
-export const createComment = comment => dispatch =>
-  ListingApiUtil.createComment(comment).then(comment =>
-    dispatch(receiveComment(comment))
+export const createComment = (id, comment) => dispatch =>
+  ListingApiUtil.createComment(id, comment).then(comment =>
+    dispatch(receiveListing(comment))
   );
 
 export const updateListing = id => dispatch =>

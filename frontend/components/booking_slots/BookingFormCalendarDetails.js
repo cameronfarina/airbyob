@@ -14,12 +14,12 @@ class BookingFormCalendar extends React.Component {
     this.disabledDays = [];
     this.checkInDateChanged = this.checkInDateChanged.bind(this);
     this.checkOutDateChanged = this.checkOutDateChanged.bind(this);
-    this.illegalDates = this.illegalDates.bind(this);
+    this.invalidDates = this.invalidDates.bind(this);
     this.daysOverlap = this.daysOverlap.bind(this);
     this.daysDontOverlap = this.daysDontOverlap.bind(this);
   }
 
-  illegalDates() {
+  invalidDates() {
     this.props.bookings.forEach(({ startDate, endDate }) => {
       let current_date = new Date(startDate + " 00:00");
       let finish_date = new Date(endDate + " 00:00");
@@ -82,7 +82,7 @@ class BookingFormCalendar extends React.Component {
 
   render() {
     const { listing } = this.props;
-    this.illegalDates();
+    this.invalidDates();
 
     const num_nights = this.getNumberOfNightsInStay(
       this.state.startDate,

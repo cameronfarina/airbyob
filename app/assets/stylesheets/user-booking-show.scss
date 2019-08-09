@@ -1,0 +1,41 @@
+.booking-listing-item-container {
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+.booking-listing-item-container img {
+  height: 250px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+}
+
+.user-booking-ul {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 33% [col-start]);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.subheader {
+  text-align: center;
+  margin: 50px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.booking-text {
+  line-height: 20px;
+}
+
+.booking-image {
+  height: 200px;
+  width: 375px;
+  background-size: 375px 200px;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  border: 1px solid white;
+}

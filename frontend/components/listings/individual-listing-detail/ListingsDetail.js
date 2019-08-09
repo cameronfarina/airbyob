@@ -1,9 +1,8 @@
 import React from "react";
-import BookingFormContainer from "../../booking_slots/BookingFormContainer";
+import BookingFormContainer from "../../booking_slots/BookingIndexContainer";
 import PhotoSection from "./PhotoSection";
 import NavBar from "../../navbar/Navbar";
 import Calendar from "../../calendar/Calendar";
-import Map from "../listing_map/listing_map";
 import CommentIndexContainer from "../../comments/comment_index_container";
 import { withRouter } from "react-router-dom";
 
@@ -13,35 +12,16 @@ class ListingContent extends React.Component {
     this.state = {
       date: new Date()
     };
-    this.listing = this.props.listing;
   }
 
   componentDidMount() {
-    let {
-      fetchListing,
-      fetchAllBookings,
-      comments
-    } = this.props;
-
-    fetchAllBookings();
-
-    fetchListing(this.props.match.params.listingId);
-
-
-    switch (this.listing.beds) {
-      case 1:
-        return (this.listing.listing_type = "Private Room");
-      case 2:
-        return (this.listing.listing_type = "Entire Apartment");
-      case 3 || 4 || 5:
-        return (this.listing.listing_type = "Entire House");
-      default:
-        "Private Room";
-    }
+    let { fetchListing, fetchBooking } = this.props;
+    fetchBooking();
+    fetchListing(this.props.listingId);
   }
 
   render() {
-    const { listing, comments } = this.props;
+    const { listing } = this.props;
     if (!listing) {
       return null;
     }
@@ -69,16 +49,6 @@ class ListingContent extends React.Component {
       bathrooms = "bathrooms";
     }
 
-    let comment = Object.values(comments).filter(
-      el => el.listingId === listing.id
-    );
-    let rating = 0;
-    comment.forEach(el => (rating += el.rating));
-    rating = rating / comment.length || 0;
-
-    let center = new google.maps.LatLng(listing.latitude, listing.longitude);
-    let zoom = 2;
-
     return (
       <div className="listing-detail-content-wrapper">
         <NavBar />
@@ -100,11 +70,11 @@ class ListingContent extends React.Component {
                       <div className="listing-type">{size}</div>
                       <div className="listing-props">
                         <div className="number-of-bathrooms">
-                          {this.listing.bathrooms} {bathrooms}
+                          {listing.bathrooms} {bathrooms}
                         </div>
                         <br />
                         <div className="number-of-bedrooms">
-                          {this.listing.beds} {beds}
+                          {listing.beds} {beds}
                         </div>
                       </div>
                     </div>
@@ -141,7 +111,7 @@ class ListingContent extends React.Component {
 
               <div className="listing-description">
                 <div className="listing-title">About This Listing</div>
-                <div className="description">{this.listing.description}</div>
+                <div className="description">{listing.description}</div>
               </div>
 
               <div className="listing-amenities">
@@ -184,11 +154,17 @@ class ListingContent extends React.Component {
               <div className="listing-calendar">
                 <div className="listing-title availability">Availability</div>
                 <div className="calendar-row">
-                  <Calendar />
+                  <Calendar bookedDates={listing.booked_dates} />
+                </div>
+              </div>
+              <div className="listing-reviews">
+                <div className="listing-title">
+                  <CommentIndexContainer />
                 </div>
               </div>
             </div>
-            <BookingFormContainer listing={this.listing} />
+
+            <BookingFormContainer listing={listing} />
           </div>
         </div>
 

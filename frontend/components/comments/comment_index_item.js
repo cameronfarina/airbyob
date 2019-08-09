@@ -1,35 +1,48 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const CommentIndexItem = ({
-  currentUser,
-  listingId,
-  comment,
-  deleteComment
-}) => {
-  const toggleDelete = () => {
-    if (comment) {
-      if (currentUser && currentUser.id == comment.authorId) {
-        return (
-          <Link
-            to={`/listings/${listingId}`}
-            onClick={() => deleteComment(comment.id)}
-          >
-            remove
-          </Link>
-        );
-      }
-    } else {
-      return 'No Reviews yet!'
+class CommentIndexItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      comment: this.props.comment,
+      currentUser: this.props.currentUser,
+      listingId: this.props.listingId
+    };
+
+    this.deleteUserComment = this.deleteUserComment.bind(this);
+    // this.editUserComment = this.editUserComment.bind(this);
+    this.showButtons = this.showButtons.bind(this);
+  }
+
+  deleteUserComment() {
+    this.props.deleteComment(this.state.comment.id);
+  }
+
+  showButtons() {
+    const { currentUser, comment } = this.props;
+    if (currentUser && currentUser.id === comment.author_id) {
+      return <button onClick={this.deleteUserComment}>Delete Comment</button>;
     }
-  };
-  return (
-    <li className="review-index-item">
-      <div>
-        {toggleDelete()}
-      </div>
-    </li>
-  );
-};
+  }
 
-export default CommentIndexItem;
+  render() {
+    const { comment } = this.props;
+    return (
+      <li className="review-index-item">
+        <div>
+          <span className="reviewer">Guest # {comment.author_id}</span>
+          {/* <span className="reviewer">Rating: {comment.rating} / 5</span> */}
+          {this.showButtons()}
+        </div>
+        <p>
+          {comment.body
+            ? comment.body
+            : "Be the first to leave a review for this listing!"}
+        </p>
+      </li>
+    );
+  }
+}
+
+export default withRouter(CommentIndexItem);

@@ -70,3 +70,27 @@ a {
   text-decoration: none;
   margin: 15px 0;
 }
+
+.loading-dots {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.DateInput {
+  padding: 8px;
+}
+
+.DateInput_input {
+  padding: 0 8px;
+  font-size: 17px;
+}
+
+.DateInput_input__focused {
+  white-space: nowrap !important;
+  color: rgb(0, 122, 135) !important;
+  padding: 0px 6px !important;
+  overflow: hidden !important;
+  background: rgb(153, 237, 230) !important;
+  border-color: rgb(153, 237, 230) !important;
+  border-radius: 3px !important;
+}

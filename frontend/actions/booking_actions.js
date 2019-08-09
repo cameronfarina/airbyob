@@ -13,10 +13,10 @@ export const receiveAllBookings = bookings => {
   };
 };
 
-const receiveBooking = booking => {
+const receiveBooking = bookingId => {
   return {
     type: RECEIVE_BOOKING,
-    booking
+    bookingId
   };
 };
 
@@ -53,7 +53,7 @@ export const fetchBooking = bookingId => dispatch =>
 export const createBooking = booking => dispatch =>
   APIBookingsUtil.createBooking(booking).then(
     booking => dispatch(receiveBooking(booking)),
-    errors => dispatch(receiveErrors(errors))
+    errors => dispatch(receiveErrors(errors.responseJSON))
   );
 
 export const updateBooking = booking => dispatch =>
@@ -62,8 +62,8 @@ export const updateBooking = booking => dispatch =>
     errors => dispatch(receiveErrors(errors))
   );
 
-export const deleteBooking = bookingId => dispatch =>
-  APIBookingsUtil.deleteBooking(bookingId).then(
-    bookingId => dispatch(removeBooking(bookingId)),
+export const deleteBooking = id => dispatch =>
+  APIBookingsUtil.deleteBooking(id).then(
+    id => dispatch(removeBooking(id)),
     errors => dispatch(receiveErrors(errors))
   );

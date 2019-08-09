@@ -1,52 +1,37 @@
 import React from "react";
-import BookingFormCalendar from "./BookingFormCalendarDetails";
-import BookingFormCalculation from "./BookingFormCalculation";
+import BookingForm from "./BookingForm";
+import { Link } from 'react-router-dom';
 
-class BookingForm extends React.Component {
+class BookingFormIndex extends React.Component {
   constructor(props) {
     super(props);
-
-    this.reserveListing = this.reserveListing.bind(this);
+    this.state = {};
   }
 
-  reserveListing(e) {
-    e.preventDefault();
+  componentDidMount() {
+    this.props.fetchAllBookings();
   }
 
   render() {
-    const { bookings, listing } = this.props;
+    const { bookings, listing, createBooking, currentUser } = this.props;
+
     return (
-      <div className="booking-form-container" id="booking-form-container">
-        <div className="price-container">
-          <span className="price-tag">
-            ${Math.floor(this.props.listing.price)}
-          </span>
-          per night
-        </div>
-        <div className="line" />
-        <form
-          onSubmit={this.reserveListing}
-          className="booking-request-form-container"
-        >
-          <BookingFormCalendar bookings={bookings} listing={listing} />
-          <BookingFormCalculation listing={listing} />
-          <div className="booking-form-field">
-            <label>GUESTS</label>
-            <input
-              type="number"
-              placeholder="1 guest"
-              min="1"
-              className="booking-form-input"
-            />
-          </div>
-          <div className="reserve-button">
-            <button>Reserve</button>
-          </div>
-        </form>
-        <div className="charged">You won't be charged yet</div>
+      <div>
+        <BookingForm
+          createBooking={createBooking}
+          listing={listing}
+          currentUser={currentUser}
+          bookings={bookings}
+          price={listing.price}
+          beds={listing.beds}
+          bathrooms={listing.bathrooms}
+          city={listing.city}
+          furnished={listing.furnished}
+          average_rating={listing.average_rating}
+        />
       </div>
     );
   }
 }
 
-export default BookingForm;
+export default BookingFormIndex;

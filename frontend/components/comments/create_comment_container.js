@@ -1,12 +1,12 @@
 import { connect } from "react-redux";
 import { createComment } from "../../actions/listing_actions";
-import CreateCommentForm from "./create_comment";
+import CreateComment from "./create_comment";
 
 const mapDispatchToProps = dispatch => ({
-  createComment: comment => dispatch(createComment(comment))
+  createComment: (id, comment) => dispatch(createComment(id, comment))
 });
 
 export default connect(
   null,
   mapDispatchToProps
-)(CreateCommentForm);
+)(CreateComment);

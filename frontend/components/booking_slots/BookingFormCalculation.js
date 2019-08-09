@@ -3,22 +3,30 @@ import React from "react";
 class BookingFormCalculation extends React.Component {
   constructor(props) {
     super(props);
-
-    this.openExtraInfo = this.openExtraInfo.bind(this);
+    this.state = {
+      cleaningHidden: true,
+      serviceHidden: true
+    };
+    this.toggleHiddenButtons = this.toggleHiddenButtons.bind(this);
   }
 
-  openExtraInfo(e) {
-    e.preventDefault();
-    const question = document.getElementById("questionMark");
-    this.setState({
-      extraHidden: !this.state.extraHidden
-    });
-
-    if (this.state.extraHidden) {
-      question.classList.remove("hide-extra-info");
-    } else {
-      question.classList.add("hide-extra-info");
-    }
+  toggleHiddenButtons(field) {
+    let that = this;
+    return () => {
+      const filterButton = document.getElementById(field);
+      that.setState(
+        {
+          [`${field}Hidden`]: !that.state[`${field}Hidden`]
+        },
+        () => {
+          if (!that.state[`${field}Hidden`]) {
+            filterButton.classList.remove("hide-extra-info");
+          } else {
+            filterButton.classList.add("hide-extra-info");
+          }
+        }
+      );
+    };
   }
 
   render() {
@@ -26,9 +34,9 @@ class BookingFormCalculation extends React.Component {
     this.cleaningFees = 10 * this.props.num_nights;
     this.totalCosts = Math.floor(listing.price * this.props.num_nights);
     this.serviceFees = Math.floor((this.totalCosts + this.cleaningFees) * 0.2);
-    this.occupancyTaxes = Math.floor(this.totalCosts * 0.08);
+    this.cleaningFees = Math.floor(this.totalCosts * 0.08);
     this.finalPrice = Math.floor(
-      this.occupancyTaxes + this.serviceFees + this.totalCosts
+      this.cleaningFees + this.serviceFees + this.totalCosts
     );
 
     const finalPricingSection =
@@ -43,26 +51,28 @@ class BookingFormCalculation extends React.Component {
           <div className="final-pricing">
             <span>
               Service fee{" "}
-              <button onClick={this.openExtraInfo}>
+              <a onClick={this.toggleHiddenButtons("service")}>
                 <i className="far fa-question-circle" />
-              </button>
-              <div className="hide-extra-info" id="questionMark">
-                This is for the site
+              </a>
+              <span className="right-side">${this.serviceFees}</span>
+              <div className="hide-extra-info" id="service">
+                This helps us run our platform and offer services like 24/7
+                support on your trip.
               </div>
-            </span>{" "}
-            <span className="right-side">${this.serviceFees}</span>
+            </span>
           </div>
           <div className="final-pricing">
             <span>
-              Occupancy taxes and fees{" "}
-              <button onClick={this.openExtraInfo}>
+              Cleaning fees{" "}
+              <a onClick={this.toggleHiddenButtons("cleaning")}>
                 <i className="far fa-question-circle" />
-              </button>
-              <div className="hide-extra-info" id="questionMark">
-                This is for the site
+              </a>
+              <span className="right-side">${this.cleaningFees}</span>
+              <div className="hide-extra-info" id="cleaning">
+                One-time fee charged by host to cover the cost of cleaning their
+                space.
               </div>
             </span>{" "}
-            <span className="right-side">${this.occupancyTaxes}</span>
           </div>
           <div className="final-pricing">
             <span>Total</span>{" "}

@@ -23,29 +23,27 @@
   right: 100px;
   padding: 30px;
   border: 1px solid #e4e4e4 !important;
-  border .price-container {
-    top: 10px;
-    input {
-      width: 250px;
-    }
-  }
-  font-size: 12px;
-  .price-tag {
-    font-size: 24px;
-    font-weight: 800;
-    margin-right: 3px;
-  }
-}
 
-.line {
-  padding-top: 12px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid #e4e4e4 !important;
+  .booking-form-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #484848;
+  }
+
+  .booking-form-price-text {
+    margin-right: 5px;
+    color: #484848;
+  }
+  .booking-form-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
 }
 
 .booking-request-form-container {
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 10px;
   margin-bottom: 10px;
 
@@ -55,9 +53,11 @@
 
   label {
     display: block;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 5px;
     padding-bottom: 5px;
+    font-size: 14px;
+    color: #484848;
   }
 
   .booking-form-input {
@@ -65,7 +65,7 @@
     border-radius: 2px;
     box-sizing: border-box;
     border: 1px solid #e4e4e4 !important;
-    color: grey;
+    color: #484848;
     font-size: 14px;
     padding: 10px;
     background: white;
@@ -144,4 +144,60 @@
 
 .hide-extra-info {
   display: none;
+}
+
+.far:hover {
+  cursor: pointer;
+}
+
+#service {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(235, 235, 235) !important;
+  border-image: initial !important;
+  border-radius: 4px !important;
+  padding: 8px;
+  width: 160px;
+  background: white;
+  position: absolute;
+  right: 377px;
+  top: 172px;
+}
+
+#cleaning {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(235, 235, 235) !important;
+  border-image: initial !important;
+  border-radius: 4px !important;
+  padding: 8px;
+  width: 160px;
+  background: white;
+  position: absolute;
+  right: 83px;
+  top: 209px;
+}
+
+.individual-stars-container i {
+  color: #5bc2bf;
+}
+
+.booking-form-stars {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.p-stars {
+  color: #484848;
+  font-size: 12px;
+  margin: 0 0 0 5px;
+}
+
+.comment-stars {
+  top: 5px;
+  position: relative;
 }

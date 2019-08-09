@@ -1,26 +1,42 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Rating from "react-rating";
+import ReactStars from "react-stars";
 
 class CreateComment extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.comments
+    this.state = {
+      rating: 0,
+      body: ""
+    };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleRatingChange = this.handleRatingChange.bind(this);
+  }
+
+  handleRatingChange(newRating) {
+    this.setState({ rating: newRating });
   }
 
   update(field) {
     return e => this.setState({ [field]: e.currentTarget.value });
   }
 
+  navigateToListing() {
+    const url = `/listings/${this.props.match.params.listingId}`;
+    this.props.history.push(url);
+  }
+
   handleSubmit(e) {
     e.preventDefault();
-
-    this.state.listingId = this.props.listing.id;
+    let listingId;
+    listingId = this.props.match.params.listingId;
     this.props
-      .submit(this.state)
-      .then(() => this.setState({ rating: null, body: "" }));
+      .createComment(listingId, this.state)
+      .then(() => this.setState({ rating: undefined, body: "" }));
+
+    this.navigateToListing();
   }
 
   render() {
@@ -30,25 +46,28 @@ class CreateComment extends React.Component {
 
     return (
       <div className="create-review-box">
-        <form className="create-review-form">
+        <form onSubmit={this.handleSubmit} className="create-review-form">
           <div className="rating">
             <p>Rate your experience </p>
-            <div>
-              <Rating
-                onChange={rating => (this.state.rating = rating)}
-                emptySymbol="fa fa-star-o fa-2x"
-                fullSymbol="fa fa-star fa-2x"
-                fractions={2}
+            <div className="comment-stars">
+              <ReactStars
+                value={this.state.rating}
+                count={5}
+                size={20}
+                edit={true}
+                color2={"#26c4bcce"}
+                onChange={this.handleRatingChange}
               />
             </div>
           </div>
           <div className="review-body-box">
-            {/* <textarea
-              value={this.props.body}
+            <textarea
+              value={this.state.body}
               onChange={this.update("body")}
-              placeholder="comments here"
+              placeholder="Leave a review here!"
+              className="review-text-area"
             />
-            <button onClick={this.handleSubmit}>submit</button> */}
+            <button className="submit-review-button">Submit Review</button>
           </div>
         </form>
       </div>

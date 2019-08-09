@@ -1,6 +1,4 @@
 class Api::ListingsController < ApplicationController
-  before_action :require_logged_in, only: [:create]
-  before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def index
     if (params[:filter].class.to_s == 'Hash')
@@ -9,14 +7,18 @@ class Api::ListingsController < ApplicationController
       answer = location
     end
 
-    listings = answer ? Listing.get_listings(answer) : Listing.first(5)
-    @listings = listings.includes(:comments)
-    
+    @listings = answer ? Listing.get_listings(answer) : Listing.first(5)
     @bounds = Listing.get_bounds(@listings)
   end
 
   def show
     @listing = Listing.includes(:comments).find(params[:id])
+
+    if @listing
+      render :show
+    else
+      render json: ['Listing could not be found'], status: 404
+    end
   end
 
   def create

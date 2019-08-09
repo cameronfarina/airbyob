@@ -1,11 +1,12 @@
 class Api::CommentsController < ApplicationController
-  before_action :require_ownership, only: [:edit, :update, :destroy]
+  # before_action :require_ownership, only: [:edit, :update, :destroy]
 
   def create
     @comment = current_user.comments.new(comment_params)
     @comment.listing_id = params[:listing_id]
     if @comment.save
-      render :show
+      @listing = @comment.listing
+      render 'api/listings/show'
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -26,9 +27,13 @@ class Api::CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = current_user.comments.find(params[:id])
-    @comment.destroy
-    render json: @comment.errors.full_messages, status: 422
+    comment = current_user.comments.find(params[:id])
+    @listing = comment.listing
+    if comment.delete
+      render json: { id: comment.id }
+    else
+      render json: comment.errors.full_messages
+    end
   end
 
   private

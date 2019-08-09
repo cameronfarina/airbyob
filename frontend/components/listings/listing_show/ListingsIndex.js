@@ -3,7 +3,6 @@ import ListingIndexItem from "./ListingIndexItem";
 import Navbar from "../../navbar/Navbar";
 import ListingsMap from "../listing_map/listing_map";
 import FilterBar from "../../filterbar/Filterbar";
-import CommentIndexContainer from "../../comments/comment_index_container";
 
 class ListingIndex extends React.Component {
   constructor(props) {
@@ -57,7 +56,6 @@ class ListingIndex extends React.Component {
             <div className="listings-content">
               <div className="listings-rows">{IndexItems}</div>
             </div>
-            <CommentIndexContainer comments={comments} />
           </div>
           <div className="map-container" id="the-map">
             <ListingsMap

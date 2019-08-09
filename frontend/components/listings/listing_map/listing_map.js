@@ -8,26 +8,12 @@ const getCoordsObj = latLng => ({
   lng: latLng.lng()
 });
 
-const mapOptions = {
-  center: {
-    lat: 37.773972,
-    lng: -122.431297
-  },
-  zoom: 13
-};
-
 class ListingMap extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    const map = this.refs.map;
-    this.map = new google.maps.Map(map, mapOptions);
-    this.MarkerManager = new MarkerManager(
-      this.map,
-      this.handleMarkerClick.bind(this)
-    );
 
     if (this.props.singleListing) {
       this.MarkerManager.createMarkerFromListing(this.props.listing);
@@ -51,18 +37,20 @@ class ListingMap extends React.Component {
         this.map,
         this.handleMarkerClick.bind(this)
       );
+      this.map.panTo(mapOptions.center);
 
       this.MarkerManager.updateMarkers(this.props.listings);
     }
   }
 
   componentDidUpdate() {
-    const map = this.refs.map;
-    this.map = new google.maps.Map(map, mapOptions);
-    this.MarkerManager = new MarkerManager(
-      this.map,
-      this.handleMarkerClick.bind(this)
-    );
+    // const map = this.refs.map;
+
+    // this.map = new google.maps.Map(map, mapOptions);
+    // this.MarkerManager = new MarkerManager(
+    //   this.map,
+    //   this.handleMarkerClick.bind(this)
+    // );
 
     if (this.props.singleListing) {
       this.MarkerManager.createMarkerFromListing(this.props.listing);
