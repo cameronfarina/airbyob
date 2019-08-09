@@ -1,6 +1,6 @@
 
 class Api::BookingsController < ApplicationController
-  before_action :require_logged_in
+  before_action :require_logged_in, only: [:destroy]
   
   def index
     @bookings = Booking.includes(:listing)
