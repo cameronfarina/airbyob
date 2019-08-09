@@ -18,7 +18,8 @@ class ListingIndexItem extends React.Component {
     const { listing } = this.props;
     let averageRating;
     if (listing.average_rating) {
-      averageRating = parseInt(listing.average_rating) / listing.average_rating.length;
+      averageRating =
+        parseInt(listing.average_rating) / listing.average_rating.length;
     } else {
       averageRating = "No reviews yet";
     }
@@ -44,7 +45,6 @@ class ListingIndexItem extends React.Component {
       furnished =
         "This listing is not furnished, please remember to bring your own bed!";
     }
-
     const features = "Wifi - Kitchen - Free Parking";
     return (
       <div className="listing-index-items" onClick={this.handleClick}>
@@ -52,7 +52,7 @@ class ListingIndexItem extends React.Component {
           <ul className="listing-list">
             <div className="individual-listing">
               <div className="listing-image">
-                <img src={window.livingroom} />
+                <img src={window.orange} />
               </div>
               <div className="listing-details">
                 <div className="listing-header">
