@@ -5,7 +5,6 @@ export const fetchAllBookings = () =>
   });
 
 export const fetchBooking = id => {
-  debugger
   return $.ajax({
     method: "GET",
     url: `api/bookings/${id}`

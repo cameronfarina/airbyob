@@ -101,9 +101,11 @@
           color: white;
           background-color: $button-blue;
           border-radius: 4px;
+          border-color: $button-blue;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
 
-          &:active {
-            background-color: $dark-blue;
+          &:hover {
+            background: #20a59ece;
           }
         }
       }

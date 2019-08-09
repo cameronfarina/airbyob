@@ -75,3 +75,22 @@
     background: #20a59ece;
   }
 }
+
+.comment-delete-button {
+  width: 150px;
+  background: $button-blue;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: $button-blue;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+
+  &:hover {
+    background: #20a59ece;
+  }
+}

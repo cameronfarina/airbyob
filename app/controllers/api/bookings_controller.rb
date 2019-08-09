@@ -30,9 +30,8 @@ class Api::BookingsController < ApplicationController
     params.require(:booking).permit(:start_date, :end_date, :num_guests, :listing_id, :user_id)
   end
 
-    def does_not_overlap?(params)
+  def does_not_overlap?(params)
     Booking.where(listing_id: params[:listing_id]).each do |booking|
-
       if (!(params[:start_date].to_s >= booking.end_date.to_s || params[:end_date].to_s <= booking.start_date.to_s))
         return false
       end

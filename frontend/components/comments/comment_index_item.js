@@ -21,13 +21,12 @@ class CommentIndexItem extends React.Component {
   showButtons() {
     const { currentUser, comment } = this.props;
     if (currentUser && currentUser.id === comment.author_id) {
-      return <button onClick={this.deleteUserComment}>Delete Comment</button>;
+      return <button className="comment-delete-button" onClick={this.deleteUserComment}>Delete Comment</button>;
     }
   }
 
   render() {
     const { comment } = this.props;
-    debugger
     return (
       <li className="review-index-item">
         <div>
