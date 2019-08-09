@@ -12,8 +12,7 @@ class BookingForm extends React.Component {
       start_date: null,
       end_date: null,
       num_guests: 1,
-      listing_id: props.listing.id,
-      user_id: props.currentUser.id
+      listing_id: props.listing.id
     };
 
     this.renderErrors = this.renderErrors.bind(this);
@@ -29,15 +28,14 @@ class BookingForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const bookingParams = {
-      listing_id: this.props.listing.id,
-      start_date: this.state.start_date,
-      end_date: this.state.end_date,
-      user_id: this.state.user_id,
-      num_guests: this.state.num_guests
-    };
-
     if (this.props.currentUser) {
+      const bookingParams = {
+        listing_id: this.props.listing.id,
+        start_date: this.state.start_date,
+        end_date: this.state.end_date,
+        num_guests: this.state.num_guests,
+        user_id: this.props.currentUser.id
+      };
       this.state.user_id = this.props.currentUser.id;
       this.props
         .createBooking(bookingParams)

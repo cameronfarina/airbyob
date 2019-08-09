@@ -20,12 +20,11 @@ class ListingContent extends React.Component {
     fetchAllBookings();
     fetchListing(this.props.listingId);
 
-    window.addEventListener('scroll', ()=> {
+    window.addEventListener("scroll", () => {
       const isTop = window.scrollY < 100;
-      if (isTop !== true){
-        
+      if (isTop !== true) {
       }
-    })
+    });
   }
 
   render() {
