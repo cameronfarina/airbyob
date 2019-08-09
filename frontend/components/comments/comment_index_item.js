@@ -27,6 +27,7 @@ class CommentIndexItem extends React.Component {
 
   render() {
     const { comment } = this.props;
+    debugger
     return (
       <li className="review-index-item">
         <div>

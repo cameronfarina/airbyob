@@ -10,7 +10,8 @@ class ListingContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date()
+      date: new Date(),
+      scrolled: false
     };
   }
 
@@ -18,6 +19,13 @@ class ListingContent extends React.Component {
     let { fetchListing, fetchAllBookings } = this.props;
     fetchAllBookings();
     fetchListing(this.props.listingId);
+
+    window.addEventListener('scroll', ()=> {
+      const isTop = window.scrollY < 100;
+      if (isTop !== true){
+        
+      }
+    })
   }
 
   render() {
