@@ -11,7 +11,6 @@ class CommentIndexItem extends React.Component {
     };
 
     this.deleteUserComment = this.deleteUserComment.bind(this);
-    // this.editUserComment = this.editUserComment.bind(this);
     this.showButtons = this.showButtons.bind(this);
   }
 
@@ -32,7 +31,6 @@ class CommentIndexItem extends React.Component {
       <li className="review-index-item">
         <div>
           <span className="reviewer">Guest # {comment.author_id}</span>
-          {/* <span className="reviewer">Rating: {comment.rating} / 5</span> */}
           {this.showButtons()}
         </div>
         <p>

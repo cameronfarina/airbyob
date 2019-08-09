@@ -7,7 +7,6 @@ import { formatDate, parseDate } from "react-day-picker/moment";
 
 class BookingForm extends React.Component {
   constructor(props) {
-    debugger;
     super(props);
     this.state = {
       start_date: null,
@@ -122,8 +121,13 @@ class BookingForm extends React.Component {
   }
 
   render() {
-    const { bookings, listing } = this.props;
+    const { listing } = this.props;
     this.invalidDates();
+
+    let ratingLength;
+    if (Object.keys(listing.comments).length > 0) {
+      ratingLength = listing.comments.length;
+    }
 
     const num_nights = this.getNumberOfNightsInStay(
       this.state.start_date,
@@ -142,12 +146,12 @@ class BookingForm extends React.Component {
         >
           <div className="booking-form-price">
             <span className="booking-form-price-text">
-              ${Math.floor(this.props.listing.price)}
+              <strong>${Math.floor(this.props.listing.price)}</strong>
             </span>
             <span className="booking-form-text">per night</span>
             <div className="booking-form-stars">
               {renderStars(listing.average_rating)}
-              <p className="p-stars">{Object.keys(listing.comments).length}</p>
+              <p className="p-stars">{ratingLength}</p>
             </div>
             <div className="splash-form-field inline">
               <div className="splash-form-inline-field booking-input">

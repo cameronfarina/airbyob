@@ -16,6 +16,13 @@ class ListingIndexItem extends React.Component {
 
   render() {
     const { listing } = this.props;
+    let averageRating;
+    if (listing.average_rating) {
+      averageRating = parseInt(listing.average_rating) / listing.average_rating.length;
+    } else {
+      averageRating = "No reviews yet";
+    }
+
     let beds, size, bathrooms, furnished;
     if (listing.beds === 1) {
       beds = "bed";
@@ -67,9 +74,7 @@ class ListingIndexItem extends React.Component {
                   <li>{furnished}</li>
                 </div>
                 <div className="listing-review">
-                  <li>
-                    {renderStars(this.props.averageRating)}
-                  </li>
+                  <li>{renderStars(averageRating)}</li>
                 </div>
                 <div className="listing-price">
                   <li>{`$${Math.floor(listing.price)}/night`}</li>

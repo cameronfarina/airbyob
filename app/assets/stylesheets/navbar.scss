@@ -144,3 +144,27 @@
     border-bottom: 2px solid $dark-blue;
   }
 }
+.loggedIn-container {
+  display: flex;
+}
+
+.loggedIn-navbar-container {
+  align-self: center;
+
+  .loggedIn-nav-list-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $dark-blue;
+      text-decoration: none;
+      padding: 32px 20px;
+    }
+
+    a:hover {
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+}

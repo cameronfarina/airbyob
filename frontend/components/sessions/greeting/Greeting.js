@@ -39,7 +39,14 @@ class Greeting extends React.Component {
     const { logout } = this.props;
     return (
       <div>
-        <div>
+        <div className="loggedIn-container">
+          <div className="loggedIn-navbar-container">
+            <ul className="loggedIn-nav-list-items">
+              <li>
+                <Link to="/trips">My Trips</Link>
+              </li>
+            </ul>
+          </div>
           <div className="profile-container">
             <button className="avatar-button" onClick={this.toggleDropdown}>
               <img
@@ -54,12 +61,12 @@ class Greeting extends React.Component {
               className="profile-dropdown-menu hide-dropdown"
               id="profile-dropdown"
             >
-              <ul className="profile-dropdown-list" onClick={logout}>
-                <li className="profile-dropdown-list-item">
+              <ul className="profile-dropdown-list">
+                <li className="profile-dropdown-list-item" onClick={logout}>
                   <Link to="/">Log Out</Link>
                 </li>
                 <li className="profile-dropdown-list-item">
-                  <Link to="/">My Trips</Link>
+                  <Link to="/trips">My Trips</Link>
                 </li>
               </ul>
             </div>

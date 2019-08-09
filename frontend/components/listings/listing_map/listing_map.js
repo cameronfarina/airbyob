@@ -14,7 +14,6 @@ class ListingMap extends React.Component {
   }
 
   componentDidMount() {
-
     if (this.props.singleListing) {
       this.MarkerManager.createMarkerFromListing(this.props.listing);
     } else {
@@ -44,14 +43,6 @@ class ListingMap extends React.Component {
   }
 
   componentDidUpdate() {
-    // const map = this.refs.map;
-
-    // this.map = new google.maps.Map(map, mapOptions);
-    // this.MarkerManager = new MarkerManager(
-    //   this.map,
-    //   this.handleMarkerClick.bind(this)
-    // );
-
     if (this.props.singleListing) {
       this.MarkerManager.createMarkerFromListing(this.props.listing);
     } else {

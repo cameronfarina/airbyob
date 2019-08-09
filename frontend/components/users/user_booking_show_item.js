@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Carousel from "../listings/individual-listing-detail/Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 class BookingShowItem extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ class BookingShowItem extends React.Component {
       <li className="booking-listing-item-container">
         <Link to={`/listings/${this.props.booking.listing_id}`}>
           <div>
-            <img src={window.orange} />
+            <Carousel showThumbs={false} />
           </div>
         </Link>
 

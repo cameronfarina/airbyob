@@ -188,3 +188,48 @@
   line-height: 1.28571em !important;
   padding-left: 4px;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  #the-map {
+    display: none;
+  }
+
+  .listings-page-content {
+    width: 100%;
+  }
+
+  .listings-content {
+    width: 80%;
+  }
+
+  .switch-container {
+    display: none;
+  }
+
+  .filter-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #guests,
+  .guests-filter-container {
+    left: 400px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #the-map {
+    display: none;
+  }
+
+  .listings-page-content {
+    width: 100%;
+  }
+  .listings-content {
+    width: 98%;
+  }
+
+  .filter-button-container {
+    display: none;
+  }
+}

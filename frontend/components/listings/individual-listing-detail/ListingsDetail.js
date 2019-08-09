@@ -15,8 +15,8 @@ class ListingContent extends React.Component {
   }
 
   componentDidMount() {
-    let { fetchListing, fetchBooking } = this.props;
-    fetchBooking();
+    let { fetchListing, fetchAllBookings } = this.props;
+    fetchAllBookings();
     fetchListing(this.props.listingId);
   }
 

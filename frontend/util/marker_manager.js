@@ -35,7 +35,7 @@ class MarkerManager {
       fillOpacity: 1,
       scale: 1.15,
       strokeColor: "grey",
-      strokeWeight: 0.5,
+      strokeWeight: 0.5
     };
 
     this.markers[listing.id] = new google.maps.Marker({
@@ -44,16 +44,12 @@ class MarkerManager {
       title: listing.name,
       listingId: listing.id,
       label: "$" + String(listing.price),
-      icon: mapIcon,
+      icon: mapIcon
     });
 
-    
     let marker = this.markers[listing.id];
-    marker.addListener('click', () => this.handleClick(listing))
+    marker.addListener("click", () => this.handleClick(listing));
     marker.setMap(this.map);
-
-    // marker.addListener("click", () => this.handleClick(listing));
-    // this.markers[marker.listingId] = marker;
   }
 
   removeMarker(marker) {

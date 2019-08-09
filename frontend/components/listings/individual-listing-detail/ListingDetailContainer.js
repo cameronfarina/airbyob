@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import ListingDetail from "./ListingsDetail";
 import { fetchListing } from "../../../actions/listing_actions";
-import { fetchBooking } from "../../../actions/booking_actions";
+import { fetchAllBookings } from "../../../actions/booking_actions";
 import { selectCommentsForListing } from "../../../reducers/selectors";
 
 const mapStateToProps = (state, { match }) => {
@@ -19,7 +19,7 @@ const mapStateToProps = (state, { match }) => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchListing: id => dispatch(fetchListing(id)),
-    fetchBooking: id => dispatch(fetchBooking(id))
+    fetchAllBookings: () => dispatch(fetchAllBookings())
   };
 };
 
