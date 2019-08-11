@@ -15,6 +15,15 @@ class BookingForm extends React.Component {
       listing_id: props.listing.id
     };
 
+    window.addEventListener("scroll", () => {
+      let bookingForm = document.getElementById("booking-form-container");
+      if (window.scrollY > 520) {
+        bookingForm.classList.add("fixed");
+      } else {
+        bookingForm.classList.remove("fixed");
+      }
+    });
+
     this.renderErrors = this.renderErrors.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.disabledDays = [];
