@@ -45,21 +45,16 @@
   justify-content: center;
 }
 
-// .listing-content {
-//   display: flex;
-//   justify-content: center;
-// }
-
 .listings-detail-page {
   top: 155px;
   flex-direction: column;
   display: flex;
-  width: 95%;
+  width: 100%;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: 420px;
   padding-right: 125px !important;
-  padding-left: 25px !important;
+  padding-left: 150px !important;
   position: absolute;
 }
 

@@ -17,7 +17,7 @@ class BookingForm extends React.Component {
 
     window.addEventListener("scroll", () => {
       let bookingForm = document.getElementById("booking-form-container");
-      if (window.scrollY > 520) {
+      if (window.scrollY > 450) {
         bookingForm.classList.add("fixed");
       } else {
         bookingForm.classList.remove("fixed");
