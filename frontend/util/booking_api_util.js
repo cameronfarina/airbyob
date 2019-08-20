@@ -14,8 +14,8 @@ export const fetchBooking = id => {
 export const createBooking = booking => {
   return $.ajax({
     method: "POST",
-    url: "api/bookings",
-    data: { booking: booking }
+    url: `api/listings/${booking.listing_id}/bookings`,
+    data: { booking: payload(booking) }
   });
 };
 
@@ -23,7 +23,7 @@ export const updateBooking = booking =>
   $.ajax({
     method: "PATCH",
     url: `api/bookings/${booking.id}`,
-    data: { booking: booking }
+    data: { booking: payload(booking) }
   });
 
 export const deleteBooking = bookingId =>
@@ -31,3 +31,11 @@ export const deleteBooking = bookingId =>
     method: "DELETE",
     url: `api/bookings/${bookingId}`
   });
+
+const payload = booking => ({
+  start_date: booking.startDate,
+  end_date: booking.endDate,
+  num_guests: booking.num_guests,
+  user_id: booking.user_id,
+  listing_id: booking.listing_id
+});

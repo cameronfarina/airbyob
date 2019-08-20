@@ -4,6 +4,7 @@ import BookingFormCalculation from "./BookingFormCalculation";
 import { renderStars } from "../comments/stars";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import { formatDate, parseDate } from "react-day-picker/moment";
+import throttle from "lodash/throttle";
 
 class BookingForm extends React.Component {
   constructor(props) {
@@ -15,34 +16,6 @@ class BookingForm extends React.Component {
       listing_id: props.listing.id
     };
 
-    function debounce(func, wait, immediate) {
-      var timeout;
-      return function() {
-        var context = this,
-          args = arguments;
-        var later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    }
-
-    const myScroll = debounce(function() {
-      let bookingForm = document.getElementById("booking-form-container");
-      console.log("scrolling");
-      if (window.scrollY > 450) {
-        bookingForm.classList.add("fixed");
-      } else {
-        bookingForm.classList.remove("fixed");
-      }
-    }, 500);
-
-    window.addEventListener("scroll", myScroll);
-
     this.renderErrors = this.renderErrors.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.disabledDays = [];
@@ -51,6 +24,50 @@ class BookingForm extends React.Component {
     this.invalidDates = this.invalidDates.bind(this);
     this.daysOverlap = this.daysOverlap.bind(this);
     this.daysDontOverlap = this.daysDontOverlap.bind(this);
+    this.fixedClassAdded = false;
+    this.featuredListFixedOnScroll = this.featuredListFixedOnScroll.bind(this);
+    this.ratingLength = this.ratingLength.bind(this);
+  }
+
+  featuredListFixedOnScroll(e) {
+    this.bookingForm =
+      this.bookingForm || document.getElementById("booking-form-container");
+
+    if (window.scrollY > 450) {
+      if (!this.fixedClassAdded) {
+        this.bookingForm.classList.add("fixed");
+        this.fixedClassAdded = true;
+      }
+    } else {
+      if (this.fixedClassAdded) {
+        this.bookingForm.classList.remove("fixed");
+        this.fixedClassAdded = false;
+      }
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener(
+      "scroll",
+      throttle(this.featuredListFixedOnScroll, 25)
+    );
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.featuredListFixedOnScroll);
+  }
+
+  componentDidUpdate() {
+    this.ratingLength();
+  }
+
+  ratingLength() {
+    debugger;
+    let ratings;
+    if (this.props.listing.comments.length > 0) {
+      ratings = this.props.listing.comments.length;
+    }
+    return ratings;
   }
 
   handleSubmit(e) {
@@ -147,13 +164,8 @@ class BookingForm extends React.Component {
   }
 
   render() {
-    const { listing } = this.props;
+    const { listing, average_rating } = this.props;
     this.invalidDates();
-
-    let ratingLength;
-    if (Object.keys(listing.comments).length > 0) {
-      ratingLength = listing.comments.length;
-    }
 
     const num_nights = this.getNumberOfNightsInStay(
       this.state.start_date,
@@ -176,8 +188,8 @@ class BookingForm extends React.Component {
             </span>
             <span className="booking-form-text">per night</span>
             <div className="booking-form-stars">
-              {renderStars(listing.average_rating)}
-              <p className="p-stars">{ratingLength}</p>
+              {renderStars(average_rating)}
+              <p className="p-stars">{this.ratingLength()}</p>
             </div>
             <div className="splash-form-field inline">
               <div className="splash-form-inline-field booking-input">

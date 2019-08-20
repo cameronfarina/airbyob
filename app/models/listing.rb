@@ -10,6 +10,7 @@ class Listing < ApplicationRecord
 
   def average_rating
     comments.average(:rating)
+    
   end
 
   def self.location_type(location)

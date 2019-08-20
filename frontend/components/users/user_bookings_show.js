@@ -1,5 +1,5 @@
 import React from "react";
-import BookingShowItem from './user_booking_show_item'
+import BookingShowItem from "./user_booking_show_item";
 
 class BookingIndex extends React.Component {
   constructor(props) {
@@ -21,9 +21,7 @@ class BookingIndex extends React.Component {
     } else {
       userBookingsHeaderInfo = (
         <div>
-          <div className="subheader">
-            Your trips
-          </div>
+          <div className="subheader">Your trips</div>
         </div>
       );
       const bookings = this.props.bookings.map((booking, idx) => (

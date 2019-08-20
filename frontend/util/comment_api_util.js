@@ -4,10 +4,10 @@ export const fetchComment = commentId =>
     url: `/api/listings/${commentId}`
   });
 
-export const createComment = comment =>
+export const createComment = (id, comment) =>
   $.ajax({
     method: "POST",
-    url: `api/listings/${comment.listingId}/comments`,
+    url: `api/listings/${id}/comments`,
     data: { comment }
   });
 
