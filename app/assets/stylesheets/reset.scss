@@ -18,6 +18,14 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: "Varela Round", sans-serif;
+  font-size: inherit;
+  text-decoration: none;
+  outline: none;
+  color: #484848;
 }
 
 #root {
@@ -33,7 +41,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: 0;
 }
@@ -61,7 +68,7 @@ p {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
-  margin: 20px 0 30px;
+  margin: 0;
 }
 
 a {

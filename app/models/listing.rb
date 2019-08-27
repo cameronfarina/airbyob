@@ -66,7 +66,7 @@ class Listing < ApplicationRecord
       .where("lng < ?", bounds[3])
   end
 
-    def booked_dates
+  def booked_dates
     booked = []
     self.bookings.each do |booking|
       check_in = booking.start_date

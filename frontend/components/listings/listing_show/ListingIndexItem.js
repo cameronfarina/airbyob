@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { renderStars } from "../../comments/stars";
+import renderStars from "../../comments/stars";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {

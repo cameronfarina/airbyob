@@ -9,27 +9,27 @@
 User.delete_all
 Booking.delete_all
 
-# require 'csv'
-# data = CSV.foreach("#{Rails.root}/db/MOCK_DATA.csv").map do |row|
+require 'csv'
+ data = CSV.foreach("#{Rails.root}/db/MOCK_DATA.csv").map do |row|
 
-#     {
-#       address: row[0], 
-#       city: row[1], 
-#       state: row[2], 
-#       country: row[3],
-#       price: row[4],
-#       latitude: row[5], 
-#       longitude: row[6], 
-#       furnished: row[7], 
-#       user_id: row[8], 
-#       description: row[9], 
-#       beds: row[10],
-#       bathrooms: row[11]
-#     }
+     {
+       address: row[0], 
+       city: row[1], 
+       state: row[2], 
+       country: row[3],
+       price: row[4],
+       latitude: row[5], 
+       longitude: row[6], 
+       furnished: row[7], 
+       user_id: row[8], 
+       description: row[9], 
+       beds: row[10],
+       bathrooms: row[11]
+     }
+ end
 
-# end
+Listing.create!(data)
 
-# Listing.create!(data)
 user1 = User.create!(email: "cam@gmail.com", password: "123456", name: "Cameron Farina")
 user2 = User.create!(email: "tom@gmail.com", password: "123456", name: "Tom Farina")
 user3 = User.create!(email: "jon@gmail.com", password: "123456", name: "Jon Farina")

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const renderStars = rating => {
+const renderStars = rating => {
   if (rating && (rating > 0 && rating < 6)) {
     const fullStar = <i className="fa fa-star" />;
     const emptyStar = <i className="fa fa-star" />;
@@ -67,6 +67,8 @@ export const renderStars = rating => {
       );
     }
   } else {
-    return 'No reviews yet'
+    return "No reviews yet";
   }
 };
+
+export default renderStars;

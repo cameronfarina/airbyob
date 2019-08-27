@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import BookingFormCalculation from "./BookingFormCalculation";
-import { renderStars } from "../comments/stars";
+import renderStars from "../comments/stars";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import { formatDate, parseDate } from "react-day-picker/moment";
 import throttle from "lodash/throttle";
@@ -62,7 +62,6 @@ class BookingForm extends React.Component {
   }
 
   ratingLength() {
-    debugger;
     let ratings;
     if (this.props.listing.comments.length > 0) {
       ratings = this.props.listing.comments.length;

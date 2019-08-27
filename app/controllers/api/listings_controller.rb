@@ -7,7 +7,7 @@ class Api::ListingsController < ApplicationController
       answer = location
     end
 
-    @listings = answer ? Listing.get_listings(answer) : Listing.first(5)
+    @listings = answer ? Listing.get_listings(answer) : Listing.all.limit(100)
     @bounds = Listing.get_bounds(@listings)
   end
 
