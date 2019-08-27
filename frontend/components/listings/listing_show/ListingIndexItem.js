@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import renderStars from "../../comments/stars";
+import { Lazy } from "react-lazy";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -51,35 +52,43 @@ class ListingIndexItem extends React.Component {
         <div className="index-item-info">
           <ul className="listing-list">
             <div className="individual-listing">
-              <div className="listing-image">
-                <img src={window.orange} />
-              </div>
-              <div className="listing-details">
-                <div className="listing-header">
-                  <h5>{size}</h5>
+              <Lazy>
+                <div className="listing-image">
+                  <img src={window.orange} />
                 </div>
-                <div className="listing-details-specific">
-                  <li>
-                    {listing.beds} {beds}
-                  </li>
-                  <span className="details-breaker">.</span>
-                  <li>
-                    {listing.bathrooms} {bathrooms}
-                  </li>
+                <div className="listing-details">
+                  <div className="listing-header">
+                    <h5>
+                      {size} ·{" "}
+                      <span className="sub-header">
+                        {listing.city}, {listing.country}
+                      </span>
+                    </h5>
+                  </div>
+
+                  <div className="listing-details-specific">
+                    <li>
+                      {listing.beds} {beds}
+                    </li>
+                    <span className="details-breaker">.</span>
+                    <li>
+                      {listing.bathrooms} {bathrooms}
+                    </li>
+                  </div>
+                  <div className="listing-features">
+                    <li>{features}</li>
+                  </div>
+                  <div className="listing-furnished">
+                    <li>{furnished}</li>
+                  </div>
+                  <div className="listing-review">
+                    <li>{renderStars(averageRating)}</li>
+                  </div>
+                  <div className="listing-price">
+                    <li>{`$${Math.floor(listing.price)}/night`}</li>
+                  </div>
                 </div>
-                <div className="listing-features">
-                  <li>{features}</li>
-                </div>
-                <div className="listing-furnished">
-                  <li>{furnished}</li>
-                </div>
-                <div className="listing-review">
-                  <li>{renderStars(averageRating)}</li>
-                </div>
-                <div className="listing-price">
-                  <li>{`$${Math.floor(listing.price)}/night`}</li>
-                </div>
-              </div>
+              </Lazy>
             </div>
           </ul>
         </div>

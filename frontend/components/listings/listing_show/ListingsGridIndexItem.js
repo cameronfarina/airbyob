@@ -1,6 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import RenderStars from "../../comments/stars";
+import Carousel from "nuka-carousel";
+import { Lazy } from "react-lazy";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -24,7 +26,7 @@ class ListingIndexItem extends React.Component {
       averageRating = "No reviews yet";
     }
 
-    let beds, size, bathrooms, furnished;
+    let beds, size, bathrooms;
     if (listing.beds === 1) {
       beds = "bed";
       size = "PRIVATE ROOM IN APARTMENT";
@@ -39,20 +41,21 @@ class ListingIndexItem extends React.Component {
       bathrooms = "bathrooms";
     }
 
-    if (listing.furnished) {
-      furnished = "This listing is furnished!";
-    } else {
-      furnished =
-        "This listing is not furnished, please remember to bring your own bed!";
-    }
-    const features = "Wifi - Kitchen - Free Parking";
     return (
-      <div className="listing-index-items" onClick={this.handleClick}>
+      <div className="listing-index-items">
         <li>
           <div className="image-box">
-            <img src={window.orange} />
+            <Lazy>
+              <Carousel>
+                <img className="lozad" src={window.orange} />
+                <img className="lozad" src={window.livingroom} />
+                <img className="lozad" src={window.bedroom} />
+                <img className="lozad" src={window.pool} />
+                <img className="lozad" src={window.bedtwo} />
+              </Carousel>
+            </Lazy>
           </div>
-          <div className="quick-info">
+          <div className="quick-info" onClick={this.handleClick}>
             <p className="info-size">{size}</p>
             <h4>
               {listing.city}, {listing.state}

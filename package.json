@@ -22,6 +22,7 @@
     "react-google-autocomplete": "^1.1.0",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.1",
+    "react-lazy": "^1.1.0",
     "react-moment-proptypes": "^1.6.0",
     "react-rating": "^1.7.2",
     "react-redux": "^7.1.0",

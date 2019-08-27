@@ -42,13 +42,20 @@
           max-height: 210px;
           width: 100%;
           height: 100%;
-          border-radius: 4px;
+          -moz-transition: all 0.8s;
+          -webkit-transition: all 0.8s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+          }
         }
       }
 
       .quick-info {
         padding-top: 5px;
         line-height: 1.5;
+        color: #484848;
 
         .info-size {
           color: $button-blue;
