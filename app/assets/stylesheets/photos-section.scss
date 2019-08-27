@@ -15,68 +15,163 @@
  */
 @import "variables";
 
-.photo-box{
-  display:flex;
+.photo-box {
+  display: flex;
   width: 100%;
   height: 50%;
   position: relative;
   top: 69px;
-  // border: 1px solid black;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border: 2px solid #000;
+  overflow: hidden;
+
   .big-photo-left {
     width: 50%;
     height: calc(100% + 1px);
-    border: 1px solid black;
-    // background image hard-coded
-    // background-image: image_url('listing2_1.jpg');
+    border: 2px solid #000;
     background-size: 100% 100%;
-    // background: $nav-grey;
+    -moz-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+
+    &:hover {
+      transform: scale(1.05);
+      border: 2px solid #000;
+      overflow: hidden;
+      filter: brightness(100%);
+    }
   }
   .photos {
     width: 25%;
-    height: 100%;
-    border-right: 1px solid black;
-    background: grey;
+    border: 2px solid #000;
+    overflow: hidden;
+
     .photo-up-1 {
       display: block;
       width: 100%;
       height: 50%;
-      border-top: 1px solid black;
-      // background image hard-coded
-      // background-image: image_url('listing2_2.jpg');
+      border: 2px solid #000;
       background-size: 100% 100%;
-      // background: $nav-grey;
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
+
+      &:hover {
+        filter: brightness(100%);
+        transform: scale(1.05);
+        overflow: hidden;
+        width: 100%;
+      }
     }
     .photo-up-2 {
       display: block;
       width: 100%;
       height: 50%;
-      border-top: 1px solid black;
-      // background image hard-coded
-      // background-image: image_url('listing2_3.jpg');
+      border: 2px solid #000;
       background-size: 100% 100%;
-      // background: $nav-grey;
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
+
+      &:hover {
+        filter: brightness(100%);
+        transform: scale(1.05);
+        border: 2px solid #000;
+        overflow: hidden;
+        width: 100%;
+      }
     }
     .photo-down-1 {
       display: block;
       width: 100%;
       height: 50%;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      // background image hard-coded
-      // background-image: image_url('listing2_4.jpg');
-      background-size: 100% 100%;  
-      // background: $nav-grey;
+      border: 2px solid #000;
+      background-size: 100% 100%;
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
+
+      &:hover {
+        filter: brightness(100%);
+        transform: scale(1.05);
+        border: 2px solid #000;
+        overflow: hidden;
+        width: 100%;
+      }
     }
     .photo-down-2 {
       display: block;
       width: 100%;
       height: 50%;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      // background image hard-coded
-      // background-image: image_url('listing2_5.jpg');
-      background-size: 100% 100%;  
-      // background: $nav-grey;
+      border: 2px solid #000;
+      background-size: 100% 100%;
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
+
+      &:hover {
+        filter: brightness(100%);
+        transform: scale(1.05);
+        border: 2px solid #000;
+        overflow: hidden;
+        width: 100%;
+      }
     }
   }
+}
+
+// .listing-show-image {
+//   max-width: 100vw;
+//   height: 79vh;
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   padding: 0;
+// }
+
+// .listing-show-photo-container {
+//   height: 100%px;
+//   width: 100%;
+//   box-sizing: border-box;
+//   overflow: hidden;
+//   display: grid;
+//   grid-template-columns: 2fr 1fr 1fr;
+//   z-index: 2;
+// }
+
+.listing-show-photo-container img {
+  max-height: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.listing-show-photo-container img:hover {
+  transform: scale(1.05);
+}
+
+.listing-show-photo-container:hover img {
+  filter: brightness(55%);
+}
+
+.listing-show-photo-container:hover img:hover {
+  filter: brightness(100%);
+}
+
+.listing-show-photo-left-container {
+  border: 2px solid #000;
+}
+
+.listing-show-photo-left-container,
+.listing-show-photo-middle-container,
+.listing-show-photo-right-container {
+  width: 100%;
+}
+
+.listing-show-photo-left-container {
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.listing-show-photo-left-container img,
+.listing-show-photo-middle-container img,
+.listing-show-photo-right-container img {
+  height: 100%;
 }

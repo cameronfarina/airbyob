@@ -5,14 +5,18 @@ import NavBar from "../../navbar/Navbar";
 import Calendar from "../../calendar/Calendar";
 import CommentIndexContainer from "../../comments/comment_index_container";
 import { withRouter } from "react-router-dom";
+import LoadingDots from "../../loading/loading";
 
 class ListingContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       date: new Date(),
-      scrolled: false
+      scrolled: false,
+      loading: true
     };
+
+    setTimeout(() => this.setState({ loading: false }), 1000);
   }
 
   componentDidMount() {
@@ -28,6 +32,10 @@ class ListingContent extends React.Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return <LoadingDots state={this.state} />;
+    }
+
     const { listing } = this.props;
     if (!listing) {
       return null;
@@ -69,7 +77,6 @@ class ListingContent extends React.Component {
                 <div className="title-host-container">
                   <div className="title-location-container" />
                 </div>
-
                 <div className="listing-info">
                   <div className="apartment-info">
                     <div className="icon fa fa-home" />

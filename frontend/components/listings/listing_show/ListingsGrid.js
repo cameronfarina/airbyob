@@ -1,12 +1,16 @@
 import React from "react";
 import ListingsGridIndexItem from "./ListingsGridIndexItem";
 import Navbar from "../../navbar/Navbar";
-// import ListingsMap from "../listing_map/listing_map";
-// import FilterBar from "../../filterbar/Filterbar";
+import LoadingDots from "../../loading/loading";
 
 class ListingIndex extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      loading: true
+    };
+
+    setTimeout(() => this.setState({ loading: false }), 3000);
   }
 
   componentDidMount() {
@@ -14,14 +18,11 @@ class ListingIndex extends React.Component {
   }
 
   render() {
-    const {
-      listings,
-      comments
-      // bounds,
-      // listingId,
-      // fetchListing,
-      // updateFilter
-    } = this.props;
+    if (this.state.loading) {
+      return <LoadingDots state={this.state} />;
+    }
+
+    const { listings, comments } = this.props;
     if (Object.values(listings).length === 0) {
       return null;
     }

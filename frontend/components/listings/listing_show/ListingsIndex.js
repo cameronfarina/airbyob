@@ -3,10 +3,16 @@ import ListingIndexItem from "./ListingIndexItem";
 import Navbar from "../../navbar/Navbar";
 import ListingsMap from "../listing_map/listing_map";
 import FilterBar from "../../filterbar/Filterbar";
+import LoadingDots from "../../loading/loading";
 
 class ListingIndex extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      loading: true
+    };
+
+    setTimeout(() => this.setState({ loading: false }), 2000);
   }
 
   componentDidMount() {
@@ -14,6 +20,9 @@ class ListingIndex extends React.Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return <LoadingDots state={this.state} />;
+    }
     const {
       listings,
       comments,

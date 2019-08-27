@@ -2,7 +2,7 @@ import React from "react";
 
 const PhotoSection = () => {
   return (
-    <div className="photo-box">
+    <div className="listing-show-photo-container photo-box">
       <img className="big-photo-left" src={window.bedroom} />
       <div className="photos">
         <img className="photo-up-1" src={window.livingroom} />
