@@ -38,7 +38,7 @@ class FilterBar extends React.Component {
       mapHidden: !this.state.mapHidden
     });
 
-    if (this.state.mapHidden) {
+    if (!this.state.mapHidden) {
       theMap.classList.add("hide-map");
     } else {
       theMap.classList.remove("hide-map");
