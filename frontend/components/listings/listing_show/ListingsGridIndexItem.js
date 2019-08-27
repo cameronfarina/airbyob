@@ -55,7 +55,7 @@ class ListingIndexItem extends React.Component {
           <div className="quick-info">
             <p className="info-size">{size}</p>
             <h4>
-              {listing.city}, {listing.country}
+              {listing.city}, {listing.state}
             </h4>
             <p>
               {listing.beds} {beds} · {listing.bathrooms} {bathrooms}{" "}

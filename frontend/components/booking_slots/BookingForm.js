@@ -54,7 +54,7 @@ class BookingForm extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.featuredListFixedOnScroll);
+    window.removeEventListener("scroll");
   }
 
   componentDidUpdate() {

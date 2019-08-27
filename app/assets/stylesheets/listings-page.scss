@@ -70,6 +70,14 @@
   margin: 4px !important;
   padding: 0;
   position: relative !important;
+  overflow: hidden;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
 }
 
 .listing-image img {
@@ -135,7 +143,7 @@
   position: absolute;
   padding: 20px 14px;
   bottom: 0;
-  font-weight: 1000 ;
+  font-weight: 1000;
   right: 0;
   color: $button-blue;
 }
