@@ -81,15 +81,14 @@
       .listing-type {
         font-size: 16px !important;
         font-weight: 800 !important;
-        line-height: 1.375em !important;
-        color: $dark-blue !important;
+        color: $button-blue !important;
         padding-bottom: 20px;
       }
 
       .listing-props {
         margin-top: 5px;
 
-        [class|="num"] {
+        [class="num"] {
           font-size: 16px;
           font-weight: 300;
           margin-right: 25px;

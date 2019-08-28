@@ -44,7 +44,7 @@ class ListingContent extends React.Component {
     let beds, size;
     if (!listing.furnished) {
       beds =
-        "beds can fit in this listing, but it will not be furnished during your stay. Please make sure to bring your own bed.";
+        "beds can fit in this listing, but it will not be furnished during your stay. Please make sure to bring your own bed!";
       size = "Entire Apartment";
     } else if (listing.beds === 2 || listing.beds === 3) {
       beds = "beds";
@@ -83,12 +83,12 @@ class ListingContent extends React.Component {
                     <div className="listing-properties-list">
                       <div className="listing-type">{size}</div>
                       <div className="listing-props">
-                        <div className="number-of-bathrooms">
-                          {listing.bathrooms} {bathrooms}
+                        <div className="number-of-beds">
+                          {listing.beds} {beds}
                         </div>
                         <br />
-                        <div className="number-of-bedrooms">
-                          {listing.beds} {beds}
+                        <div className="number-of-bathrooms">
+                          {listing.bathrooms} {bathrooms}
                         </div>
                       </div>
                     </div>

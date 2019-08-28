@@ -1,0 +1,155 @@
+@import "variables";
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  width: 568px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.modal-child input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+  background-color: transparent;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-weight: 300;
+  color: #484848;
+  padding: 11px;
+}
+
+.input-container {
+  display: flex;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 16px;
+}
+
+.input-container:focus-within {
+  border: 1px solid $button-blue;
+}
+
+.icon-container {
+  align-self: center;
+  padding-right: 12px;
+}
+
+.modal-child button {
+  background-color: $button-blue;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  width: 94%;
+  text-align: center;
+  font-weight: 450;
+  line-height: 22px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.modal-child p {
+  text-align: center;
+  font-size: 16px;
+}
+
+#close-x {
+  text-align: left;
+  background-color: white;
+  color: #484848;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 24px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#close-x:active {
+  border-radius: 100%;
+  border: 2px solid #e4e4e4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(26, 26, 29, 0.08);
+}
+
+.login-modal-header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#demo-user-button {
+  background-color: $pink;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#demo-user-button:hover {
+  background-color: #ff5a5f;
+}
+
+.session-buttons {
+  text-align: center;
+}
+
+.form-submit-button {
+  margin-top: 15px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-submit-button:hover {
+  background-color: $button-hover;
+}
+
+.login-modal-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-nav-link-text {
+  margin-right: 5px;
+  font-weight: 350;
+  font-size: 16px;
+}
+
+.signup-span {
+  font-size: 16px;
+  color: $button-blue;
+  font-weight: 600;
+}
+
+.signup-span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal-nav-link-text a {
+  color: $button-blue;
+  font-weight: 475;
+}
+
+.modal-nav-link-text a:hover {
+  text-decoration: underline;
+}
+
+.errors-div ul li {
+  font-size: 16px;
+  color: $button-blue;
+  margin: 5px 0;
+}

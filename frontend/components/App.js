@@ -6,6 +6,7 @@ import HomepageContainer from "../components/homepage/HomepageContainer";
 import ListingsDetailContainer from "./listings/individual-listing-detail/ListingDetailContainer";
 import ListingsContainer from "../components/listings/listing_show/ListingsContainer";
 import UserBookingShowContainer from "../components/users/user_bookings_show_container";
+import Modal from "./modal/modal";
 
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
@@ -13,10 +14,9 @@ import "react-dates/lib/css/_datepicker.css";
 const App = () => {
   return (
     <div>
+      <Modal />
       <Route exact path="/" component={HomepageContainer} />
       <Route exact path="/listings" component={ListingsContainer} />
-      <AuthRoute exact path="/login" component={SessionFormContainer} />
-      <AuthRoute exact path="/signup" component={SessionFormContainer} />
       <Route path="/listings/:listingId" component={ListingsDetailContainer} />
       <ProtectedRoute
         exact

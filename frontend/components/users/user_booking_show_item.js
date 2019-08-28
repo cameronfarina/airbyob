@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Carousel from "../listings/individual-listing-detail/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "../navbar/Navbar";
+import CreateCommentContainer from '../comments/create_comment_container';
+import EditCommentContainer from '../comments/edit_comment_container';
 
 class BookingShowItem extends React.Component {
   constructor(props) {

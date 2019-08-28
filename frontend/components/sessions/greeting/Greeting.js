@@ -80,24 +80,17 @@ class Greeting extends React.Component {
     return (
       <div className="navbar-list">
         <ul className="navbar-list-items">
-          <li className="navbar-link-item">
-            <Link
-              to="/login"
-              className="loginButton"
-              onClick={this.openContainer}
-            >
-              Log in
-            </Link>
+          <li
+            className="navbar-link-item"
+            onClick={() => this.props.openModal("signup")}
+          >
+            Sign Up
           </li>
-          <br />
-          <li className="navbar-link-item">
-            <Link
-              to="/signup"
-              className="loginButton"
-              onClick={this.openContainer}
-            >
-              Sign up
-            </Link>
+          <li
+            className="navbar-link-item"
+            onClick={() => this.props.openModal("login")}
+          >
+            Log In
           </li>
         </ul>
       </div>

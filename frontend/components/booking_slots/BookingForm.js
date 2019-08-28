@@ -17,6 +17,7 @@ class BookingForm extends React.Component {
     };
 
     this.renderErrors = this.renderErrors.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.disabledDays = [];
     this.checkInDateChanged = this.checkInDateChanged.bind(this);
@@ -33,7 +34,7 @@ class BookingForm extends React.Component {
     this.bookingForm =
       this.bookingForm || document.getElementById("booking-form-container");
 
-    if (window.scrollY > 450) {
+    if (window.scrollY > 473) {
       if (!this.fixedClassAdded) {
         this.bookingForm.classList.add("fixed");
         this.fixedClassAdded = true;
@@ -53,8 +54,15 @@ class BookingForm extends React.Component {
     );
   }
 
+  handleChange(e) {
+    e.preventDefault();
+    this.setState({
+      num_guests: e.currentTarget.value
+    });
+  }
+
   componentWillUnmount() {
-    window.removeEventListener("scroll");
+    window.removeEventListener("scroll", this.featuredListFixedOnScroll);
   }
 
   componentDidUpdate() {
@@ -74,18 +82,17 @@ class BookingForm extends React.Component {
 
     if (this.props.currentUser) {
       const bookingParams = {
-        listing_id: this.props.listing.id,
+        listing_id: this.state.listing_id,
         start_date: this.state.start_date,
         end_date: this.state.end_date,
         num_guests: this.state.num_guests,
         user_id: this.props.currentUser.id
       };
-      this.state.user_id = this.props.currentUser.id;
       this.props
         .createBooking(bookingParams)
         .then(() => this.props.history.push("/trips"));
     } else {
-      this.props.history.push("/login");
+      this.props.openModal("login");
     }
   }
 
@@ -239,11 +246,7 @@ class BookingForm extends React.Component {
             <input
               type="number"
               placeholder="1 guest"
-              onChange={myGuests =>
-                this.setState({
-                  guests: myGuests
-                })
-              }
+              onChange={this.handleChange}
               min="1"
               className="booking-form-input"
             />

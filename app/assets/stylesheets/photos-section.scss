@@ -21,40 +21,39 @@
   height: 50%;
   position: relative;
   top: 69px;
-  -moz-transition: all 0.7s;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  border: 2px solid #000;
+  border: 2px solid white;
   overflow: hidden;
 
   .big-photo-left {
     width: 50%;
-    height: calc(100% + 1px);
-    border: 2px solid #000;
+    height: 99%;
+    border: 2px solid white;
     background-size: 100% 100%;
-    -moz-transition: all 0.7s;
-    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    overflow: hidden;
 
     &:hover {
       transform: scale(1.05);
-      border: 2px solid #000;
+      border: 2px solid white;
       overflow: hidden;
       filter: brightness(100%);
     }
   }
   .photos {
     width: 25%;
-    border: 2px solid #000;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     overflow: hidden;
+    z-index: 5;
 
     .photo-up-1 {
       display: block;
       width: 100%;
       height: 50%;
-      border: 2px solid #000;
+      border: 2px solid white;
       background-size: 100% 100%;
-      -moz-transition: all 0.7s;
-      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
 
       &:hover {
         filter: brightness(100%);
@@ -67,15 +66,14 @@
       display: block;
       width: 100%;
       height: 50%;
-      border: 2px solid #000;
+      border: 2px solid white;
       background-size: 100% 100%;
-      -moz-transition: all 0.7s;
-      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
 
       &:hover {
         filter: brightness(100%);
         transform: scale(1.05);
-        border: 2px solid #000;
+        border: 2px solid white;
         overflow: hidden;
         width: 100%;
       }
@@ -84,15 +82,14 @@
       display: block;
       width: 100%;
       height: 50%;
-      border: 2px solid #000;
+      border: 2px solid white;
       background-size: 100% 100%;
-      -moz-transition: all 0.7s;
-      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
 
       &:hover {
         filter: brightness(100%);
         transform: scale(1.05);
-        border: 2px solid #000;
+        border: 2px solid white;
         overflow: hidden;
         width: 100%;
       }
@@ -101,15 +98,14 @@
       display: block;
       width: 100%;
       height: 50%;
-      border: 2px solid #000;
+      border: 2px solid white;
       background-size: 100% 100%;
-      -moz-transition: all 0.7s;
-      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
 
       &:hover {
         filter: brightness(100%);
         transform: scale(1.05);
-        border: 2px solid #000;
+        border: 2px solid white;
         overflow: hidden;
         width: 100%;
       }
@@ -141,37 +137,20 @@
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+  overflow: hidden;
 }
 
 .listing-show-photo-container img:hover {
   transform: scale(1.05);
+  overflow: hidden;
 }
 
 .listing-show-photo-container:hover img {
   filter: brightness(55%);
+  overflow: hidden;
 }
 
 .listing-show-photo-container:hover img:hover {
   filter: brightness(100%);
-}
-
-.listing-show-photo-left-container {
-  border: 2px solid #000;
-}
-
-.listing-show-photo-left-container,
-.listing-show-photo-middle-container,
-.listing-show-photo-right-container {
-  width: 100%;
-}
-
-.listing-show-photo-left-container {
-  border: 2px solid #000;
   overflow: hidden;
-}
-
-.listing-show-photo-left-container img,
-.listing-show-photo-middle-container img,
-.listing-show-photo-right-container img {
-  height: 100%;
 }

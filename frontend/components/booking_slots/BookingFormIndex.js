@@ -1,6 +1,6 @@
 import React from "react";
 import BookingForm from "./BookingForm";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 class BookingFormIndex extends React.Component {
   constructor(props) {
@@ -13,7 +13,13 @@ class BookingFormIndex extends React.Component {
   }
 
   render() {
-    const { bookings, listing, createBooking, currentUser } = this.props;
+    const {
+      bookings,
+      listing,
+      createBooking,
+      currentUser,
+      openModal
+    } = this.props;
 
     return (
       <div>
@@ -28,6 +34,7 @@ class BookingFormIndex extends React.Component {
           city={listing.city}
           furnished={listing.furnished}
           average_rating={listing.average_rating}
+          openModal={openModal}
         />
       </div>
     );

@@ -43,3 +43,25 @@ export const deleteComment = id =>
     method: "DELETE",
     url: `api/comments/${id}`
   });
+
+export const fetchComments = () => {
+  return $.ajax({
+    method: "GET",
+    url: "api/comments"
+  });
+};
+
+export const fetchComment = id => {
+  return $.ajax({
+    method: "GET",
+    url: `api/comments/${id}`
+  });
+};
+
+export const updateComment = comment => {
+  return $.ajax({
+    method: "PATCH",
+    url: `api/comments/${comment.id}`,
+    data: { comment: comment }
+  });
+};

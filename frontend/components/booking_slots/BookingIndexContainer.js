@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-
+import { openModal } from "../../actions/modal_actions";
 import BookingFormIndex from "./BookingFormIndex";
 import {
   createBooking,
@@ -30,7 +30,8 @@ const mapDispatchToProps = dispatch => {
     clearErrors: () => dispatch(clearErrors()),
     fetchListing: id => dispatch(fetchListing(id)),
     fetchAllBookings: () => dispatch(fetchAllBookings()),
-    fetchBooking: id => dispatch(fetchBooking(id))
+    fetchBooking: id => dispatch(fetchBooking(id)),
+    openModal: modal => dispatch(openModal(modal))
   };
 };
 

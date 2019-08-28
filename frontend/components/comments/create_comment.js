@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import Rating from "react-rating";
 import ReactStars from "react-stars";
 
 class CreateComment extends React.Component {

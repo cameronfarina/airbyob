@@ -46,12 +46,12 @@ class ListingIndexItem extends React.Component {
         <li>
           <div className="image-box">
             <Lazy>
-              <Carousel>
-                <img className="lozad" src={window.orange} />
-                <img className="lozad" src={window.livingroom} />
-                <img className="lozad" src={window.bedroom} />
-                <img className="lozad" src={window.pool} />
-                <img className="lozad" src={window.bedtwo} />
+              <Carousel className="lozad">
+                <img onClick={this.handleClick} src={window.orange} />
+                <img onClick={this.handleClick} src={window.livingroom} />
+                <img onClick={this.handleClick} src={window.bedroom} />
+                <img onClick={this.handleClick} src={window.pool} />
+                <img onClick={this.handleClick} src={window.bedtwo} />
               </Carousel>
             </Lazy>
           </div>

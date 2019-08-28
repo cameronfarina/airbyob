@@ -139,7 +139,6 @@ class SessionForm extends React.Component {
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left">
-                <h1 className="form-header">Welcome Back!</h1>
                 <p>To log into your account, please click below</p>
                 <button
                   className="ghost form-btn"
