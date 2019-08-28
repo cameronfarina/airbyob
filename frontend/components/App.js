@@ -6,7 +6,7 @@ import HomepageContainer from "../components/homepage/HomepageContainer";
 import ListingsDetailContainer from "./listings/individual-listing-detail/ListingDetailContainer";
 import ListingsContainer from "../components/listings/listing_show/ListingsContainer";
 import UserBookingShowContainer from "../components/users/user_bookings_show_container";
-import Modal from "./modal/modal";
+import Modal from "./modal/Modal";
 
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
