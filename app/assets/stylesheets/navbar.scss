@@ -136,6 +136,10 @@
 
   .navbar-link-item {
     margin: 0 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   a {

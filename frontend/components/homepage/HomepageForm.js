@@ -53,7 +53,9 @@ class HomepageForm extends React.Component {
 
     return (
       <section className="splash-form">
-        <h1>Find your next place to call home</h1>
+        <h1 className="splash-form-header">
+          Find your next place to call home
+        </h1>
         <form onSubmit={this.handleSubmit}>
           <div className="splash-form-field">
             <label>WHERE</label>

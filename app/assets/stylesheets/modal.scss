@@ -38,15 +38,12 @@
   display: flex;
   border: 1px solid #e4e4e4;
   margin-bottom: 16px;
+  align-self: center;
+  padding-right: 12px;
 }
 
 .input-container:focus-within {
   border: 1px solid $button-blue;
-}
-
-.icon-container {
-  align-self: center;
-  padding-right: 12px;
 }
 
 .modal-child button {
