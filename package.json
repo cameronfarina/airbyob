@@ -9,7 +9,7 @@
     "faker": "^4.1.0",
     "google-maps-react": "^2.0.2",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "nuka-carousel": "^4.5.9",
     "prop-types": "^15.7.2",
